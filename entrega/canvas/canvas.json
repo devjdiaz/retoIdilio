@@ -1,0 +1,256 @@
+{
+  "pages": [
+    {
+      "id": "page-1",
+      "name": "Estados"
+    },
+    {
+      "id": "page-2",
+      "name": "Especificación"
+    },
+    {
+      "id": "page-3",
+      "name": "Flujo y lógica"
+    }
+  ],
+  "artboards": [
+    {
+      "file": "Estado01.dc.html",
+      "title": "01 · Sin racha, nada que reclamar",
+      "page": "page-1",
+      "x": 0,
+      "y": 0,
+      "w": 390,
+      "h": 844
+    },
+    {
+      "file": "Main.dc.html",
+      "title": "02 · Recompensa disponible ★",
+      "page": "page-1",
+      "x": 470,
+      "y": 0,
+      "w": 390,
+      "h": 844
+    },
+    {
+      "file": "Estado03.dc.html",
+      "title": "03 · Reclamada · día 1",
+      "page": "page-1",
+      "x": 940,
+      "y": 0,
+      "w": 390,
+      "h": 844
+    },
+    {
+      "file": "Estado04.dc.html",
+      "title": "04 · Reclamada · día 2",
+      "page": "page-1",
+      "x": 1410,
+      "y": 0,
+      "w": 390,
+      "h": 844
+    },
+    {
+      "file": "Estado05.dc.html",
+      "title": "05 · Meta alcanzada · día 3",
+      "page": "page-1",
+      "x": 1880,
+      "y": 0,
+      "w": 390,
+      "h": 844
+    },
+    {
+      "file": "Estado06.dc.html",
+      "title": "06 · Racha en riesgo",
+      "page": "page-1",
+      "x": 0,
+      "y": 1240,
+      "w": 390,
+      "h": 844
+    },
+    {
+      "file": "Estado07.dc.html",
+      "title": "07 · Racha rota",
+      "page": "page-1",
+      "x": 470,
+      "y": 1240,
+      "w": 390,
+      "h": 844
+    },
+    {
+      "file": "Estado08.dc.html",
+      "title": "08 · Oculta",
+      "page": "page-1",
+      "x": 940,
+      "y": 1240,
+      "w": 390,
+      "h": 844
+    },
+    {
+      "file": "Estado09.dc.html",
+      "title": "09 · Reaparición",
+      "page": "page-1",
+      "x": 1410,
+      "y": 1240,
+      "w": 390,
+      "h": 844
+    },
+    {
+      "file": "Estado10.dc.html",
+      "title": "10 · Saldo insuficiente",
+      "page": "page-1",
+      "x": 1880,
+      "y": 1240,
+      "w": 390,
+      "h": 844
+    },
+    {
+      "file": "Anatomia.dc.html",
+      "title": "Anatomía · medidas",
+      "page": "page-2",
+      "x": 0,
+      "y": 0,
+      "w": 1000,
+      "h": 640
+    },
+    {
+      "file": "Tokens.dc.html",
+      "title": "Tokens · color, tipografía, contraste",
+      "page": "page-2",
+      "x": 1080,
+      "y": 0,
+      "w": 900,
+      "h": 900
+    },
+    {
+      "file": "AntesDespues.dc.html",
+      "title": "Antes / Después",
+      "page": "page-2",
+      "x": 0,
+      "y": 1020,
+      "w": 920,
+      "h": 1120
+    },
+    {
+      "file": "Curva.dc.html",
+      "title": "Curva de racha · actual vs. propuesta",
+      "page": "page-2",
+      "x": 1000,
+      "y": 1020,
+      "w": 940,
+      "h": 700
+    },
+    {
+      "file": "Flujo.dc.html",
+      "title": "Flujo completo",
+      "page": "page-3",
+      "x": 0,
+      "y": 0,
+      "w": 1200,
+      "h": 900
+    },
+    {
+      "file": "Prioridad.dc.html",
+      "title": "Prioridad de estados",
+      "page": "page-3",
+      "x": 1280,
+      "y": 0,
+      "w": 720,
+      "h": 900
+    }
+  ],
+  "annotations": [
+    {
+      "id": "note-primera",
+      "page": "page-1",
+      "x": 0,
+      "y": 884,
+      "w": 390,
+      "text": "Fallback, no primera sesión.\n\nAntes este estado decía «primera vez» y no ofrecía CTA — mientras el estado 10 le ofrecía «Reclama +20» al mismo usuario. La contradicción se resolvió a favor de que el día 1 sí se reclama en la primera sesión, que es lo que hace la app real.\n\nConsecuencia: la primera sesión ahora entra por el estado 2, y éste queda como default seguro. Ya no ocurre en el flujo normal, pero sigue siendo inspeccionable desde el panel de demo."
+    },
+    {
+      "id": "note-glow",
+      "page": "page-1",
+      "x": 470,
+      "y": 884,
+      "w": 390,
+      "text": "★ El único estado con glow. Si aparece en tres estados deja de significar urgencia.\n\nY el único sin mensaje: el botón ya dice el verbo y el número. Poner «Reclama +35» al lado de «Reclamar +35» no informa, solo ocupa — es «quitar un elemento» aplicado.\n\nAcá entra ahora la primera sesión. El reclamo ocurre en la barra misma; hoy exige atravesar dos planes de suscripción y tres paquetes de monedas para llegar al camino gratuito."
+    },
+    {
+      "id": "note-segmentos",
+      "page": "page-1",
+      "x": 940,
+      "y": 884,
+      "w": 860,
+      "text": "Tres segmentos, no siete.\n\nSiete en 56 px de alto producen astillas ilegibles, y la meta del día 7 ya viaja en el copy. El indicador responde «¿cuánto falta para el próximo hito?», no «¿dónde estoy en la semana?».\n\nAparece solo en 3, 4 y 5 — los únicos estados sin CTA. Así el violeta del indicador nunca compite con el pill del estado 2, que es el que tiene que ganar la mirada.\n\nEl día 3 merece un momento, no un cambio de número: entra con un pop de 400 ms y después se queda quieto. Es el único hito con evidencia dura — 2,4× en retención D30."
+    },
+    {
+      "id": "note-riesgo",
+      "page": "page-1",
+      "x": 0,
+      "y": 2124,
+      "w": 390,
+      "text": "El único reloj real del sistema. Idilio hoy no tiene ninguno.\n\nSolo aparece con racha ≥ 2: a un usuario sin racha no se le puede generar urgencia sobre algo que no tiene.\n\n«Vence en 3h» y no «Tu racha termina en 3h»: el sujeto es obvio —es la barra de racha y al lado hay un botón de reclamo— y la versión larga no entra junto al CTA sin truncarse.\n\nSin glow. La urgencia acá la carga el número de horas, no el brillo."
+    },
+    {
+      "id": "note-truncado",
+      "page": "page-1",
+      "x": 470,
+      "y": 2124,
+      "w": 390,
+      "text": "No regaña y no muestra lo perdido. Copy prohibido: «Perdiste», «Se acabó», cualquier cifra de lo perdido.\n\nEste estado es el que forzó la corrección. Con el monto en el mensaje se renderizaba literalmente «… nuevo · Reclama +20»: el truncado desde el inicio protegía el número, pero rompía el español.\n\nPresupuesto real medido: 338 px útiles − 37 de saldo − 132 de botón − 16 de gaps ≈ 150 px para el mensaje. «Empieza de nuevo» entra; «Empezamos de nuevo · Reclama +20» no entraba nunca."
+    },
+    {
+      "id": "note-transicion",
+      "page": "page-1",
+      "x": 940,
+      "y": 2124,
+      "w": 860,
+      "text": "8 · Oculta — fade + translate Y, 200 ms ease-out.\n9 · Reaparición — 250 ms ease-out.\n\nLos dos artboards animan el ciclo real; con prefers-reduced-motion quedan fijos.\n\nNingún píxel permanente sobre el video vertical: el video es el producto. La barra vuelve justo en el momento de decisión — seguir, salir o desbloquear.\n\n8 y 9 no son contenido sino visibilidad. Son ortogonales a los otros siete estados, y por eso no entran en la pila de prioridad."
+    },
+    {
+      "id": "note-danger",
+      "page": "page-1",
+      "x": 1880,
+      "y": 2124,
+      "w": 390,
+      "text": "El muro es el disparador real del estado 10, no un botón del panel de demo. Es el único punto del flujo donde el usuario tiene una razón para mirar la economía.\n\nLos dos números, de los dos lados: lo que cuesta y lo que hay. El saldo pasa a --danger en la card y en la barra; la moneda sigue dorada.\n\n«Ver paquetes» ocupa el lugar de acción secundaria y no desaparece cuando el saldo alcanza: el camino de pago sigue presente y sin degradar. La barra añade la alternativa gratuita, no la reemplaza."
+    },
+    {
+      "id": "note-abajo",
+      "page": "page-2",
+      "x": 0,
+      "y": 690,
+      "w": 980,
+      "text": "Por qué abajo: vertical, una mano, 54 % de las sesiones entre 11 pm y 2 am, Android de gama de entrada con pantallas grandes. La zona superior es la menos alcanzable con el pulgar. Y la app ya puso el saldo abajo en el reproductor — se respeta el patrón que el usuario ya conoce en vez de inventar uno nuevo."
+    },
+    {
+      "id": "note-curva",
+      "page": "page-2",
+      "x": 1000,
+      "y": 1760,
+      "w": 940,
+      "text": "Esta corrección es prerrequisito de la barra, no un extra. Una barra que promete «Mañana +75» sobre una curva que paga menos que ayer le enseña al usuario que el sistema no premia volver."
+    },
+    {
+      "id": "note-antes",
+      "page": "page-2",
+      "x": 0,
+      "y": 2180,
+      "w": 920,
+      "text": "La intervención no agrega una pantalla: activa una superficie que ya existe y que el usuario ya mira. Es lo que la hace construible en un trimestre."
+    },
+    {
+      "id": "note-flujo",
+      "page": "page-3",
+      "x": 1280,
+      "y": 940,
+      "w": 720,
+      "text": "Los diez estados corren sobre una sola máquina de estados. En el POC eso es un useReducer con un selector de prioridad: la racha es una máquina de estados y se modela como tal."
+    }
+  ],
+  "launch": {
+    "view": "canvas",
+    "page": "page-1"
+  }
+}

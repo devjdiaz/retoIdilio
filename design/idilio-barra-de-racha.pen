@@ -1,0 +1,381 @@
+{
+  "version": "2.17",
+  "children": [
+    {
+      "type": "frame",
+      "id": "bi8Au",
+      "x": 0,
+      "y": 200,
+      "name": "02 · Recompensa disponible",
+      "clip": true,
+      "width": 390,
+      "height": 844,
+      "fill": "$bg",
+      "layout": "none",
+      "children": [
+        {
+          "type": "rectangle",
+          "id": "GKp61",
+          "x": 0,
+          "y": 0,
+          "name": "Video (simulado)",
+          "fill": {
+            "type": "gradient",
+            "gradientType": "linear",
+            "enabled": true,
+            "rotation": 225,
+            "size": {
+              "height": 1
+            },
+            "colors": [
+              {
+                "color": "#2A1145",
+                "position": 0
+              },
+              {
+                "color": "#3A1A5C",
+                "position": 0.5
+              },
+              {
+                "color": "#0E2226",
+                "position": 1
+              }
+            ]
+          },
+          "width": 390,
+          "height": 844
+        },
+        {
+          "type": "frame",
+          "id": "ZlO7B",
+          "x": 16,
+          "y": 664,
+          "name": "Contexto del episodio",
+          "layout": "vertical",
+          "gap": 4,
+          "children": [
+            {
+              "type": "text",
+              "id": "aP7xj",
+              "name": "Capítulo",
+              "fill": "$text",
+              "content": "Capítulo 13",
+              "fontFamily": "$font",
+              "fontSize": 14
+            },
+            {
+              "type": "text",
+              "id": "ZaBKZ",
+              "name": "Serie",
+              "fill": "$text",
+              "content": "Mi Mejor Pasajera",
+              "fontFamily": "$font",
+              "fontSize": 18,
+              "fontWeight": "700"
+            },
+            {
+              "type": "text",
+              "id": "TJd0R",
+              "name": "Progreso",
+              "fill": "$text-2",
+              "content": "Capítulo 13 de 56",
+              "fontFamily": "$font",
+              "fontSize": 12
+            }
+          ]
+        },
+        {
+          "id": "f9PsCs",
+          "type": "ref",
+          "ref": "b8W8SF",
+          "name": "Barra de racha",
+          "x": 0,
+          "y": 754,
+          "descendants": {
+            "fbS4t": {
+              "enabled": false
+            }
+          }
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "b8W8SF",
+      "x": 0,
+      "y": 0,
+      "name": "Barra de racha · componente",
+      "context": "Base = mensaje + CTA, la forma de los estados 6, 7 y 10. El indicador viene apagado y lo encienden 3, 4 y 5, que a su vez apagan el CTA. Nunca van los tres: en 358px útiles no entran.",
+      "reusable": true,
+      "width": 390,
+      "height": 90,
+      "fill": "#0000008C",
+      "stroke": "#FFFFFF14",
+      "strokeWidth": {
+        "top": 1
+      },
+      "strokeAlignment": "inner",
+      "effect": {
+        "type": "background_blur",
+        "radius": 18
+      },
+      "layout": "vertical",
+      "children": [
+        {
+          "type": "frame",
+          "id": "wOBMU",
+          "name": "Contenido",
+          "width": 390,
+          "height": 56,
+          "padding": [
+            0,
+            16
+          ],
+          "justifyContent": "space_between",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "U4aHZ",
+              "name": "Saldo",
+              "gap": 8,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "ellipse",
+                  "id": "B9toq",
+                  "name": "Moneda",
+                  "fill": "$coin",
+                  "width": 22,
+                  "height": 22,
+                  "stroke": "$coin-deep",
+                  "strokeWidth": 1.25
+                },
+                {
+                  "type": "text",
+                  "id": "wnyBX",
+                  "name": "Cantidad",
+                  "fill": "$coin",
+                  "content": "45",
+                  "fontFamily": "$font",
+                  "fontSize": 16,
+                  "fontWeight": "700"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "Zy2WD",
+              "name": "Estado activo",
+              "gap": 8,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "fbS4t",
+                  "name": "Mensaje",
+                  "fill": "$text",
+                  "content": "Día 2 · Mañana +60",
+                  "fontFamily": "$font",
+                  "fontSize": 14,
+                  "fontWeight": "500"
+                },
+                {
+                  "type": "frame",
+                  "id": "p0CxX",
+                  "x": 145,
+                  "y": 20,
+                  "name": "Indicador de racha",
+                  "enabled": false,
+                  "gap": 4,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "rectangle",
+                      "cornerRadius": "$r-pill",
+                      "id": "MKHEQ",
+                      "name": "Segmento lleno",
+                      "fill": "$violet",
+                      "width": 20,
+                      "height": 4
+                    },
+                    {
+                      "type": "rectangle",
+                      "cornerRadius": "$r-pill",
+                      "id": "shbOU",
+                      "name": "Segmento lleno",
+                      "fill": "$violet",
+                      "width": 20,
+                      "height": 4
+                    },
+                    {
+                      "type": "rectangle",
+                      "cornerRadius": "$r-pill",
+                      "id": "AQM9h",
+                      "name": "Segmento vacío",
+                      "fill": "$track",
+                      "width": 20,
+                      "height": 4
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "dQZox",
+                  "name": "CTA · Reclamar",
+                  "height": 44,
+                  "fill": {
+                    "type": "gradient",
+                    "gradientType": "linear",
+                    "enabled": true,
+                    "rotation": 270,
+                    "size": {
+                      "height": 1
+                    },
+                    "colors": [
+                      {
+                        "color": "$violet",
+                        "position": 0
+                      },
+                      {
+                        "color": "$cta-gradient-end",
+                        "position": 1
+                      }
+                    ]
+                  },
+                  "cornerRadius": "$r-pill",
+                  "effect": {
+                    "type": "shadow",
+                    "shadowType": "outer",
+                    "color": "#7B2FF773",
+                    "blur": 20
+                  },
+                  "padding": [
+                    0,
+                    16
+                  ],
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "r5Og5m",
+                      "name": "Label",
+                      "fill": "$text",
+                      "content": "Reclamar +35",
+                      "fontFamily": "$font",
+                      "fontSize": 14,
+                      "fontWeight": "700"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "Avt7X",
+          "name": "Safe area",
+          "width": 390,
+          "height": 34
+        }
+      ]
+    }
+  ],
+  "variables": {
+    "bg": {
+      "type": "color",
+      "value": "#000000"
+    },
+    "surface": {
+      "type": "color",
+      "value": "#141414"
+    },
+    "surface-2": {
+      "type": "color",
+      "value": "#1E1E1E"
+    },
+    "surface-violet": {
+      "type": "color",
+      "value": "#2A0E4A"
+    },
+    "violet": {
+      "type": "color",
+      "value": "#7B2FF7"
+    },
+    "violet-bright": {
+      "type": "color",
+      "value": "#9B4DFF"
+    },
+    "violet-logo": {
+      "type": "color",
+      "value": "#C44BF0"
+    },
+    "coin": {
+      "type": "color",
+      "value": "#FFD84D"
+    },
+    "coin-deep": {
+      "type": "color",
+      "value": "#E8A317"
+    },
+    "coin-locked": {
+      "type": "color",
+      "value": "#B9A8CC"
+    },
+    "success": {
+      "type": "color",
+      "value": "#3ED07A"
+    },
+    "danger": {
+      "type": "color",
+      "value": "#FF453A"
+    },
+    "text": {
+      "type": "color",
+      "value": "#FFFFFF"
+    },
+    "text-2": {
+      "type": "color",
+      "value": "#9A9A9A"
+    },
+    "text-3": {
+      "type": "color",
+      "value": "#6B6B6B"
+    },
+    "track": {
+      "type": "color",
+      "value": "#2E2E2E"
+    },
+    "cta-gradient-end": {
+      "type": "color",
+      "value": "#9446FD"
+    },
+    "r-pill": {
+      "type": "number",
+      "value": 999
+    },
+    "r-card": {
+      "type": "number",
+      "value": 16
+    },
+    "bar-height": {
+      "type": "number",
+      "value": 56
+    },
+    "safe-area": {
+      "type": "number",
+      "value": 34
+    },
+    "gutter": {
+      "type": "number",
+      "value": 16
+    },
+    "font": {
+      "type": "string",
+      "value": "Poppins"
+    }
+  },
+  "fileToken": "427646ac-5c54-4b57-8ba3-3f239cf1b613"
+}

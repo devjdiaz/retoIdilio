@@ -1,0 +1,105 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+  <style>
+    body { margin: 0; background: #000000; font-family: 'Poppins', 'Century Gothic', 'Avenir Next', system-ui, sans-serif; -webkit-font-smoothing: antialiased; }
+    a { color: #9B4DFF; } a:hover { color: #7B2FF7; }
+    .kicker { font-size: 11px; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: #7B2FF7; }
+    .grp { display: flex; align-items: flex-end; gap: 6px; height: 308px; }
+    .col { display: flex; flex-direction: column; justify-content: flex-end; align-items: center; gap: 6px; height: 308px; }
+    .bar { width: 26px; border-radius: 6px 6px 0 0; }
+    .vA { font-size: 11px; font-weight: 500; color: #6B6B6B; font-variant-numeric: tabular-nums; }
+    .vP { font-size: 12px; font-weight: 700; color: #FFFFFF; font-variant-numeric: tabular-nums; }
+    .day { width: 58px; text-align: center; font-size: 12px; font-weight: 500; color: #9A9A9A; }
+    .card { background: #141414; border-radius: 16px; padding: 16px; display: flex; flex-direction: column; gap: 6px; }
+    .ct { font-size: 13px; font-weight: 700; color: #FFFFFF; }
+    .cb { font-size: 11px; font-weight: 400; color: #9A9A9A; line-height: 1.4; }
+  </style>
+</helmet>
+<div style="width:940px;height:700px;box-sizing:border-box;padding:44px 48px;background:#000000;display:flex;flex-direction:column;gap:20px;">
+
+  <div style="display:flex;align-items:flex-start;justify-content:space-between;gap:32px;">
+    <div style="display:flex;flex-direction:column;gap:4px;">
+      <span class="kicker">Corrección de base</span>
+      <span style="font-size:26px;font-weight:700;color:#FFFFFF;">La curva de racha retrocede</span>
+      <span style="font-size:13px;font-weight:400;color:#9A9A9A;">Esto no es un supuesto: está en pantalla, en el modal de racha de producción.</span>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:8px;padding-top:6px;">
+      <div style="display:flex;align-items:center;gap:8px;">
+        <span style="width:14px;height:14px;border-radius:4px;background:#2E2E2E;"></span>
+        <span style="font-size:12px;font-weight:500;color:#9A9A9A;">Hoy</span>
+      </div>
+      <div style="display:flex;align-items:center;gap:8px;">
+        <span style="width:14px;height:14px;border-radius:4px;background:#7B2FF7;"></span>
+        <span style="font-size:12px;font-weight:500;color:#FFFFFF;">Propuesta</span>
+      </div>
+    </div>
+  </div>
+
+  <div style="display:flex;justify-content:center;">
+    <div style="position:relative;width:598px;">
+      <div style="display:flex;align-items:flex-end;gap:32px;">
+        <div class="grp">
+          <div class="col"><span class="vA">15</span><div class="bar" style="height:17px;background:#2E2E2E;"></div></div>
+          <div class="col"><span class="vP">20</span><div class="bar" style="height:22px;background:#7B2FF7;"></div></div>
+        </div>
+        <div class="grp">
+          <div class="col"><span class="vA">40</span><div class="bar" style="height:45px;background:#2E2E2E;"></div></div>
+          <div class="col"><span class="vP">35</span><div class="bar" style="height:39px;background:#7B2FF7;"></div></div>
+        </div>
+        <div class="grp">
+          <div class="col"><span class="vA">60</span><div class="bar" style="height:67px;background:#2E2E2E;"></div></div>
+          <div class="col"><span class="vP">60</span><div class="bar" style="height:67px;background:#7B2FF7;"></div></div>
+        </div>
+        <div class="grp">
+          <div class="col"><span class="vA" style="color:#FF453A;font-weight:700;">↓ 50</span><div class="bar" style="height:56px;background:#2E2E2E;box-shadow:inset 0 2px 0 #FF453A;"></div></div>
+          <div class="col"><span class="vP">75</span><div class="bar" style="height:84px;background:#7B2FF7;"></div></div>
+        </div>
+        <div class="grp">
+          <div class="col"><span class="vA" style="color:#FF453A;font-weight:700;">↓ 40</span><div class="bar" style="height:45px;background:#2E2E2E;box-shadow:inset 0 2px 0 #FF453A;"></div></div>
+          <div class="col"><span class="vP">90</span><div class="bar" style="height:101px;background:#7B2FF7;"></div></div>
+        </div>
+        <div class="grp">
+          <div class="col"><span class="vA">45</span><div class="bar" style="height:50px;background:#2E2E2E;"></div></div>
+          <div class="col"><span class="vP">110</span><div class="bar" style="height:123px;background:#7B2FF7;"></div></div>
+        </div>
+        <div class="grp">
+          <div class="col"><span class="vA">200</span><div class="bar" style="height:224px;background:#2E2E2E;"></div></div>
+          <div class="col"><span class="vP">250</span><div class="bar" style="height:280px;background:#7B2FF7;"></div></div>
+        </div>
+      </div>
+      <div style="position:absolute;left:180px;width:206px;bottom:67px;border-top:1px dashed #FF453A;"></div>
+      <div style="display:flex;gap:32px;margin-top:8px;">
+        <span class="day">Día 1</span><span class="day">Día 2</span><span class="day">Día 3</span><span class="day">Día 4</span><span class="day">Día 5</span><span class="day">Día 6</span><span class="day">Día 7</span>
+      </div>
+    </div>
+  </div>
+
+  <div style="display:grid;grid-template-columns:repeat(3, minmax(0, 1fr));gap:12px;margin-top:auto;">
+    <div class="card">
+      <span class="ct">Nunca retrocede</span>
+      <span class="cb">Es la condición mínima de un sistema de progresión. La curva actual se rompe justo en el tramo donde se cae el 94 % de los usuarios.</span>
+    </div>
+    <div class="card">
+      <span class="ct">El día 1 sube de 15 a 20</span>
+      <span class="cb">Un episodio cuesta 15. Con 15 exactos el saldo vuelve a cero al primer desbloqueo: no hay acumulación, y sin acumulación no hay tensión entre ahorrar y gastar.</span>
+    </div>
+    <div class="card">
+      <span class="ct">Total 450 → 640</span>
+      <span class="cb">Es más moneda regalada; el tradeoff se declara. Se compensa con volumen de desbloqueos, y el techo exacto es decisión de negocio con datos de ARPU.</span>
+    </div>
+  </div>
+
+</div>
+</x-dc>
+</body>
+</html>

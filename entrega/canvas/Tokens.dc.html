@@ -1,0 +1,83 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+  <style>
+    body { margin: 0; background: #000000; font-family: 'Poppins', 'Century Gothic', 'Avenir Next', system-ui, sans-serif; -webkit-font-smoothing: antialiased; }
+    a { color: #9B4DFF; } a:hover { color: #7B2FF7; }
+    .kicker { font-size: 11px; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: #7B2FF7; }
+    .sw { display: flex; flex-direction: column; gap: 8px; }
+    .chip { height: 56px; border-radius: 12px; }
+    .name { font-size: 12px; font-weight: 700; color: #FFFFFF; }
+    .hex { font-size: 11px; font-weight: 400; color: #6B6B6B; font-variant-numeric: tabular-nums; }
+    .use { font-size: 11px; font-weight: 400; color: #9A9A9A; line-height: 1.3; }
+    .ratio { background: #141414; border-radius: 16px; padding: 16px; display: flex; flex-direction: column; gap: 4px; }
+  </style>
+</helmet>
+<div style="width:900px;height:900px;box-sizing:border-box;padding:44px 48px;background:#000000;display:flex;flex-direction:column;gap:32px;">
+
+  <div style="display:flex;flex-direction:column;gap:4px;">
+    <span class="kicker">Especificación</span>
+    <span style="font-size:26px;font-weight:700;color:#FFFFFF;">Tokens que toca la barra</span>
+    <span style="font-size:13px;font-weight:400;color:#9A9A9A;">Extraídos de la app en producción. Ningún color entra al código si no está acá.</span>
+  </div>
+
+  <div style="display:grid;grid-template-columns:repeat(5, minmax(0, 1fr));gap:12px;">
+    <div class="sw"><div class="chip" style="background:#000000;border:1px solid #2E2E2E;"></div><span class="name">--bg</span><span class="hex">#000000</span><span class="use">Fondo global. Negro puro.</span></div>
+    <div class="sw"><div class="chip" style="background:rgba(0,0,0,0.55);border:1px solid #2E2E2E;"></div><span class="name">--overlay</span><span class="hex">0,0,0 / 55 %</span><span class="use">La barra sobre el video, con blur.</span></div>
+    <div class="sw"><div class="chip" style="background:#7B2FF7;"></div><span class="name">--violet</span><span class="hex">#7B2FF7</span><span class="use">Segmento lleno y arranque del CTA.</span></div>
+    <div class="sw"><div class="chip" style="background:#9B4DFF;"></div><span class="name">--violet-bright</span><span class="hex">#9B4DFF</span><span class="use">Cierre del gradiente del CTA.</span></div>
+    <div class="sw"><div class="chip" style="background:#2E2E2E;"></div><span class="name">--track</span><span class="hex">#2E2E2E</span><span class="use">Segmento vacío del indicador.</span></div>
+    <div class="sw"><div class="chip" style="background:#FFD84D;"></div><span class="name">--coin</span><span class="hex">#FFD84D</span><span class="use">El saldo. Amarillo = valor.</span></div>
+    <div class="sw"><div class="chip" style="background:#E8A317;"></div><span class="name">--coin-deep</span><span class="hex">#E8A317</span><span class="use">Volumen de la moneda.</span></div>
+    <div class="sw"><div class="chip" style="background:#3ED07A;"></div><span class="name">--success</span><span class="hex">#3ED07A</span><span class="use">Confirmación: «Reclamado».</span></div>
+    <div class="sw"><div class="chip" style="background:#FF453A;"></div><span class="name">--danger</span><span class="hex">#FF453A</span><span class="use">Saldo insuficiente. Solo el número.</span></div>
+    <div class="sw"><div class="chip" style="background:#FFFFFF;"></div><span class="name">--text</span><span class="hex">#FFFFFF</span><span class="use">El mensaje de estado.</span></div>
+  </div>
+
+  <div style="display:flex;gap:32px;align-items:flex-end;border-top:1px solid #2E2E2E;padding-top:24px;">
+    <div style="display:flex;flex-direction:column;gap:4px;">
+      <span class="use">Poppins 700</span>
+      <span style="font-size:30px;font-weight:700;color:#FFD84D;line-height:1;font-variant-numeric:tabular-nums;">115</span>
+      <span class="use">Saldo · 16 px · tabular</span>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:4px;">
+      <span class="use">Poppins 700</span>
+      <span style="font-size:30px;font-weight:700;color:#FFFFFF;line-height:1;">Reclamar +35</span>
+      <span class="use">CTA · 14 px</span>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:4px;">
+      <span class="use">Poppins 500</span>
+      <span style="font-size:30px;font-weight:500;color:#FFFFFF;line-height:1;">Día 2 · Mañana +60</span>
+      <span class="use">Mensaje · 14 px</span>
+    </div>
+    <div style="margin-left:auto;display:flex;flex-direction:column;gap:8px;align-items:flex-end;">
+      <div style="height:36px;width:120px;border-radius:999px;background-image:linear-gradient(90deg, #7B2FF7 0%, #9B4DFF 100%);box-shadow:0 0 20px rgba(123,47,247,0.45);"></div>
+      <span class="use" style="text-align:right;">--glow-violet<br>Solo en el estado 2.</span>
+    </div>
+  </div>
+
+  <div style="display:flex;flex-direction:column;gap:12px;">
+    <span class="kicker" style="color:#3ED07A;">Contraste verificado, no asumido</span>
+    <div style="display:grid;grid-template-columns:repeat(3, minmax(0, 1fr));gap:12px;">
+      <div class="ratio"><span style="font-size:19px;font-weight:700;color:#FFFFFF;">15,2:1</span><span class="use">--coin sobre negro. El número nunca es el problema.</span></div>
+      <div class="ratio"><span style="font-size:19px;font-weight:700;color:#FFFFFF;">6,2:1</span><span class="use">--danger sobre negro. Pasa AA en el estado 10.</span></div>
+      <div class="ratio"><span style="font-size:19px;font-weight:700;color:#FFFFFF;">3,6:1</span><span class="use">--violet sobre negro. Pasa AA no textual (≥3:1): es el indicador.</span></div>
+      <div class="ratio"><span style="font-size:19px;font-weight:700;color:#FFFFFF;">10,5:1</span><span class="use">Negro sobre --success. Por eso «Reclamado» va en negro, no en blanco (2:1).</span></div>
+      <div class="ratio"><span style="font-size:19px;font-weight:700;color:#FFFFFF;">≈4,5 – 5,6:1</span><span class="use">Blanco sobre --grad-cta a lo largo del texto. Con el monto en el botón y px-4, el tramo final roza el límite de AA: es el par a vigilar si el label crece.</span></div>
+      <div class="ratio"><span style="font-size:19px;font-weight:700;color:#9A9A9A;">1,6:1</span><span class="use">--track sobre negro. Riel, no información. --surface-2 se descartó: 1,26:1, invisible.</span></div>
+    </div>
+  </div>
+
+</div>
+</x-dc>
+</body>
+</html>

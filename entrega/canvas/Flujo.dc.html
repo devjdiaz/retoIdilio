@@ -1,0 +1,174 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+  <style>
+    body { margin: 0; background: #000000; font-family: 'Poppins', 'Century Gothic', 'Avenir Next', system-ui, sans-serif; -webkit-font-smoothing: antialiased; }
+    a { color: #9B4DFF; } a:hover { color: #7B2FF7; }
+  </style>
+</helmet>
+<div style="width:1200px;height:900px;background:#000000;">
+<svg width="1200" height="900" viewBox="0 0 1200 900" font-family="'Poppins', 'Century Gothic', 'Avenir Next', system-ui, sans-serif" role="img" aria-label="Flujo completo de la barra de racha">
+  <defs>
+    <marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#6B6B6B"></path>
+    </marker>
+    <marker id="arv" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#7B2FF7"></path>
+    </marker>
+  </defs>
+
+  <rect x="0" y="0" width="1200" height="900" fill="#000000"></rect>
+
+  <!-- Título -->
+  <text x="48" y="52" font-size="11" font-weight="700" letter-spacing="1.5" fill="#7B2FF7">ENTREGABLE 5.3</text>
+  <text x="48" y="82" font-size="26" font-weight="700" fill="#FFFFFF">Flujo completo</text>
+  <text x="48" y="102" font-size="13" font-weight="400" fill="#9A9A9A">La barra es una capa sobre el core loop: nunca saca al usuario del video.</text>
+
+  <!-- Leyenda -->
+  <rect x="700" y="56" width="28" height="18" rx="6" fill="#141414" stroke="#2E2E2E"></rect>
+  <text x="736" y="69" font-size="11" font-weight="500" fill="#9A9A9A">Acción</text>
+  <rect x="800" y="56" width="28" height="18" rx="9" fill="none" stroke="#7B2FF7" stroke-dasharray="4 3"></rect>
+  <text x="836" y="69" font-size="11" font-weight="500" fill="#9A9A9A">Decisión</text>
+  <rect x="906" y="56" width="28" height="18" rx="6" fill="#2A0E4A" stroke="#7B2FF7"></rect>
+  <text x="942" y="69" font-size="11" font-weight="500" fill="#9A9A9A">Estado de la barra</text>
+
+  <!-- Banda A -->
+  <text x="48" y="126" font-size="11" font-weight="700" letter-spacing="1.4" fill="#6B6B6B">AL ABRIR LA APP</text>
+  <line x1="196" y1="122" x2="1152" y2="122" stroke="#2E2E2E"></line>
+
+  <!-- Aristas banda A -->
+  <path d="M180,312 H210" stroke="#6B6B6B" stroke-width="1.4" fill="none" marker-end="url(#ar)"></path>
+  <path d="M384,312 H408 V222 H426" stroke="#6B6B6B" stroke-width="1.4" fill="none" marker-end="url(#ar)"></path>
+  <path d="M384,312 H408 V394 H426" stroke="#6B6B6B" stroke-width="1.4" fill="none" marker-end="url(#ar)"></path>
+  <text x="412" y="242" font-size="10" font-weight="500" fill="#9A9A9A">No</text>
+  <text x="412" y="382" font-size="10" font-weight="500" fill="#9A9A9A">Sí</text>
+
+  <path d="M592,222 H616 V162 H634" stroke="#6B6B6B" stroke-width="1.4" fill="none" marker-end="url(#ar)"></path>
+  <path d="M592,222 H616 V262 H634" stroke="#6B6B6B" stroke-width="1.4" fill="none" marker-end="url(#ar)"></path>
+  <text x="620" y="182" font-size="10" font-weight="500" fill="#9A9A9A">Sí</text>
+  <text x="620" y="252" font-size="10" font-weight="500" fill="#9A9A9A">No</text>
+
+  <path d="M740,284 V314" stroke="#7B2FF7" stroke-width="1.4" stroke-dasharray="4 3" fill="none" marker-end="url(#arv)"></path>
+  <text x="640" y="382" font-size="10" font-weight="500" fill="#9B4DFF">Racha ≥ 2 · quedan pocas horas</text>
+
+  <path d="M840,262 H870" stroke="#6B6B6B" stroke-width="1.4" fill="none" marker-end="url(#ar)"></path>
+  <!-- 7 no es terminal: tiene CTA `Reclamar +20`, así que desemboca en el
+       reclamo igual que 2 y 6. Entra por arriba para no pisar el nodo 2. -->
+  <path d="M816,162 H942 V240" stroke="#6B6B6B" stroke-width="1.4" fill="none" marker-end="url(#ar)"></path>
+  <path d="M1008,262 H1034" stroke="#6B6B6B" stroke-width="1.4" fill="none" marker-end="url(#ar)"></path>
+  <path d="M1114,284 V310" stroke="#6B6B6B" stroke-width="1.4" fill="none" marker-end="url(#ar)"></path>
+  <path d="M1114,360 V386" stroke="#6B6B6B" stroke-width="1.4" fill="none" marker-end="url(#ar)"></path>
+  <text x="1122" y="378" font-size="10" font-weight="500" fill="#9A9A9A">Sí</text>
+  <path d="M1040,338 H880 V394 H638" stroke="#6B6B6B" stroke-width="1.4" fill="none" marker-end="url(#ar)"></path>
+  <text x="884" y="330" font-size="10" font-weight="500" fill="#9A9A9A">No</text>
+
+  <path d="M532,416 V438" stroke="#7B2FF7" stroke-width="1.4" stroke-dasharray="4 3" fill="none" marker-end="url(#arv)"></path>
+  <text x="542" y="434" font-size="10" font-weight="500" fill="#9B4DFF">Sin racha que reportar</text>
+
+  <!-- Nodos banda A -->
+  <rect x="48" y="290" width="132" height="44" rx="12" fill="#141414" stroke="#2E2E2E"></rect>
+  <text x="114" y="312" font-size="12" font-weight="500" fill="#FFFFFF" text-anchor="middle" dominant-baseline="middle">Abre la app</text>
+
+  <rect x="216" y="290" width="168" height="44" rx="22" fill="none" stroke="#7B2FF7" stroke-dasharray="4 3"></rect>
+  <text x="300" y="312" font-size="12" font-weight="500" fill="#FFFFFF" text-anchor="middle" dominant-baseline="middle">¿Reclamó hoy?</text>
+
+  <rect x="432" y="200" width="160" height="44" rx="22" fill="none" stroke="#7B2FF7" stroke-dasharray="4 3"></rect>
+  <text x="512" y="222" font-size="12" font-weight="500" fill="#FFFFFF" text-anchor="middle" dominant-baseline="middle">¿Racha rota?</text>
+
+  <rect x="640" y="140" width="176" height="44" rx="12" fill="#2A0E4A" stroke="#7B2FF7"></rect>
+  <text x="654" y="162" font-size="12" fill="#FFFFFF" dominant-baseline="middle"><tspan font-weight="700" fill="#9B4DFF">7 · </tspan><tspan font-weight="500">Racha rota</tspan></text>
+
+  <rect x="640" y="240" width="200" height="44" rx="12" fill="#2A0E4A" stroke="#7B2FF7"></rect>
+  <text x="654" y="262" font-size="12" fill="#FFFFFF" dominant-baseline="middle"><tspan font-weight="700" fill="#9B4DFF">2 · </tspan><tspan font-weight="500">Recompensa disponible</tspan></text>
+  <text x="654" y="300" font-size="9" font-weight="500" fill="#6B6B6B">incluye la primera sesión</text>
+
+  <rect x="640" y="320" width="190" height="44" rx="12" fill="#2A0E4A" stroke="#7B2FF7"></rect>
+  <text x="654" y="342" font-size="12" fill="#FFFFFF" dominant-baseline="middle"><tspan font-weight="700" fill="#9B4DFF">6 · </tspan><tspan font-weight="500">Racha en riesgo</tspan></text>
+
+  <rect x="432" y="372" width="200" height="44" rx="12" fill="#2A0E4A" stroke="#7B2FF7"></rect>
+  <text x="446" y="394" font-size="12" fill="#FFFFFF" dominant-baseline="middle"><tspan font-weight="700" fill="#9B4DFF">3–5 · </tspan><tspan font-weight="500">Reclamada, según día</tspan></text>
+
+  <rect x="432" y="444" width="210" height="44" rx="12" fill="#2A0E4A" stroke="#7B2FF7"></rect>
+  <text x="446" y="466" font-size="12" fill="#FFFFFF" dominant-baseline="middle"><tspan font-weight="700" fill="#9B4DFF">1 · </tspan><tspan font-weight="500">Sin racha · fallback</tspan></text>
+
+  <rect x="876" y="240" width="132" height="44" rx="12" fill="#141414" stroke="#2E2E2E"></rect>
+  <text x="942" y="262" font-size="12" font-weight="500" fill="#FFFFFF" text-anchor="middle" dominant-baseline="middle">Toca Reclamar</text>
+
+  <rect x="1040" y="240" width="148" height="44" rx="12" fill="#141414" stroke="#2E2E2E"></rect>
+  <text x="1114" y="262" font-size="12" font-weight="500" fill="#FFFFFF" text-anchor="middle" dominant-baseline="middle">Suma · avanza día</text>
+
+  <rect x="1040" y="316" width="148" height="44" rx="22" fill="none" stroke="#7B2FF7" stroke-dasharray="4 3"></rect>
+  <text x="1114" y="338" font-size="12" font-weight="500" fill="#FFFFFF" text-anchor="middle" dominant-baseline="middle">¿Día 3?</text>
+
+  <rect x="1040" y="392" width="148" height="44" rx="12" fill="#2A0E4A" stroke="#7B2FF7"></rect>
+  <text x="1054" y="414" font-size="12" fill="#FFFFFF" dominant-baseline="middle"><tspan font-weight="700" fill="#9B4DFF">5 · </tspan><tspan font-weight="500">Celebración</tspan></text>
+
+  <!-- Paso a banda B: 3-5 y el fallback confluyen en el canal izquierdo -->
+  <path d="M432,394 H24 V656" stroke="#6B6B6B" stroke-width="1.4" fill="none" marker-end="url(#ar)"></path>
+  <path d="M432,466 H24" stroke="#6B6B6B" stroke-width="1.4" fill="none"></path>
+
+  <!-- Banda B -->
+  <text x="48" y="610" font-size="11" font-weight="700" letter-spacing="1.4" fill="#6B6B6B">DENTRO DEL REPRODUCTOR</text>
+  <line x1="250" y1="606" x2="1152" y2="606" stroke="#2E2E2E"></line>
+
+  <path d="M208,662 H238" stroke="#6B6B6B" stroke-width="1.4" fill="none" marker-end="url(#ar)"></path>
+  <path d="M394,662 H424" stroke="#6B6B6B" stroke-width="1.4" fill="none" marker-end="url(#ar)"></path>
+  <path d="M602,662 H632" stroke="#6B6B6B" stroke-width="1.4" fill="none" marker-end="url(#ar)"></path>
+  <text x="604" y="652" font-size="10" font-weight="500" fill="#9A9A9A">Bloqueado</text>
+
+  <path d="M516,684 V754" stroke="#6B6B6B" stroke-width="1.4" fill="none" marker-end="url(#ar)"></path>
+  <text x="524" y="726" font-size="10" font-weight="500" fill="#9A9A9A">Sale</text>
+
+  <path d="M460,684 V716 H319 V690" stroke="#6B6B6B" stroke-width="1.4" fill="none" marker-end="url(#ar)"></path>
+  <text x="330" y="734" font-size="10" font-weight="500" fill="#9A9A9A">Siguiente episodio desbloqueado</text>
+
+  <path d="M816,662 H834 V600 H846" stroke="#6B6B6B" stroke-width="1.4" fill="none" marker-end="url(#ar)"></path>
+  <text x="838" y="630" font-size="10" font-weight="500" fill="#9A9A9A">Sí</text>
+  <path d="M816,662 H834 V722 H846" stroke="#6B6B6B" stroke-width="1.4" fill="none" marker-end="url(#ar)"></path>
+  <text x="838" y="702" font-size="10" font-weight="500" fill="#9A9A9A">No</text>
+
+  <path d="M922,578 V556 H319 V634" stroke="#6B6B6B" stroke-width="1.4" fill="none" marker-end="url(#ar)"></path>
+  <text x="560" y="548" font-size="10" font-weight="500" fill="#9A9A9A">Vuelve a ocultarse</text>
+
+  <path d="M947,744 V766" stroke="#6B6B6B" stroke-width="1.4" fill="none" marker-end="url(#ar)"></path>
+
+  <!-- Nodos banda B -->
+  <rect x="48" y="640" width="160" height="44" rx="12" fill="#141414" stroke="#2E2E2E"></rect>
+  <text x="128" y="662" font-size="12" font-weight="500" fill="#FFFFFF" text-anchor="middle" dominant-baseline="middle">Entra al reproductor</text>
+
+  <rect x="244" y="640" width="150" height="44" rx="12" fill="#2A0E4A" stroke="#7B2FF7"></rect>
+  <text x="258" y="662" font-size="12" fill="#FFFFFF" dominant-baseline="middle"><tspan font-weight="700" fill="#9B4DFF">8 · </tspan><tspan font-weight="500">Oculta</tspan></text>
+
+  <rect x="430" y="640" width="172" height="44" rx="22" fill="none" stroke="#7B2FF7" stroke-dasharray="4 3"></rect>
+  <text x="516" y="662" font-size="12" font-weight="500" fill="#FFFFFF" text-anchor="middle" dominant-baseline="middle">¿Fin de episodio?</text>
+
+  <rect x="430" y="760" width="172" height="44" rx="12" fill="#2A0E4A" stroke="#7B2FF7"></rect>
+  <text x="444" y="782" font-size="12" fill="#FFFFFF" dominant-baseline="middle"><tspan font-weight="700" fill="#9B4DFF">9 · </tspan><tspan font-weight="500">Reaparición</tspan></text>
+
+  <rect x="638" y="640" width="178" height="44" rx="22" fill="none" stroke="#7B2FF7" stroke-dasharray="4 3"></rect>
+  <text x="727" y="662" font-size="12" font-weight="500" fill="#FFFFFF" text-anchor="middle" dominant-baseline="middle">¿Saldo suficiente?</text>
+
+  <rect x="852" y="578" width="140" height="44" rx="12" fill="#141414" stroke="#2E2E2E"></rect>
+  <text x="922" y="600" font-size="12" font-weight="500" fill="#FFFFFF" text-anchor="middle" dominant-baseline="middle">Desbloquea</text>
+
+  <rect x="852" y="700" width="190" height="44" rx="12" fill="#2A0E4A" stroke="#7B2FF7"></rect>
+  <text x="866" y="722" font-size="12" fill="#FFFFFF" dominant-baseline="middle"><tspan font-weight="700" fill="#9B4DFF">10 · </tspan><tspan font-weight="500">Saldo insuficiente</tspan></text>
+
+  <rect x="852" y="772" width="190" height="44" rx="12" fill="#141414" stroke="#2E2E2E"></rect>
+  <text x="947" y="794" font-size="12" font-weight="500" fill="#FFFFFF" text-anchor="middle" dominant-baseline="middle">Reclamar o pagar</text>
+
+  <text x="1152" y="866" font-size="11" font-weight="500" fill="#6B6B6B" text-anchor="end">El camino de pago sigue presente y sin degradar. La barra añade la alternativa gratuita, no la reemplaza.</text>
+</svg>
+</div>
+</x-dc>
+</body>
+</html>

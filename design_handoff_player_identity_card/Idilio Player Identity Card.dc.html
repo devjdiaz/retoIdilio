@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<meta name="design_doc_mode" content="canvas">
+<link rel="stylesheet" href="_ds/modernist-c13ac7d1-5f08-42a3-af79-1ac26e91de34/styles.css">
+<script src="_ds/modernist-c13ac7d1-5f08-42a3-af79-1ac26e91de34/_ds_bundle.js"></script>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  html, body { margin:0; padding:0; background:#0a0a0c; color:#fff; font-family:'Poppins',system-ui,sans-serif; }
+  a { color:#c084fc; text-decoration:none; }
+  a:hover { color:#e9d5ff; }
+  @keyframes idRise { from { opacity:0; transform:translateY(14px); } to { opacity:1; transform:translateY(0); } }
+  @keyframes idPop { 0% { transform:scale(.86); opacity:0; } 60% { transform:scale(1.06); } 100% { transform:scale(1); opacity:1; } }
+  @keyframes idFloat { 0% { opacity:0; transform:translateY(6px) scale(.9); } 25% { opacity:1; transform:translateY(-6px) scale(1); } 100% { opacity:0; transform:translateY(-34px) scale(1); } }
+  @keyframes idGlow { 0%,100% { box-shadow:0 0 0 0 rgba(168,85,247,0); } 50% { box-shadow:0 0 0 6px rgba(168,85,247,.22); } }
+  @keyframes idSheet { from { transform:translateY(100%); } to { transform:translateY(0); } }
+</style>
+</helmet>
+
+<section data-screen-label="Turno 1" style="padding:56px 48px 72px; display:flex; flex-direction:column; gap:36px; background:#0a0a0c; min-height:100vh; box-sizing:border-box;">
+
+  <div style="display:flex; flex-direction:column; gap:10px; max-width:900px;">
+    <div style="font-size:12px; letter-spacing:.18em; text-transform:uppercase; color:#a855f7; font-weight:600;">Idilio · Reproductor</div>
+    <div style="font-size:40px; line-height:1.05; font-weight:700; letter-spacing:-.02em;">Player Identity Card</div>
+    <div style="font-size:15px; line-height:1.6; color:#9a9aa4; max-width:640px; text-wrap:pretty;">Segunda capa del reproductor: identidad, progreso y recompensa siempre por debajo del video, nunca encima de la escena. Prototipo funcional — todos los datos entran por props.</div>
+  </div>
+
+  <div style="display:flex; flex-wrap:wrap; gap:44px; align-items:flex-start;">
+
+    <div id="1a" style="display:flex; flex-direction:column; gap:14px;">
+      <div style="display:flex; align-items:center; gap:10px;">
+        <span style="display:inline-flex; align-items:center; justify-content:center; min-width:30px; height:22px; padding:0 8px; background:#a855f7; color:#0a0a0c; font-size:12px; font-weight:700; border-radius:4px;">1a</span>
+        <span style="font-size:13px; color:#9a9aa4;">Prototipo interactivo</span>
+      </div>
+
+      <div style="width:390px; height:844px; position:relative; display:flex; flex-direction:column; background:#000; border-radius:44px; border:1px solid #232329; overflow:hidden; box-shadow:0 40px 90px rgba(0,0,0,.6);">
+
+        <div style="position:absolute; top:0; left:0; right:0; height:52px; display:flex; align-items:center; justify-content:space-between; padding:0 26px; z-index:6; font-size:14px; font-weight:600; color:#fff;">
+          <span>10:44</span>
+          <span style="width:74px; height:24px; background:#000; border-radius:14px;"></span>
+          <span style="font-size:12px; color:#e5e5ea;">19%</span>
+        </div>
+
+        <div style="position:relative; width:100%; flex:1 1 auto; min-height:0; overflow:hidden; background:#101014;">
+          <img src="uploads/IMG_9295.PNG" alt="" style="position:absolute; max-width:none; width:660px; height:1434px; left:-135px; top:-204px; opacity:.92;" />
+          <div style="position:absolute; inset:0; background:linear-gradient(180deg, rgba(0,0,0,.55) 0%, rgba(0,0,0,0) 26%, rgba(0,0,0,0) 52%, rgba(0,0,0,.82) 100%);"></div>
+
+          <div style="position:absolute; top:64px; left:16px; width:36px; height:36px; border-radius:50%; background:rgba(20,20,24,.7); display:flex; align-items:center; justify-content:center;">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg>
+          </div>
+
+          <div style="position:absolute; left:20px; right:110px; bottom:78px; display:flex; flex-direction:column; gap:4px;">
+            <div style="font-size:12px; color:#c9c9d1; font-weight:500;">Capítulo 18</div>
+            <div style="font-size:19px; font-weight:700; letter-spacing:-.01em;">Mi Mejor Pasajera</div>
+          </div>
+
+          <div style="position:absolute; right:16px; bottom:96px; display:flex; flex-direction:column; gap:20px; align-items:center;">
+            <div style="display:flex; flex-direction:column; align-items:center; gap:4px;">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.8"><path d="M19 14c1.5-1.5 2-3 2-4.5A4.5 4.5 0 0012 7.5 4.5 4.5 0 003 9.5C3 11 3.5 12.5 5 14l7 7z"/></svg>
+              <span style="font-size:11px; color:#e5e5ea; font-weight:600;">267</span>
+            </div>
+            <div style="display:flex; flex-direction:column; align-items:center; gap:4px;">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.8"><path d="M21 11.5a8.4 8.4 0 01-9 8.4 9.5 9.5 0 01-2.9-.4L4 21l1.4-4.2A8.3 8.3 0 013 11.5 8.5 8.5 0 0112 3a8.5 8.5 0 019 8.5z"/></svg>
+              <span style="font-size:11px; color:#e5e5ea; font-weight:600;">12</span>
+            </div>
+          </div>
+
+          <div style="position:absolute; left:20px; right:20px; bottom:24px; display:flex; align-items:center; gap:12px;">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="#fff"><rect x="6" y="4" width="4" height="16" rx="1"/><rect x="14" y="4" width="4" height="16" rx="1"/></svg>
+            <div style="flex:1; height:3px; background:rgba(255,255,255,.25); border-radius:2px; overflow:hidden;">
+              <div style="height:100%; width:38%; background:#a855f7;"></div>
+            </div>
+            <span style="font-size:11px; color:#d4d4dc; font-variant-numeric:tabular-nums;">01:24 / 03:42</span>
+          </div>
+
+          <sc-if value="{{ showEnd }}" hint-placeholder-val="{{ false }}">
+            <div style="position:absolute; inset:0; background:linear-gradient(180deg, rgba(8,6,12,.55) 0%, rgba(8,6,12,.94) 45%); backdrop-filter:blur(2px); display:flex; flex-direction:column; justify-content:flex-end; padding:24px 22px 26px; gap:16px; animation:idRise .34s ease both;">
+              <div style="font-size:11px; letter-spacing:.2em; text-transform:uppercase; color:#a855f7; font-weight:700;">Episodio completado</div>
+              <div style="display:flex; gap:10px;">
+                <div style="flex:1; padding:12px 14px; background:rgba(168,85,247,.12); border:1px solid rgba(168,85,247,.34); border-radius:14px;">
+                  <div style="font-size:22px; font-weight:800; color:#d8f24a; letter-spacing:-.02em;">+25</div>
+                  <div style="font-size:11px; color:#b9b9c3; font-weight:500;">XP</div>
+                </div>
+                <div style="flex:1; padding:12px 14px; background:rgba(245,197,24,.10); border:1px solid rgba(245,197,24,.30); border-radius:14px;">
+                  <div style="font-size:22px; font-weight:800; color:#f5c518; letter-spacing:-.02em;">+10</div>
+                  <div style="font-size:11px; color:#b9b9c3; font-weight:500;">Monedas</div>
+                </div>
+                <div style="flex:1; padding:12px 14px; background:rgba(255,122,41,.10); border:1px solid rgba(255,122,41,.30); border-radius:14px;">
+                  <div style="font-size:22px; font-weight:800; color:#ff7a29; letter-spacing:-.02em;">{{ streak }}</div>
+                  <div style="font-size:11px; color:#b9b9c3; font-weight:500;">Racha mantenida</div>
+                </div>
+              </div>
+              <div style="display:flex; flex-direction:column; gap:7px;">
+                <div style="display:flex; justify-content:space-between; font-size:12px; color:#c9c9d1; font-weight:500;"><span>{{ levelLabel }}</span><span>{{ xpText }}</span></div>
+                <div style="height:8px; background:rgba(255,255,255,.12); border-radius:6px; overflow:hidden;">
+                  <div style="height:100%; width:{{ xpPct }}; background:linear-gradient(90deg,#d8f24a,#a3e635); border-radius:6px; transition:width 1.1s cubic-bezier(.22,1,.36,1);"></div>
+                </div>
+              </div>
+              <div style="display:flex; gap:10px;">
+                <div onClick="{{ nextEpisode }}" style="flex:1; padding:14px; background:#7c2bff; border-radius:999px; text-align:center; font-size:15px; font-weight:700; cursor:pointer;" style-hover="background:#8f47ff">Siguiente capítulo</div>
+                <div onClick="{{ openPrediction }}" style="padding:14px 18px; border:1px solid rgba(255,255,255,.24); border-radius:999px; text-align:center; font-size:15px; font-weight:600; cursor:pointer; color:#e5e5ea;" style-hover="border-color:#a855f7; color:#fff">Predecir</div>
+              </div>
+            </div>
+          </sc-if>
+
+          <sc-if value="{{ showPrediction }}" hint-placeholder-val="{{ false }}">
+            <div style="position:absolute; inset:0; background:linear-gradient(180deg, rgba(8,6,12,.5) 0%, rgba(8,6,12,.95) 40%); display:flex; flex-direction:column; justify-content:flex-end; padding:24px 22px 26px; gap:14px; animation:idRise .3s ease both;">
+              <div style="font-size:11px; letter-spacing:.2em; text-transform:uppercase; color:#a855f7; font-weight:700;">Predice lo que pasará</div>
+              <div style="font-size:20px; font-weight:700; letter-spacing:-.01em;">¿Qué hará Valentina?</div>
+              <div style="display:flex; flex-direction:column; gap:8px;">
+                <sc-for list="{{ options }}" as="opt" hint-placeholder-count="3">
+                  <div onClick="{{ opt.pick }}" style="padding:14px 16px; border:1px solid {{ opt.border }}; background:{{ opt.bg }}; border-radius:14px; display:flex; align-items:center; gap:12px; cursor:pointer; font-size:15px; font-weight:600;">
+                    <span style="width:24px; height:24px; border-radius:7px; background:rgba(255,255,255,.10); display:flex; align-items:center; justify-content:center; font-size:12px; font-weight:700; color:#c9c9d1;">{{ opt.key }}</span>
+                    <span>{{ opt.label }}</span>
+                  </div>
+                </sc-for>
+              </div>
+              <div style="font-size:12px; color:#8e8e98;">{{ predictionNote }}</div>
+            </div>
+          </sc-if>
+
+          <sc-if value="{{ toast }}" hint-placeholder-val="{{ false }}">
+            <div style="position:absolute; left:0; right:0; bottom:70px; display:flex; justify-content:center; pointer-events:none;">
+              <div style="padding:8px 16px; background:rgba(12,10,16,.86); border:1px solid rgba(168,85,247,.5); border-radius:999px; font-size:14px; font-weight:700; color:#d8f24a; animation:idFloat 1.6s ease both;">{{ toast }}</div>
+            </div>
+          </sc-if>
+        </div>
+
+        <div style="flex:0 0 auto; padding:8px 10px 12px; z-index:5; background:#000;">
+
+          <sc-if value="{{ isRail }}" hint-placeholder-val="{{ false }}">
+            <div onClick="{{ expand }}" style="height:56px; margin:0 2px; padding:0 14px; background:linear-gradient(180deg,#171020,#0d0a12); border:1px solid rgba(168,85,247,.30); border-radius:18px; display:flex; align-items:center; gap:12px; cursor:pointer;" style-hover="border-color:rgba(168,85,247,.6)">
+              <div style="position:relative; width:36px; height:36px; border-radius:50%; padding:2px; background:linear-gradient(135deg,#c084fc,#7c2bff); flex:none;">
+                <div style="width:100%; height:100%; border-radius:50%; background:#1b1424; display:flex; align-items:center; justify-content:center; font-size:14px; font-weight:700; color:#c084fc;">{{ initial }}</div>
+              </div>
+              <div style="flex:1; min-width:0; display:flex; flex-direction:column; gap:4px;">
+                <div style="display:flex; align-items:center; gap:6px; white-space:nowrap;">
+                  <span style="font-size:13px; font-weight:700; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;">@{{ username }}</span>
+                  <span style="font-size:11px; font-weight:700; color:#c084fc; white-space:nowrap; flex:none;">Nv {{ level }}</span>
+                </div>
+                <div style="height:3px; background:rgba(255,255,255,.14); border-radius:2px; overflow:hidden;">
+                  <div style="height:100%; width:{{ xpPct }}; background:#d8f24a; transition:width .9s cubic-bezier(.22,1,.36,1);"></div>
+                </div>
+              </div>
+              <div style="display:flex; align-items:center; gap:10px; flex:none;">
+                <div style="display:flex; align-items:center; gap:5px;">
+                  <span style="width:16px; height:16px; border-radius:50%; background:radial-gradient(circle at 32% 28%, #ffe89a, #f5c518 55%, #c99406); box-shadow:inset 0 0 0 1.5px rgba(255,255,255,.35);"></span>
+                  <span style="font-size:13px; font-weight:700; color:#f5c518; font-variant-numeric:tabular-nums;">{{ coins }}</span>
+                </div>
+                <div style="display:flex; align-items:center; gap:4px;">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="#ff7a29"><path d="M12 2c2.5 4 6 5.5 6 10a6 6 0 11-12 0c0-2 1-3.4 2.5-5C10 5.5 11.6 4 12 2z"/></svg>
+                  <span style="font-size:13px; font-weight:700; color:#ff7a29; font-variant-numeric:tabular-nums;">{{ streak }}</span>
+                </div>
+                <sc-if value="{{ rewardReady }}" hint-placeholder-val="{{ true }}">
+                  <span style="width:26px; height:26px; border-radius:9px; background:#7c2bff; display:flex; align-items:center; justify-content:center; animation:idGlow 2.4s ease-in-out infinite;">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linejoin="round"><rect x="3" y="8" width="18" height="13" rx="1.5"/><path d="M3 12h18M12 8v13M12 8s-1-5-4-5-2 5 4 5c6 0 5-5 4-5"/></svg>
+                  </span>
+                </sc-if>
+              </div>
+            </div>
+          </sc-if>
+
+          <sc-if value="{{ isCard }}" hint-placeholder-val="{{ true }}">
+            <div style="margin:0 2px; background:linear-gradient(180deg,#1a1024,#0c0910); border:1px solid rgba(168,85,247,.34); border-radius:22px; padding:16px 16px 14px; display:flex; flex-direction:column; gap:14px; animation:idRise .28s ease both;">
+
+              <div style="display:flex; gap:14px; align-items:flex-start;">
+                <div onClick="{{ openFrames }}" style="position:relative; width:76px; height:76px; flex:none; cursor:pointer;">
+                  <div style="width:76px; height:76px; border-radius:50%; padding:3px; background:{{ frameGradient }}; box-shadow:0 0 22px rgba(168,85,247,.35);">
+                    <div style="width:100%; height:100%; border-radius:50%; background:#1b1424; border:2px solid #0c0910; box-sizing:border-box; display:flex; align-items:center; justify-content:center; font-size:28px; font-weight:700; color:#c084fc;">{{ initial }}</div>
+                  </div>
+                  <div style="position:absolute; left:50%; bottom:-8px; transform:translateX(-50%); min-width:30px; height:24px; padding:0 8px; background:#0c0910; border:2px solid #a855f7; border-radius:8px; display:flex; align-items:center; justify-content:center; font-size:13px; font-weight:800; color:#fff; font-variant-numeric:tabular-nums;">{{ level }}</div>
+                </div>
+
+                <div style="flex:1; min-width:0; display:flex; flex-direction:column; gap:7px;">
+                  <div onClick="{{ openProfile }}" style="display:flex; align-items:center; gap:6px; cursor:pointer;">
+                    <span style="font-size:19px; font-weight:700; letter-spacing:-.01em; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;">{{ username }}</span>
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="#7c2bff"><path d="M12 2l2.2 1.6 2.7-.3 1 2.5 2.3 1.5-.6 2.6.9 2.6-2.1 1.7-.7 2.6-2.7.2L12 21l-2.3-1.5-2.7-.2-.7-2.6L4.2 15l.9-2.6-.6-2.6L6.8 8.3l1-2.5 2.7.3z"/><path d="M10.6 14.6l-2.2-2.2 1.1-1.1 1.1 1.1 3.4-3.4 1.1 1.1z" fill="#fff"/></svg>
+                  </div>
+                  <div onClick="{{ openLevel }}" style="display:flex; align-items:center; gap:6px; cursor:pointer; font-size:13px; color:#b9b9c3; font-weight:500;">
+                    <span>{{ levelLabel }}</span>
+                    <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#8e8e98" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 11v5M12 8h.01"/></svg>
+                  </div>
+                  <div style="display:flex; flex-direction:column; gap:5px;">
+                    <div style="height:7px; background:rgba(255,255,255,.12); border-radius:5px; overflow:hidden;">
+                      <div style="height:100%; width:{{ xpPct }}; background:linear-gradient(90deg,#d8f24a,#a3e635); border-radius:5px; transition:width 1.1s cubic-bezier(.22,1,.36,1);"></div>
+                    </div>
+                    <div style="font-size:11px; color:#8e8e98; font-variant-numeric:tabular-nums;">{{ xpText }}</div>
+                  </div>
+                </div>
+
+                <div onClick="{{ collapse }}" style="width:28px; height:28px; flex:none; border-radius:9px; background:rgba(255,255,255,.07); display:flex; align-items:center; justify-content:center; cursor:pointer;" style-hover="background:rgba(255,255,255,.14)">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#c9c9d1" stroke-width="2.2" stroke-linecap="round"><path d="M6 15l6-6 6 6"/></svg>
+                </div>
+              </div>
+
+              <div style="height:1px; background:rgba(255,255,255,.09);"></div>
+
+              <div style="display:grid; grid-template-columns:1fr 1fr 1.35fr; gap:12px; align-items:center;">
+                <div onClick="{{ openCoins }}" style="display:flex; flex-direction:column; gap:3px; cursor:pointer;">
+                  <div style="display:flex; align-items:center; gap:6px;">
+                    <span style="width:20px; height:20px; border-radius:50%; background:radial-gradient(circle at 32% 28%, #ffe89a, #f5c518 55%, #c99406); box-shadow:inset 0 0 0 2px rgba(255,255,255,.35);"></span>
+                    <span style="font-size:20px; font-weight:800; color:#f5c518; letter-spacing:-.02em; font-variant-numeric:tabular-nums;">{{ coins }}</span>
+                  </div>
+                  <span style="font-size:11px; color:#8e8e98; font-weight:500;">Monedas</span>
+                </div>
+
+                <div onClick="{{ openStreak }}" style="display:flex; flex-direction:column; gap:3px; cursor:pointer; border-left:1px solid rgba(255,255,255,.09); padding-left:12px;">
+                  <div style="display:flex; align-items:center; gap:6px;">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="#ff7a29"><path d="M12 2c2.5 4 6 5.5 6 10a6 6 0 11-12 0c0-2 1-3.4 2.5-5C10 5.5 11.6 4 12 2z"/></svg>
+                    <span style="font-size:20px; font-weight:800; color:#ff7a29; letter-spacing:-.02em; font-variant-numeric:tabular-nums;">{{ streak }}</span>
+                  </div>
+                  <span style="font-size:11px; color:#8e8e98; font-weight:500; white-space:nowrap;">{{ streakLabel }}</span>
+                </div>
+
+                <div style="display:flex; flex-direction:column; gap:6px; align-items:stretch; border-left:1px solid rgba(255,255,255,.09); padding-left:12px;">
+                  <span style="font-size:11px; color:#8e8e98; font-weight:500; text-align:right;">{{ rewardHint }}</span>
+                  <div onClick="{{ claim }}" style="padding:10px 12px; background:{{ rewardBg }}; border:1px solid {{ rewardBorder }}; border-radius:999px; display:flex; align-items:center; justify-content:center; gap:7px; cursor:pointer; font-size:13px; font-weight:700; white-space:nowrap; color:{{ rewardColor }};">
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><rect x="3" y="8" width="18" height="13" rx="1.5"/><path d="M3 12h18M12 8v13M12 8s-1-5-4-5-2 5 4 5c6 0 5-5 4-5"/></svg>
+                    <span>{{ rewardLabel }}</span>
+                  </div>
+                </div>
+              </div>
+
+              <div onClick="{{ openProfile }}" style="display:flex; align-items:center; justify-content:space-between; padding-top:2px; cursor:pointer;">
+                <span style="font-size:12px; color:#9a9aa4; font-weight:500;">{{ frameLabel }}</span>
+                <span style="font-size:12px; color:#c084fc; font-weight:600;">Ver perfil</span>
+              </div>
+            </div>
+          </sc-if>
+        </div>
+
+        <sc-if value="{{ sheet }}" hint-placeholder-val="{{ false }}">
+          <div onClick="{{ closeSheet }}" style="position:absolute; inset:0; z-index:9; background:rgba(4,3,6,.62); display:flex; flex-direction:column; justify-content:flex-end;">
+            <div style="background:#120d19; border-top:1px solid rgba(168,85,247,.4); border-radius:26px 26px 0 0; padding:20px 20px 28px; display:flex; flex-direction:column; gap:16px; animation:idSheet .26s cubic-bezier(.22,1,.36,1) both;">
+              <div style="width:44px; height:4px; border-radius:3px; background:rgba(255,255,255,.2); align-self:center;"></div>
+              <div style="display:flex; flex-direction:column; gap:4px;">
+                <div style="font-size:11px; letter-spacing:.18em; text-transform:uppercase; color:#a855f7; font-weight:700;">{{ sheetKicker }}</div>
+                <div style="font-size:22px; font-weight:700; letter-spacing:-.01em;">{{ sheetTitle }}</div>
+              </div>
+              <div style="display:flex; flex-direction:column; gap:8px;">
+                <sc-for list="{{ sheetRows }}" as="row" hint-placeholder-count="3">
+                  <div style="display:flex; align-items:center; justify-content:space-between; gap:12px; padding:13px 14px; background:rgba(255,255,255,.05); border:1px solid rgba(255,255,255,.07); border-radius:14px;">
+                    <span style="font-size:14px; font-weight:500; color:#e5e5ea;">{{ row.label }}</span>
+                    <span style="font-size:14px; font-weight:700; color:{{ row.color }}; font-variant-numeric:tabular-nums;">{{ row.value }}</span>
+                  </div>
+                </sc-for>
+              </div>
+              <sc-if value="{{ sheetFrames }}" hint-placeholder-val="{{ false }}">
+                <div style="display:flex; gap:10px; flex-wrap:wrap;">
+                  <sc-for list="{{ frames }}" as="fr" hint-placeholder-count="6">
+                    <div onClick="{{ fr.pick }}" style="width:56px; display:flex; flex-direction:column; align-items:center; gap:6px; cursor:pointer;">
+                      <div style="width:52px; height:52px; border-radius:50%; padding:3px; background:{{ fr.gradient }};">
+                        <div style="width:100%; height:100%; border-radius:50%; background:#1b1424; border:2px solid #120d19; box-sizing:border-box; display:flex; align-items:center; justify-content:center; font-size:18px; font-weight:700; color:#c084fc;">{{ initial }}</div>
+                      </div>
+                      <span style="font-size:9px; color:{{ fr.labelColor }}; text-align:center; line-height:1.2; font-weight:600;">{{ fr.name }}</span>
+                    </div>
+                  </sc-for>
+                </div>
+              </sc-if>
+              <div onClick="{{ closeSheet }}" style="padding:14px; background:#7c2bff; border-radius:999px; text-align:center; font-size:15px; font-weight:700; cursor:pointer;" style-hover="background:#8f47ff">{{ sheetCta }}</div>
+            </div>
+          </div>
+        </sc-if>
+      </div>
+
+      <div style="width:390px; display:flex; flex-direction:column; gap:10px; padding-top:4px;">
+        <div style="font-size:11px; letter-spacing:.16em; text-transform:uppercase; color:#6f6f7a; font-weight:600;">Simular</div>
+        <div style="display:flex; flex-wrap:wrap; gap:8px;">
+          <sc-for list="{{ demo }}" as="btn" hint-placeholder-count="5">
+            <div onClick="{{ btn.run }}" style="padding:9px 13px; border:1px solid rgba(168,85,247,.35); background:rgba(168,85,247,.08); border-radius:999px; font-size:12px; font-weight:600; color:#e5e5ea; cursor:pointer;" style-hover="background:rgba(168,85,247,.2)">{{ btn.label }}</div>
+          </sc-for>
+        </div>
+        <div style="display:flex; gap:8px; padding-top:4px;">
+          <div onClick="{{ setRail }}" style="flex:1; padding:10px; text-align:center; border-radius:10px; font-size:12px; font-weight:700; cursor:pointer; background:{{ railBg }}; color:{{ railColor }}; border:1px solid rgba(255,255,255,.1);">Barra ambiente</div>
+          <div onClick="{{ setDock }}" style="flex:1; padding:10px; text-align:center; border-radius:10px; font-size:12px; font-weight:700; cursor:pointer; background:{{ dockBg }}; color:{{ dockColor }}; border:1px solid rgba(255,255,255,.1);">Panel acoplado</div>
+        </div>
+      </div>
+    </div>
+
+    <div style="width:420px; display:flex; flex-direction:column; gap:22px;">
+
+      <div style="display:flex; flex-direction:column; gap:12px; padding:20px; background:#101014; border:1px solid #232329; border-radius:18px;">
+        <div style="font-size:11px; letter-spacing:.18em; text-transform:uppercase; color:#a855f7; font-weight:700;">Decisión UX</div>
+        <div style="font-size:16px; font-weight:700;">La tarjeta vive colapsada por defecto</div>
+        <div style="font-size:13.5px; line-height:1.65; color:#9a9aa4; text-wrap:pretty;">Durante la reproducción solo se ve una barra de 56 px: avatar, @usuario, nivel, hilo de XP, monedas, racha y el regalo pulsando si hay recompensa. Contesta las siete preguntas de identidad sin robarle altura a la escena.</div>
+        <div style="font-size:13.5px; line-height:1.65; color:#9a9aa4; text-wrap:pretty;">Se expande al tocarla, al pausar y automáticamente al terminar un capítulo — el único momento en que el usuario no está dentro de una escena emocional. Vuelve a colapsar al reanudar.</div>
+        <div style="font-size:13.5px; line-height:1.65; color:#9a9aa4; text-wrap:pretty;"><strong style="color:#e5e5ea; font-weight:600;">Panel acoplado</strong> es la alternativa para landscape ancho y desktop, donde sobra alto: el video cede 96 px y la tarjeta queda siempre visible.</div>
+      </div>
+
+      <div style="display:flex; flex-direction:column; gap:12px; padding:20px; background:#101014; border:1px solid #232329; border-radius:18px;">
+        <div style="font-size:11px; letter-spacing:.18em; text-transform:uppercase; color:#a855f7; font-weight:700;">Loop</div>
+        <sc-for list="{{ loop }}" as="step" hint-placeholder-count="6">
+          <div style="display:flex; gap:12px; align-items:baseline;">
+            <span style="font-size:11px; font-weight:700; color:#7c2bff; min-width:16px; font-variant-numeric:tabular-nums;">{{ step.n }}</span>
+            <span style="font-size:13.5px; line-height:1.5; color:#b9b9c3;">{{ step.text }}</span>
+          </div>
+        </sc-for>
+      </div>
+
+      <div style="display:flex; flex-direction:column; gap:12px; padding:20px; background:#101014; border:1px solid #232329; border-radius:18px;">
+        <div style="font-size:11px; letter-spacing:.18em; text-transform:uppercase; color:#a855f7; font-weight:700;">Contrato de datos</div>
+        <div style="font-size:12.5px; line-height:1.9; color:#9a9aa4; font-family:ui-monospace,SFMono-Regular,Menlo,monospace; white-space:pre;">{{ contract }}</div>
+        <div style="font-size:12.5px; line-height:1.6; color:#6f6f7a;">Nada de lo anterior está escrito en la UI: la tarjeta lee props y expone <span style="color:#c084fc;">onClaim</span>, <span style="color:#c084fc;">onOpenWallet</span>, <span style="color:#c084fc;">onOpenStreak</span>, <span style="color:#c084fc;">onOpenProfile</span>, <span style="color:#c084fc;">onChangeFrame</span>.</div>
+      </div>
+    </div>
+  </div>
+</section>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;$preview&quot;:{&quot;width&quot;:960,&quot;height&quot;:1100},&quot;username&quot;:{&quot;editor&quot;:&quot;text&quot;,&quot;default&quot;:&quot;juanesp&quot;,&quot;tsType&quot;:&quot;string&quot;},&quot;startMode&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;options&quot;:[&quot;rail&quot;,&quot;dock&quot;],&quot;default&quot;:&quot;rail&quot;,&quot;tsType&quot;:&quot;'rail'|'dock'&quot;,&quot;section&quot;:&quot;Comportamiento&quot;}}">
+class Component extends DCLogic {
+  state = {
+    mode: this.props.startMode ?? 'rail', expanded: false, overlay: null, sheet: null,
+    xp: 2230, level: 5, coins: 115, streak: 7,
+    reward: 'available', secs: 10800, toast: null,
+    frame: 0, picked: null
+  };
+
+  FRAMES = [
+    { name: 'Básico', gradient: 'linear-gradient(135deg,#4b4b55,#2a2a31)' },
+    { name: 'Neón Idilio', gradient: 'linear-gradient(135deg,#c084fc,#7c2bff)' },
+    { name: 'Racha 30', gradient: 'linear-gradient(135deg,#ffb347,#ff5f29)' },
+    { name: 'Estreno', gradient: 'linear-gradient(135deg,#f5c518,#c99406)' },
+    { name: 'Valentina', gradient: 'linear-gradient(135deg,#ff6f91,#a1207d)' },
+    { name: 'Detective', gradient: 'linear-gradient(135deg,#7dd3fc,#1e40af)' }
+  ];
+
+  componentDidMount() {
+    this.timer = setInterval(() => {
+      if (this.state.reward === 'available' && this.state.secs > 0) this.setState(s => ({ secs: s.secs - 1 }));
+    }, 1000);
+  }
+  componentWillUnmount() { clearInterval(this.timer); }
+
+  nextXp() { return 19450; }
+
+  flash(t) {
+    this.setState({ toast: t });
+    clearTimeout(this._t);
+    this._t = setTimeout(() => this.setState({ toast: null }), 1600);
+  }
+
+  episodeEnd = () => {
+    this.setState({ overlay: 'end', expanded: true, sheet: null });
+    setTimeout(() => this.setState(s => ({ xp: s.xp + 25, coins: s.coins + 10 })), 260);
+  };
+  levelUp = () => {
+    this.setState({ overlay: null, expanded: true, sheet: null, xp: this.nextXp() - 200 });
+    setTimeout(() => this.setState(s => ({ level: s.level + 1, xp: 340, coins: s.coins + 50 })), 1200);
+    setTimeout(() => this.flash('Nivel ' + (this.state.level + 1) + ' · +50'), 1300);
+  };
+  claim = () => {
+    if (this.state.reward !== 'available') return;
+    this.setState(s => ({ coins: s.coins + 75, reward: 'claimed' }));
+    this.flash('+75 monedas');
+  };
+
+  renderVals() {
+    const s = this.state, next = this.nextXp();
+    const pct = Math.max(3, Math.min(100, Math.round((s.xp / next) * 100)));
+    const h = Math.floor(s.secs / 3600), m = Math.floor((s.secs % 3600) / 60);
+    const fr = this.FRAMES[s.frame];
+    const docked = s.mode === 'dock';
+    const showCard = docked || s.expanded;
+    const rewardMap = {
+      available: { label: 'Reclamar +75', bg: '#7c2bff', border: '#7c2bff', color: '#fff', hint: 'Vence en ' + h + 'h ' + String(m).padStart(2, '0') + 'm' },
+      claimed: { label: 'Reclamada', bg: 'rgba(255,255,255,.06)', border: 'rgba(255,255,255,.14)', color: '#8e8e98', hint: 'Próxima: +100' }
+    };
+    const rw = rewardMap[s.reward];
+
+    const sheets = {
+      coins: { kicker: 'Wallet', title: s.coins + ' monedas', cta: 'Ir a Recompensas', rows: [
+        { label: 'Recompensa diaria disponible', value: '+75', color: '#f5c518' },
+        { label: 'Por capítulo completado', value: '+10', color: '#f5c518' },
+        { label: 'Predicción acertada', value: '+20', color: '#f5c518' },
+        { label: 'Costo de un capítulo', value: '15', color: '#e5e5ea' }
+      ] },
+      streak: { kicker: 'Racha', title: s.streak + ' días siguiendo historias', cta: 'Entendido', rows: [
+        { label: 'Última actividad', value: 'Capítulo 18', color: '#e5e5ea' },
+        { label: 'Cuenta ver un capítulo, no abrir la app', value: 'Hoy ✓', color: '#ff7a29' },
+        { label: 'Día 30 desbloquea', value: 'Marco Racha 30', color: '#ff7a29' }
+      ] },
+      level: { kicker: 'Progreso', title: 'Nivel ' + s.level, cta: 'Ver perfil completo', rows: [
+        { label: 'XP actual', value: s.xp.toLocaleString('es') + ' / ' + next.toLocaleString('es'), color: '#d8f24a' },
+        { label: 'Valentina', value: '82%', color: '#e5e5ea' },
+        { label: 'La Herencia', value: '44%', color: '#e5e5ea' },
+        { label: 'El Último', value: '18%', color: '#e5e5ea' }
+      ] },
+      frames: { kicker: 'Marco actual · ' + fr.name, title: 'Cambiar marco', cta: 'Guardar', rows: [], frames: true }
+    };
+    const sh = s.sheet ? sheets[s.sheet] : null;
+
+    const optBase = (k, label) => ({
+      key: k, label, pick: () => {
+        const ok = k === 'B';
+        this.setState(sx => ({ overlay: null, picked: k, xp: sx.xp + (ok ? 20 : 5), coins: sx.coins + (ok ? 10 : 0), expanded: true }));
+        this.flash(ok ? '¡Acertaste! +20 XP · +10' : 'Fallaste · +5 XP');
+      },
+      border: s.picked === k ? '#a855f7' : 'rgba(255,255,255,.14)',
+      bg: s.picked === k ? 'rgba(168,85,247,.16)' : 'rgba(255,255,255,.05)'
+    });
+
+    return {
+      username: this.props.username ?? 'juanesp',
+      initial: (this.props.username ?? 'juanesp').charAt(0).toUpperCase(),
+      level: s.level,
+      levelLabel: 'Nivel ' + s.level,
+      xpText: s.xp.toLocaleString('es') + ' / ' + next.toLocaleString('es') + ' XP',
+      xpPct: pct + '%',
+      coins: s.coins.toLocaleString('es'),
+      streak: s.streak,
+      streakLabel: 'Racha',
+      isRail: !s.overlay && !showCard,
+      isCard: !s.overlay && showCard,
+      frameGradient: fr.gradient,
+      frameLabel: 'Marco · ' + fr.name,
+      rewardReady: s.reward === 'available',
+      rewardLabel: rw.label, rewardBg: rw.bg, rewardBorder: rw.border, rewardColor: rw.color, rewardHint: rw.hint,
+      showEnd: s.overlay === 'end',
+      showPrediction: s.overlay === 'pred',
+      predictionNote: s.picked ? 'Ya respondiste este capítulo.' : 'Acertar da +20 XP y +10 monedas.',
+      options: [optBase('A', 'Huirá'), optBase('B', 'Mentirá'), optBase('C', 'Lo enfrentará')],
+      toast: s.toast,
+      sheet: !!sh,
+      sheetKicker: sh ? sh.kicker : '',
+      sheetTitle: sh ? sh.title : '',
+      sheetCta: sh ? sh.cta : '',
+      sheetRows: sh ? sh.rows : [],
+      sheetFrames: sh ? !!sh.frames : false,
+      frames: this.FRAMES.map((f, i) => ({
+        name: f.name, gradient: f.gradient,
+        labelColor: i === s.frame ? '#c084fc' : '#8e8e98',
+        pick: () => this.setState({ frame: i })
+      })),
+      expand: () => this.setState({ expanded: true }),
+      collapse: () => this.setState({ expanded: false, overlay: null }),
+      openCoins: () => this.setState({ sheet: 'coins' }),
+      openStreak: () => this.setState({ sheet: 'streak' }),
+      openLevel: () => this.setState({ sheet: 'level' }),
+      openFrames: () => this.setState({ sheet: 'frames' }),
+      openProfile: () => this.setState({ sheet: 'level' }),
+      closeSheet: () => this.setState({ sheet: null }),
+      claim: this.claim,
+      openPrediction: () => this.setState({ overlay: 'pred' }),
+      nextEpisode: () => this.setState({ overlay: null, expanded: false }),
+      setRail: () => this.setState({ mode: 'rail', expanded: false }),
+      setDock: () => this.setState({ mode: 'dock' }),
+      railBg: docked ? 'rgba(255,255,255,.05)' : '#7c2bff',
+      railColor: docked ? '#9a9aa4' : '#fff',
+      dockBg: docked ? '#7c2bff' : 'rgba(255,255,255,.05)',
+      dockColor: docked ? '#fff' : '#9a9aa4',
+      demo: [
+        { label: 'Fin de capítulo', run: this.episodeEnd },
+        { label: 'Predicción', run: () => this.setState({ overlay: 'pred', expanded: true }) },
+        { label: 'Subir de nivel', run: this.levelUp },
+        { label: 'Expandir / colapsar', run: () => this.setState(x => ({ expanded: !x.expanded, mode: 'rail', overlay: null })) },
+        { label: 'Reiniciar', run: () => this.setState({ xp: 2230, level: 5, coins: 115, reward: 'available', overlay: null, sheet: null, picked: null, expanded: false, mode: 'rail', secs: 10800 }) }
+      ],
+      loop: [
+        { n: '01', text: 'Ver capítulo → +25 XP y +10 monedas, visibles en la barra sin abrir nada.' },
+        { n: '02', text: 'La barra de XP avanza al terminar; el salto de nivel se celebra sobre el reproductor.' },
+        { n: '03', text: 'La racha exige consumo real: cuenta capítulos vistos, no aperturas de app.' },
+        { n: '04', text: 'La recompensa diaria caduca — el countdown vive en la tarjeta, no en un modal.' },
+        { n: '05', text: 'Las monedas desbloquean el siguiente capítulo, cerrando el loop dentro del reproductor.' },
+        { n: '06', text: 'Marcos, badges y progreso por historia son la colección que sostiene el regreso.' }
+      ],
+      contract: '{\n  username, avatar, avatarFrame,\n  level, currentXP, nextLevelXP,\n  coins, streak: { days, lastEpisode },\n  reward: { state, amount, expiresAt },\n  stories: [{ id, title, progress }]\n}'
+    };
+  }
+}
+</script>
+</body>
+</html>

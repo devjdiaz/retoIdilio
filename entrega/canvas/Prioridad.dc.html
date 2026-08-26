@@ -1,0 +1,112 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+  <style>
+    body { margin: 0; background: #000000; font-family: 'Poppins', 'Century Gothic', 'Avenir Next', system-ui, sans-serif; -webkit-font-smoothing: antialiased; }
+    a { color: #9B4DFF; } a:hover { color: #7B2FF7; }
+    .row { display: flex; align-items: center; gap: 16px; background: #141414; border-radius: 16px; padding: 12px 16px; }
+    .badge { flex-shrink: 0; width: 44px; height: 44px; border-radius: 999px; display: flex; align-items: center; justify-content: center; font-size: 15px; font-weight: 700; box-sizing: border-box; }
+    .nm { font-size: 14px; font-weight: 700; color: #FFFFFF; }
+    .cond { font-size: 11px; font-weight: 400; color: #9A9A9A; line-height: 1.35; }
+    .tag { flex-shrink: 0; font-size: 9px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: #9B4DFF; border: 1px solid #7B2FF7; border-radius: 999px; padding: 4px 8px; }
+  </style>
+</helmet>
+<div style="width:720px;height:900px;box-sizing:border-box;padding:44px;background:#000000;display:flex;flex-direction:column;gap:20px;">
+
+  <div style="display:flex;flex-direction:column;gap:4px;">
+    <span style="font-size:11px;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;color:#7B2FF7;">Lógica</span>
+    <span style="font-size:26px;font-weight:700;color:#FFFFFF;">Prioridad de estados</span>
+    <span style="font-size:13px;font-weight:400;color:#9A9A9A;">Un estado a la vez, el más urgente. Si la barra muestra todo, no comunica nada.</span>
+  </div>
+
+  <div style="display:flex;gap:16px;flex:1;">
+
+    <div style="flex-shrink:0;width:24px;display:flex;flex-direction:column;align-items:center;">
+      <span style="font-size:9px;font-weight:700;letter-spacing:0.08em;color:#9B4DFF;writing-mode:vertical-rl;">MÁS URGENTE</span>
+      <div style="flex:1;width:2px;background:linear-gradient(to bottom, #7B2FF7 0%, #2E2E2E 100%);margin:8px 0;"></div>
+      <span style="font-size:9px;font-weight:700;letter-spacing:0.08em;color:#6B6B6B;writing-mode:vertical-rl;">MENOS</span>
+    </div>
+
+    <div style="flex:1;display:flex;flex-direction:column;gap:8px;">
+
+      <div class="row">
+        <span class="badge" style="background:#7B2FF7;color:#FFFFFF;">10</span>
+        <div style="display:flex;flex-direction:column;gap:2px;min-width:0;flex:1;">
+          <span class="nm">Saldo insuficiente</span>
+          <span class="cond">Intentó desbloquear y no le alcanza.</span>
+        </div>
+        <span class="tag">Transversal</span>
+      </div>
+
+      <div class="row">
+        <span class="badge" style="background:#7B2FF7;color:#FFFFFF;">6</span>
+        <div style="display:flex;flex-direction:column;gap:2px;min-width:0;flex:1;">
+          <span class="nm">Racha en riesgo</span>
+          <span class="cond">Racha ≥ 2, sin reclamar, quedan pocas horas.</span>
+        </div>
+        <span class="tag">Transversal</span>
+      </div>
+
+      <div class="row">
+        <span class="badge" style="background:#7B2FF7;color:#FFFFFF;">2</span>
+        <div style="display:flex;flex-direction:column;gap:2px;min-width:0;flex:1;">
+          <span class="nm">Recompensa disponible</span>
+          <span class="cond">No reclamó hoy y la racha no está rota — incluida la primera sesión.</span>
+        </div>
+      </div>
+
+      <div class="row">
+        <span class="badge" style="background:#2A0E4A;color:#9B4DFF;border:1px solid #7B2FF7;">7</span>
+        <div style="display:flex;flex-direction:column;gap:2px;min-width:0;flex:1;">
+          <span class="nm">Racha rota</span>
+          <span class="cond">Volvió después de perderla.</span>
+        </div>
+      </div>
+
+      <div class="row">
+        <span class="badge" style="background:#2A0E4A;color:#9B4DFF;border:1px solid #7B2FF7;">5</span>
+        <div style="display:flex;flex-direction:column;gap:2px;min-width:0;flex:1;">
+          <span class="nm">Meta alcanzada · día 3</span>
+          <span class="cond">Reclamó el día 3, el único hito con evidencia dura.</span>
+        </div>
+      </div>
+
+      <div class="row">
+        <span class="badge" style="background:transparent;color:#9A9A9A;border:1px solid #2E2E2E;font-size:13px;">3·4</span>
+        <div style="display:flex;flex-direction:column;gap:2px;min-width:0;flex:1;">
+          <span class="nm">Reclamada</span>
+          <span class="cond">Ya reclamó hoy. Día 1 o día 2.</span>
+        </div>
+      </div>
+
+      <div class="row">
+        <span class="badge" style="background:transparent;color:#9A9A9A;border:1px solid #2E2E2E;">1</span>
+        <div style="display:flex;flex-direction:column;gap:2px;min-width:0;flex:1;">
+          <span class="nm">Sin racha</span>
+          <span class="cond">Ya reclamó y no hay racha que reportar. Fallback.</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div style="display:flex;flex-direction:column;gap:8px;border-top:1px solid #2E2E2E;padding-top:16px;">
+    <span style="font-size:12px;font-weight:700;color:#FFFFFF;">Por qué el orden importa y no se infiere</span>
+    <span style="font-size:11px;font-weight:400;color:#9A9A9A;line-height:1.45;">En el flujo normal las condiciones no se solapan: racha viva y racha rota son ramas alternas. Pero <span style="color:#FFFFFF;font-weight:500;">10 y 6 son disparadores transitorios</span> —un intento de desbloqueo, un reloj— y sí pueden coincidir con cualquier otro estado. Por eso la pila se evalúa en este orden literal, en vez de deducir cuál condición es «más específica».</span>
+    <span style="font-size:11px;font-weight:400;color:#9A9A9A;line-height:1.45;">El estado <span style="color:#FFFFFF;font-weight:500;">2 absorbió la primera sesión</span>. Antes el recién llegado leía «Vuelve mañana y gana monedas» sin acción, pero al chocar con el muro el estado 10 le ofrecía reclamar hoy con botón. O el día 1 se reclama en la primera sesión o no se reclama: se resolvió a favor de que sí. El 1 quedó como default seguro.</span>
+    <span style="font-size:11px;font-weight:400;color:#9A9A9A;line-height:1.45;">Los estados <span style="color:#FFFFFF;font-weight:500;">8 y 9 no están en la pila</span>: ocultarse y reaparecer son visibilidad, no contenido. Son ortogonales — la barra puede estar oculta en cualquiera de los siete estados de arriba.</span>
+  </div>
+
+</div>
+</x-dc>
+</body>
+</html>

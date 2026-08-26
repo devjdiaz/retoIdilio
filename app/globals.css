@@ -1,0 +1,231 @@
+@import "tailwindcss";
+
+/*
+ * Tokens de design-tokens.md, conservados con sus nombres literales.
+ * NUNCA agregar un color/radio/sombra acá sin que exista primero en design-tokens.md.
+ */
+:root {
+  /* Fondo y superficie */
+  --bg: #000000;
+  --surface: #141414;
+  --surface-2: #1e1e1e;
+  --surface-violet: #2a0e4a;
+  --overlay: rgba(0, 0, 0, 0.55);
+
+  /* Marca */
+  --violet: #7b2ff7;
+  --violet-bright: #9b4dff;
+  --violet-logo: #c44bf0;
+  --cyan-logo: #5cc9c9;
+  --amber-logo: #f0a93b;
+
+  /* Economía */
+  --coin: #ffd84d;
+  --coin-deep: #e8a317;
+  --coin-locked: #b9a8cc;
+  --price: #ffd84d;
+
+  /* Semántica */
+  --success: #3ed07a;
+  --danger: #ff453a;
+  --text: #ffffff;
+  --text-2: #9a9a9a;
+  --text-3: #6b6b6b;
+
+  /* Progreso de racha */
+  --track: #2e2e2e;
+
+  /* Espaciado y forma */
+  --r-pill: 999px;
+  --r-card: 16px;
+  --r-card-lg: 20px;
+  --r-icon: 12px;
+
+  /* Glow */
+  --glow-amber: 0 0 20px rgba(255, 216, 77, 0.45);
+  --glow-violet: 0 0 20px rgba(123, 47, 247, 0.45);
+
+  /* Safe area — en desktop env() es 0, se simula el valor de iPhone */
+  --safe-bottom: max(env(safe-area-inset-bottom), 34px);
+
+  /* ── Player Identity Card ────────────────────────────────────────────
+     Paleta propia del handoff `design_handoff_player_identity_card/`.
+     Va bajo el prefijo `card-` a propósito: NO son los tokens de la app.
+     El handoff define su violeta en #7c2bff y su moneda en #f5c518, que no
+     son --violet (#7B2FF7) ni --coin (#FFD84D); y agrega dos familias que
+     la app no tiene, XP y racha. Mezclarlas habría dado dos violetas casi
+     iguales conviviendo sin que se sepa cuál manda. Separadas, se ve de
+     dónde viene cada valor. */
+  --card-violet: #7c2bff;
+  --card-violet-hover: #8f47ff;
+  --card-violet-2: #a855f7;
+  --card-lila: #c084fc;
+
+  --card-xp: #d8f24a;
+  --card-xp-2: #a3e635;
+  --card-coin: #f5c518;
+  --card-coin-hi: #ffe89a;
+  --card-coin-lo: #c99406;
+  --card-flame: #ff7a29;
+
+  --card-top: #1a1024;
+  --card-bottom: #0c0910;
+  --card-bar-top: #171020;
+  --card-bar-bottom: #0d0a12;
+  --card-sheet: #120d19;
+  --card-avatar-inner: #1b1424;
+
+  --card-ink: #e5e5ea;
+  --card-ink-2: #c9c9d1;
+  --card-ink-3: #b9b9c3;
+  --card-ink-4: #9a9aa4;
+  --card-ink-5: #8e8e98;
+}
+
+/* Puente al namespace que Tailwind v4 reconoce, sin renombrar los tokens de arriba. */
+@theme inline {
+  --color-bg: var(--bg);
+  --color-surface: var(--surface);
+  --color-surface-2: var(--surface-2);
+  --color-surface-violet: var(--surface-violet);
+  --color-overlay: var(--overlay);
+
+  --color-violet: var(--violet);
+  --color-violet-bright: var(--violet-bright);
+  --color-violet-logo: var(--violet-logo);
+  --color-cyan-logo: var(--cyan-logo);
+  --color-amber-logo: var(--amber-logo);
+
+  --color-coin: var(--coin);
+  --color-coin-deep: var(--coin-deep);
+  --color-coin-locked: var(--coin-locked);
+  --color-price: var(--price);
+
+  --color-success: var(--success);
+  --color-danger: var(--danger);
+  --color-text: var(--text);
+  --color-text-2: var(--text-2);
+  --color-text-3: var(--text-3);
+
+  --color-track: var(--track);
+
+  --color-card-violet: var(--card-violet);
+  --color-card-violet-hover: var(--card-violet-hover);
+  --color-card-violet-2: var(--card-violet-2);
+  --color-card-lila: var(--card-lila);
+  --color-card-xp: var(--card-xp);
+  --color-card-xp-2: var(--card-xp-2);
+  --color-card-coin: var(--card-coin);
+  --color-card-coin-hi: var(--card-coin-hi);
+  --color-card-coin-lo: var(--card-coin-lo);
+  --color-card-flame: var(--card-flame);
+  --color-card-top: var(--card-top);
+  --color-card-bottom: var(--card-bottom);
+  --color-card-bar-top: var(--card-bar-top);
+  --color-card-bar-bottom: var(--card-bar-bottom);
+  --color-card-sheet: var(--card-sheet);
+  --color-card-avatar-inner: var(--card-avatar-inner);
+  --color-card-ink: var(--card-ink);
+  --color-card-ink-2: var(--card-ink-2);
+  --color-card-ink-3: var(--card-ink-3);
+  --color-card-ink-4: var(--card-ink-4);
+  --color-card-ink-5: var(--card-ink-5);
+
+  --radius-pill: var(--r-pill);
+  --radius-card: var(--r-card);
+  --radius-card-lg: var(--r-card-lg);
+  --radius-icon: var(--r-icon);
+
+  --shadow-glow-amber: var(--glow-amber);
+  --shadow-glow-violet: var(--glow-violet);
+
+  --font-sans: var(--font-poppins);
+
+  --animate-pop-in: pop-in 0.4s ease-out;
+}
+
+/*
+ * Entrada del estado 5 (meta día 3) — el único hito con evidencia dura
+ * (estados.md). Sin glow: la regla de craft lo reserva al estado 2.
+ */
+@keyframes pop-in {
+  from {
+    opacity: 0;
+    transform: scale(0.85);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/*
+ * Gradiente: Tailwind v4 no tiene namespace --gradient-*, se declara como
+ * utilidad real.
+ *
+ * El extremo claro se para en 130%, no en 100%. Medido: blanco sobre
+ * `--violet-bright` puro (#9B4DFF) da 4.29:1, y el texto del CTA es de 14px
+ * bold — no califica como "texto grande", así que necesita 4.5:1. El último
+ * ~15% del gradiente no pasa AA, y es exactamente donde cae el final de un
+ * label largo como "Reclamar +250".
+ *
+ * Estirando la parada a 130%, el botón solo recorre hasta el 77% del
+ * gradiente: el peor punto queda en 4.61:1. Los dos tokens siguen siendo los
+ * de design-tokens.md y el gradiente se sigue leyendo igual; lo único que
+ * cambia es que su extremo más claro queda fuera del área de texto.
+ */
+@utility grad-cta {
+  background-image: linear-gradient(90deg, var(--violet) 0%, var(--violet-bright) 130%);
+}
+
+@utility grad-modal-racha {
+  background-image: linear-gradient(160deg, #4a1a7a 0%, var(--surface-violet) 100%);
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Entrada de las hojas del reproductor. 220ms ease-out — dentro del rango de
+   150–250ms que fija CLAUDE.md para todo lo que no es el reclamo. */
+@keyframes sheet {
+  from {
+    transform: translateY(100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+/* ── Animaciones de la Player Identity Card ────────────────────────────
+   Duraciones y easings del handoff. Las barras usan el cubic-bezier largo
+   porque ahí la animación ES el mensaje: el XP tiene que verse crecer. */
+@keyframes idRise {
+  from { opacity: 0; transform: translateY(14px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@keyframes idSheet {
+  from { transform: translateY(100%); }
+  to { transform: translateY(0); }
+}
+@keyframes idGlow {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(168, 85, 247, 0); }
+  50% { box-shadow: 0 0 0 6px rgba(168, 85, 247, 0.22); }
+}
+@keyframes idFloat {
+  0% { opacity: 0; transform: translateY(0); }
+  18% { opacity: 1; }
+  100% { opacity: 0; transform: translateY(-34px); }
+}

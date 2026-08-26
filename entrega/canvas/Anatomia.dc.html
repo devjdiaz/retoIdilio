@@ -1,0 +1,104 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+  <style>
+    body { margin: 0; background: #000000; font-family: 'Poppins', 'Century Gothic', 'Avenir Next', system-ui, sans-serif; -webkit-font-smoothing: antialiased; }
+    a { color: #9B4DFF; } a:hover { color: #7B2FF7; }
+    .rl { position: absolute; background: #6B6B6B; }
+    .cap { position: absolute; font-size: 11px; font-weight: 500; color: #9A9A9A; letter-spacing: 0.02em; }
+    .num { position: absolute; font-size: 12px; font-weight: 700; color: #FFFFFF; font-variant-numeric: tabular-nums; }
+  </style>
+</helmet>
+<div style="position:relative;width:1000px;height:640px;overflow:hidden;background:#000000;">
+
+  <div style="position:absolute;top:40px;left:48px;display:flex;flex-direction:column;gap:4px;">
+    <span style="font-size:11px;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;color:#7B2FF7;">Especificación</span>
+    <span style="font-size:26px;font-weight:700;color:#FFFFFF;">Anatomía de la barra</span>
+    <span style="font-size:13px;font-weight:400;color:#9A9A9A;">Estado 6 al 160 % — la anatomía más completa. El indicador y el CTA nunca coexisten; el glow es exclusivo del estado 2.</span>
+  </div>
+
+  <!-- Cota superior: ancho total y margen lateral -->
+  <div class="rl" style="left:188px;top:222px;width:624px;height:1px;"></div>
+  <div class="rl" style="left:188px;top:216px;width:1px;height:13px;"></div>
+  <div class="rl" style="left:811px;top:216px;width:1px;height:13px;"></div>
+  <div class="num" style="left:465px;top:196px;">390 px</div>
+  <div class="rl" style="left:214px;top:216px;width:1px;height:13px;background:#7B2FF7;"></div>
+  <div class="rl" style="left:786px;top:216px;width:1px;height:13px;background:#7B2FF7;"></div>
+  <div class="num" style="left:190px;top:238px;color:#9B4DFF;">16</div>
+  <div class="num" style="left:788px;top:238px;color:#9B4DFF;">16</div>
+
+  <!-- Fondo de video, para que se lea la translucidez real de la barra -->
+  <div style="position:absolute;left:188px;top:248px;width:624px;height:144px;overflow:hidden;background:linear-gradient(135deg, hsl(266,70%,12%) 0%, hsl(286,65%,18%) 50%, hsl(190,40%,10%) 100%);">
+    <div style="width:390px;transform:scale(1.6);transform-origin:top left;">
+      <div style="position:relative;box-sizing:border-box;height:90px;padding:0 16px 34px;display:flex;align-items:center;gap:8px;background:rgba(0,0,0,0.55);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-top:1px solid rgba(255,255,255,0.08);">
+        <div style="display:flex;flex-shrink:0;align-items:center;gap:8px;">
+          <svg width="22" height="22" viewBox="0 0 22 22" aria-hidden="true">
+            <circle cx="11" cy="11" r="10" fill="#FFD84D"></circle>
+            <circle cx="11" cy="11" r="6.5" fill="none" stroke="#E8A317" stroke-width="1.25" opacity="0.6"></circle>
+          </svg>
+          <span style="font-size:16px;font-weight:700;font-variant-numeric:tabular-nums;color:#FFD84D;">190</span>
+        </div>
+        <div style="display:flex;min-width:0;flex:1;align-items:center;justify-content:flex-end;gap:8px;">
+          <p dir="rtl" style="margin:0;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;text-align:left;font-size:14px;font-weight:500;color:#FFFFFF;"><span dir="ltr">Vence en 3h</span></p>
+          <button type="button" style="flex-shrink:0;height:44px;border:0;border-radius:999px;padding:0 16px;font-family:inherit;font-size:14px;font-weight:700;color:#FFFFFF;background-image:linear-gradient(90deg, #7B2FF7 0%, #9B4DFF 100%);">Reclamar +90</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Cota izquierda: alto de contenido y safe area -->
+  <div class="rl" style="left:160px;top:248px;width:1px;height:90px;"></div>
+  <div class="rl" style="left:154px;top:248px;width:13px;height:1px;"></div>
+  <div class="rl" style="left:154px;top:337px;width:13px;height:1px;"></div>
+  <div class="num" style="left:112px;top:283px;">56</div>
+  <div class="rl" style="left:160px;top:338px;width:1px;height:54px;"></div>
+  <div class="rl" style="left:154px;top:391px;width:13px;height:1px;"></div>
+  <div class="cap" style="left:60px;top:355px;width:96px;text-align:right;">safe area<br>34</div>
+
+  <!-- Zonas -->
+  <div class="rl" style="left:214px;top:406px;width:96px;height:1px;"></div>
+  <div class="rl" style="left:214px;top:400px;width:1px;height:7px;"></div>
+  <div class="rl" style="left:309px;top:400px;width:1px;height:7px;"></div>
+  <div class="cap" style="left:214px;top:414px;width:190px;">Saldo — ya existe hoy</div>
+
+  <div class="rl" style="left:440px;top:406px;width:346px;height:1px;"></div>
+  <div class="rl" style="left:440px;top:400px;width:1px;height:7px;"></div>
+  <div class="rl" style="left:786px;top:400px;width:1px;height:7px;"></div>
+  <div class="cap" style="left:440px;top:414px;width:346px;text-align:right;">Estado activo — lo nuevo</div>
+
+  <!-- Área táctil del CTA -->
+  <div style="position:absolute;left:578px;top:258px;width:208px;height:70px;border:1px dashed #9B4DFF;border-radius:999px;"></div>
+  <div class="cap" style="left:578px;top:334px;width:208px;text-align:center;color:#9B4DFF;">44 × 44 pt mínimo</div>
+
+  <div style="position:absolute;left:48px;right:48px;bottom:44px;display:grid;grid-template-columns:repeat(4, minmax(0, 1fr));gap:12px;">
+    <div style="background:#141414;border-radius:16px;padding:16px;display:flex;flex-direction:column;gap:4px;">
+      <span style="font-size:20px;font-weight:700;color:#FFFFFF;">10,7 %</span>
+      <span style="font-size:11px;font-weight:500;color:#9A9A9A;line-height:1.35;">de la pantalla (90 / 844). El techo es 12 %.</span>
+    </div>
+    <div style="background:#141414;border-radius:16px;padding:16px;display:flex;flex-direction:column;gap:4px;">
+      <span style="font-size:20px;font-weight:700;color:#FFFFFF;">2 pesos</span>
+      <span style="font-size:11px;font-weight:500;color:#9A9A9A;line-height:1.35;">700 en saldo y CTA, 500 en el mensaje. Nada más.</span>
+    </div>
+    <div style="background:#141414;border-radius:16px;padding:16px;display:flex;flex-direction:column;gap:4px;">
+      <span style="font-size:20px;font-weight:700;color:#FFFFFF;">4 · 8 · 16</span>
+      <span style="font-size:11px;font-weight:500;color:#9A9A9A;line-height:1.35;">Único espaciado dentro de la barra: gap 8, margen 16.</span>
+    </div>
+    <div style="background:#141414;border-radius:16px;padding:16px;display:flex;flex-direction:column;gap:4px;">
+      <span style="font-size:20px;font-weight:700;color:#FFFFFF;">999 px</span>
+      <span style="font-size:11px;font-weight:500;color:#9A9A9A;line-height:1.35;">Radio del CTA. Un borde recto rompe la identidad.</span>
+    </div>
+  </div>
+
+</div>
+</x-dc>
+</body>
+</html>
