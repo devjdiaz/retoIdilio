@@ -15,7 +15,7 @@ const PHONE_H = 844;
 
 // El marco es 390×844 fijo (CLAUDE.md), pero un navegador móvil real
 // muestra menos que eso de alto — Safari en iPhone visible ronda 664px con
-// la barra de direcciones puesta. Sin esto, la barra de racha queda fuera
+// la barra de direcciones puesta. Sin esto, la tarjeta queda fuera
 // de pantalla y hay que scrollear para verla, que es justo lo que se está
 // evaluando. `min(1, ...)` no hace nada cuando sí entra (desktop): el
 // marco nunca crece más allá de su tamaño real, solo se achica si hace
@@ -33,7 +33,7 @@ const phoneStyle: CSSProperties = {
   transformOrigin: "top left",
 };
 
-// Dueño único del estado: la barra (Scene) y el panel de demo leen y
+// Dueño único del estado: la tarjeta (Scene) y el panel de demo leen y
 // despachan sobre la misma racha, para que saltar un estado en el panel se
 // vea reflejado de inmediato en el teléfono.
 export function DemoStage() {

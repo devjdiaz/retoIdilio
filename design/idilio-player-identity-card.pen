@@ -1,0 +1,5948 @@
+{
+  "version": "2.17",
+  "children": [
+    {
+      "type": "frame",
+      "id": "yhIRb",
+      "x": 0,
+      "y": 0,
+      "name": "01 · Barra · recompensa disponible",
+      "clip": true,
+      "width": 390,
+      "height": 844,
+      "fill": "$bg",
+      "layout": "none",
+      "children": [
+        {
+          "type": "rectangle",
+          "id": "sI4sS",
+          "x": 0,
+          "y": 0,
+          "name": "Fotograma",
+          "fill": {
+            "type": "image",
+            "enabled": true,
+            "url": "../public/episodio-13-cap.jpg",
+            "mode": "fill"
+          },
+          "width": 390,
+          "height": 768
+        },
+        {
+          "type": "rectangle",
+          "id": "U29AT",
+          "x": 0,
+          "y": 468,
+          "name": "Piso oscuro",
+          "fill": {
+            "type": "gradient",
+            "gradientType": "linear",
+            "enabled": true,
+            "rotation": 180,
+            "size": {
+              "height": 1
+            },
+            "colors": [
+              {
+                "color": "#00000000",
+                "position": 0
+              },
+              {
+                "color": "#000000E6",
+                "position": 1
+              }
+            ]
+          },
+          "width": 390,
+          "height": 300
+        },
+        {
+          "type": "frame",
+          "id": "Sz1In",
+          "x": 16,
+          "y": 600,
+          "name": "Contexto",
+          "layout": "vertical",
+          "gap": 4,
+          "children": [
+            {
+              "type": "text",
+              "id": "EAPV0",
+              "name": "Capítulo",
+              "fill": "$text",
+              "content": "Capítulo 13",
+              "fontFamily": "$font",
+              "fontSize": 14,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "text",
+              "id": "pMVaC",
+              "name": "Serie",
+              "fill": "$text",
+              "content": "Mi Mejor Pasajera",
+              "fontFamily": "$font",
+              "fontSize": 18,
+              "fontWeight": "700"
+            },
+            {
+              "type": "text",
+              "id": "D0LDi",
+              "name": "Progreso",
+              "fill": "$text-2",
+              "content": "Capítulo 13 de 56",
+              "fontFamily": "$font",
+              "fontSize": 12,
+              "fontWeight": "normal"
+            }
+          ]
+        },
+        {
+          "type": "rectangle",
+          "id": "QXK2A",
+          "x": 0,
+          "y": 762,
+          "name": "Scrubber",
+          "fill": "#FFFFFF33",
+          "width": 390,
+          "height": 2
+        },
+        {
+          "type": "rectangle",
+          "id": "IV7Wh",
+          "x": 0,
+          "y": 762,
+          "name": "Scrubber lleno",
+          "fill": "$text",
+          "width": 130,
+          "height": 2
+        },
+        {
+          "type": "frame",
+          "id": "oHpRm",
+          "x": 10,
+          "y": 776,
+          "name": "Barra colapsada",
+          "width": 370,
+          "height": 56,
+          "fill": {
+            "type": "gradient",
+            "gradientType": "linear",
+            "enabled": true,
+            "rotation": 180,
+            "size": {
+              "height": 1
+            },
+            "colors": [
+              {
+                "color": "$card-bar-top",
+                "position": 0
+              },
+              {
+                "color": "$card-bar-bottom",
+                "position": 1
+              }
+            ]
+          },
+          "cornerRadius": 18,
+          "stroke": "#A855F74D",
+          "strokeWidth": 1,
+          "gap": 12,
+          "padding": [
+            0,
+            14
+          ],
+          "justifyContent": "space_between",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "cvGxx",
+              "name": "Avatar",
+              "width": 36,
+              "height": 36,
+              "fill": {
+                "type": "gradient",
+                "gradientType": "linear",
+                "enabled": true,
+                "rotation": 315,
+                "size": {
+                  "height": 1
+                },
+                "colors": [
+                  {
+                    "color": "$card-lila",
+                    "position": 0
+                  },
+                  {
+                    "color": "$card-violet",
+                    "position": 1
+                  }
+                ]
+              },
+              "cornerRadius": 999,
+              "padding": 2,
+              "justifyContent": "center",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "x885c9",
+                  "name": "Interior",
+                  "width": 32,
+                  "height": 32,
+                  "fill": "$card-avatar-inner",
+                  "cornerRadius": 999,
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "I0wm4",
+                      "name": "Inicial",
+                      "fill": "$card-lila",
+                      "content": "J",
+                      "fontFamily": "$font",
+                      "fontSize": 13,
+                      "fontWeight": "700"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "Y3Jeac",
+              "name": "Identidad",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 4,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "bBHTn",
+                  "name": "Nombre",
+                  "gap": 8,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "z4zA6J",
+                      "name": "Usuario",
+                      "fill": "$text",
+                      "content": "@juanesp",
+                      "fontFamily": "$font",
+                      "fontSize": 13,
+                      "fontWeight": "700"
+                    },
+                    {
+                      "type": "text",
+                      "id": "kP1a0",
+                      "name": "Nivel",
+                      "fill": "$card-lila",
+                      "content": "Nv 5",
+                      "fontFamily": "$font",
+                      "fontSize": 11,
+                      "fontWeight": "700"
+                    }
+                  ]
+                },
+                {
+                  "type": "rectangle",
+                  "cornerRadius": 999,
+                  "id": "x85R8K",
+                  "name": "XP track",
+                  "fill": "#FFFFFF24",
+                  "width": 150,
+                  "height": 3
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "AbWKR",
+              "name": "Stats",
+              "gap": 10,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "GmcBI",
+                  "name": "Monedas",
+                  "gap": 4,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "ellipse",
+                      "id": "FiCpI",
+                      "name": "Moneda",
+                      "fill": {
+                        "type": "gradient",
+                        "gradientType": "radial",
+                        "enabled": true,
+                        "rotation": 0,
+                        "size": {
+                          "width": 1,
+                          "height": 1
+                        },
+                        "colors": [
+                          {
+                            "color": "$card-coin-hi",
+                            "position": 0
+                          },
+                          {
+                            "color": "$card-coin",
+                            "position": 0.55
+                          },
+                          {
+                            "color": "$card-coin-lo",
+                            "position": 1
+                          }
+                        ],
+                        "center": {
+                          "x": 0.32,
+                          "y": 0.28
+                        }
+                      },
+                      "width": 16,
+                      "height": 16,
+                      "stroke": "#FFFFFF59",
+                      "strokeWidth": 1.5
+                    },
+                    {
+                      "type": "text",
+                      "id": "Homim",
+                      "name": "Saldo",
+                      "fill": "$card-coin",
+                      "content": "115",
+                      "fontFamily": "$font",
+                      "fontSize": 13,
+                      "fontWeight": "700"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "cQWvU",
+                  "name": "Racha",
+                  "gap": 4,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "path",
+                      "id": "Q7610",
+                      "name": "Llama",
+                      "geometry": "M8.5 14.5a2.5 2.5 0 0 0 2.5-2.5c0-1.38-0.5-2-1-3-1.07-2.14-0.22-4.05 2-6 0.5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.15 0.43-2.29 1-3a2.5 2.5 0 0 0 2.5 2.5z",
+                      "viewBox": [
+                        0,
+                        0,
+                        24,
+                        24
+                      ],
+                      "fill": "$card-flame",
+                      "width": 14,
+                      "height": 14
+                    },
+                    {
+                      "type": "text",
+                      "id": "fHntN",
+                      "name": "Días",
+                      "fill": "$card-flame",
+                      "content": "7",
+                      "fontFamily": "$font",
+                      "fontSize": 13,
+                      "fontWeight": "700"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "C1COf",
+                  "name": "Recompensa",
+                  "width": 26,
+                  "height": 26,
+                  "fill": "$card-violet",
+                  "cornerRadius": 9,
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "path",
+                      "id": "qP60j",
+                      "name": "Regalo",
+                      "geometry": "M3 9h18v3h-18z m9-1v13m7-9v7a2 2 0 0 1-2 2h-10a2 2 0 0 1-2-2v-7m2.5-4a2.5 2.5 0 0 1 0-5c3.5 0 4.5 5 4.5 5s1-5 4.5-5a2.5 2.5 0 0 1 0 5",
+                      "viewBox": [
+                        0,
+                        0,
+                        24,
+                        24
+                      ],
+                      "fill": "#00000000",
+                      "width": 14,
+                      "height": 14,
+                      "stroke": "$text",
+                      "strokeWidth": 2
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "s5y5CZ",
+      "x": 0,
+      "y": 964,
+      "name": "04 · Tarjeta · con cuenta",
+      "clip": true,
+      "width": 390,
+      "height": 844,
+      "fill": "$bg",
+      "layout": "none",
+      "children": [
+        {
+          "type": "rectangle",
+          "id": "WM8py",
+          "x": 0,
+          "y": 0,
+          "name": "Fotograma",
+          "fill": {
+            "type": "image",
+            "enabled": true,
+            "url": "../public/episodio-13-cap.jpg",
+            "mode": "fill"
+          },
+          "width": 390,
+          "height": 594
+        },
+        {
+          "type": "rectangle",
+          "id": "IYiK4",
+          "x": 0,
+          "y": 350,
+          "name": "Piso oscuro",
+          "fill": {
+            "type": "gradient",
+            "gradientType": "linear",
+            "enabled": true,
+            "rotation": 180,
+            "size": {
+              "height": 1
+            },
+            "colors": [
+              {
+                "color": "#00000000",
+                "position": 0
+              },
+              {
+                "color": "#000000E6",
+                "position": 1
+              }
+            ]
+          },
+          "width": 390,
+          "height": 244
+        },
+        {
+          "type": "frame",
+          "id": "OfGo3",
+          "x": 16,
+          "y": 470,
+          "name": "Contexto",
+          "layout": "vertical",
+          "gap": 4,
+          "children": [
+            {
+              "type": "text",
+              "id": "S3eJL",
+              "name": "Capítulo",
+              "fill": "$text",
+              "content": "Capítulo 13",
+              "fontFamily": "$font",
+              "fontSize": 14,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "text",
+              "id": "G2bZL",
+              "name": "Serie",
+              "fill": "$text",
+              "content": "Mi Mejor Pasajera",
+              "fontFamily": "$font",
+              "fontSize": 18,
+              "fontWeight": "700"
+            }
+          ]
+        },
+        {
+          "type": "rectangle",
+          "id": "f08Htm",
+          "x": 0,
+          "y": 588,
+          "name": "Scrubber",
+          "fill": "#FFFFFF33",
+          "width": 390,
+          "height": 2
+        },
+        {
+          "type": "rectangle",
+          "id": "i1kBh",
+          "x": 0,
+          "y": 588,
+          "name": "Scrubber lleno",
+          "fill": "$text",
+          "width": 130,
+          "height": 2
+        },
+        {
+          "type": "frame",
+          "id": "i9HkzL",
+          "x": 12,
+          "y": 592,
+          "name": "Tarjeta",
+          "width": 366,
+          "height": 240,
+          "fill": {
+            "type": "gradient",
+            "gradientType": "linear",
+            "enabled": true,
+            "rotation": 180,
+            "size": {
+              "height": 1
+            },
+            "colors": [
+              {
+                "color": "$card-top",
+                "position": 0
+              },
+              {
+                "color": "$card-bottom",
+                "position": 1
+              }
+            ]
+          },
+          "cornerRadius": 22,
+          "stroke": "#A855F757",
+          "strokeWidth": 1,
+          "layout": "vertical",
+          "gap": 14,
+          "padding": [
+            16,
+            16,
+            14,
+            16
+          ],
+          "children": [
+            {
+              "type": "frame",
+              "id": "V5w7bx",
+              "name": "Identidad",
+              "width": "fill_container",
+              "gap": 14,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "BY6Ok",
+                  "name": "Avatar",
+                  "width": 76,
+                  "height": 76,
+                  "fill": {
+                    "type": "gradient",
+                    "gradientType": "linear",
+                    "enabled": true,
+                    "rotation": 315,
+                    "size": {
+                      "height": 1
+                    },
+                    "colors": [
+                      {
+                        "color": "$card-lila",
+                        "position": 0
+                      },
+                      {
+                        "color": "$card-violet",
+                        "position": 1
+                      }
+                    ]
+                  },
+                  "cornerRadius": 999,
+                  "padding": 3,
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "a2aTo",
+                      "name": "Interior",
+                      "width": 70,
+                      "height": 70,
+                      "fill": "$card-avatar-inner",
+                      "cornerRadius": 999,
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "E6mcD",
+                          "name": "Inicial",
+                          "fill": "$card-lila",
+                          "content": "J",
+                          "fontFamily": "$font",
+                          "fontSize": 28,
+                          "fontWeight": "700"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "FNgNv",
+                  "name": "Datos",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 6,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "JcQa8",
+                      "name": "Nombre",
+                      "fill": "$text",
+                      "content": "juanesp",
+                      "fontFamily": "$font",
+                      "fontSize": 19,
+                      "fontWeight": "700"
+                    },
+                    {
+                      "type": "text",
+                      "id": "ePkuc",
+                      "name": "Nivel",
+                      "fill": "$card-ink-3",
+                      "content": "Nivel 5",
+                      "fontFamily": "$font",
+                      "fontSize": 13,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "H7bgr",
+                      "name": "XP",
+                      "width": 190,
+                      "height": 7,
+                      "fill": "#FFFFFF1F",
+                      "cornerRadius": 999,
+                      "layout": "none",
+                      "children": [
+                        {
+                          "type": "rectangle",
+                          "cornerRadius": 999,
+                          "id": "x9WriY",
+                          "x": 0,
+                          "y": 0,
+                          "name": "XP lleno",
+                          "fill": {
+                            "type": "gradient",
+                            "gradientType": "linear",
+                            "enabled": true,
+                            "rotation": 270,
+                            "size": {
+                              "height": 1
+                            },
+                            "colors": [
+                              {
+                                "color": "$card-xp",
+                                "position": 0
+                              },
+                              {
+                                "color": "$card-xp-2",
+                                "position": 1
+                              }
+                            ]
+                          },
+                          "width": 22,
+                          "height": 7
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "WXYkj",
+                      "name": "XP texto",
+                      "fill": "$card-ink-5",
+                      "content": "2.230 / 19.450 XP",
+                      "fontFamily": "$font",
+                      "fontSize": 11,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "rectangle",
+              "id": "VDvXk",
+              "name": "Divisor",
+              "fill": "#FFFFFF17",
+              "width": "fill_container",
+              "height": 1
+            },
+            {
+              "type": "frame",
+              "id": "Y0MM3",
+              "name": "Stats",
+              "width": "fill_container",
+              "gap": 12,
+              "justifyContent": "space_between",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "tP5Kt",
+                  "name": "Monedas",
+                  "layout": "vertical",
+                  "gap": 4,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "RWeaL",
+                      "name": "Valor",
+                      "gap": 6,
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "ellipse",
+                          "id": "AT0NE",
+                          "name": "Moneda",
+                          "fill": {
+                            "type": "gradient",
+                            "gradientType": "radial",
+                            "enabled": true,
+                            "rotation": 0,
+                            "size": {
+                              "width": 1,
+                              "height": 1
+                            },
+                            "colors": [
+                              {
+                                "color": "$card-coin-hi",
+                                "position": 0
+                              },
+                              {
+                                "color": "$card-coin",
+                                "position": 0.55
+                              },
+                              {
+                                "color": "$card-coin-lo",
+                                "position": 1
+                              }
+                            ],
+                            "center": {
+                              "x": 0.32,
+                              "y": 0.28
+                            }
+                          },
+                          "width": 20,
+                          "height": 20,
+                          "stroke": "#FFFFFF59",
+                          "strokeWidth": 1.5
+                        },
+                        {
+                          "type": "text",
+                          "id": "Plul7",
+                          "name": "n",
+                          "fill": "$card-coin",
+                          "content": "115",
+                          "fontFamily": "$font",
+                          "fontSize": 20,
+                          "fontWeight": "800"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "gPPzB",
+                      "name": "Label",
+                      "fill": "$card-ink-5",
+                      "content": "Monedas",
+                      "fontFamily": "$font",
+                      "fontSize": 11,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "vvBay",
+                  "name": "Racha",
+                  "stroke": "#FFFFFF17",
+                  "strokeWidth": {
+                    "left": 1
+                  },
+                  "layout": "vertical",
+                  "gap": 4,
+                  "padding": [
+                    0,
+                    0,
+                    0,
+                    12
+                  ],
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "augmC",
+                      "name": "Valor",
+                      "gap": 6,
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "path",
+                          "id": "DbMRF",
+                          "name": "Llama",
+                          "geometry": "M8.5 14.5a2.5 2.5 0 0 0 2.5-2.5c0-1.38-0.5-2-1-3-1.07-2.14-0.22-4.05 2-6 0.5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.15 0.43-2.29 1-3a2.5 2.5 0 0 0 2.5 2.5z",
+                          "viewBox": [
+                            0,
+                            0,
+                            24,
+                            24
+                          ],
+                          "fill": "$card-flame",
+                          "width": 18,
+                          "height": 18
+                        },
+                        {
+                          "type": "text",
+                          "id": "yYIPU",
+                          "name": "n",
+                          "fill": "$card-flame",
+                          "content": "7",
+                          "fontFamily": "$font",
+                          "fontSize": 20,
+                          "fontWeight": "800"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "G3E2d6",
+                      "name": "Label",
+                      "fill": "$card-ink-5",
+                      "content": "Racha",
+                      "fontFamily": "$font",
+                      "fontSize": 11,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "VbOmV",
+                  "name": "Recompensa",
+                  "stroke": "#FFFFFF17",
+                  "strokeWidth": {
+                    "left": 1
+                  },
+                  "layout": "vertical",
+                  "gap": 6,
+                  "padding": [
+                    0,
+                    0,
+                    0,
+                    12
+                  ],
+                  "alignItems": "end",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "dMwyS",
+                      "name": "Vence",
+                      "fill": "$card-ink-5",
+                      "content": "Vence en 2h 59m",
+                      "fontFamily": "$font",
+                      "fontSize": 11,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "z613Q",
+                      "name": "CTA",
+                      "fill": "$card-violet",
+                      "cornerRadius": 999,
+                      "gap": 6,
+                      "padding": [
+                        10,
+                        12
+                      ],
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "zPS85",
+                          "name": "Label",
+                          "fill": "$text",
+                          "content": "Reclamar +75",
+                          "fontFamily": "$font",
+                          "fontSize": 13,
+                          "fontWeight": "700"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "xvLdQ",
+              "name": "Pie",
+              "width": "fill_container",
+              "justifyContent": "space_between",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "SrGxD",
+                  "name": "Marco",
+                  "fill": "$card-ink-4",
+                  "content": "Marco · Neón Idilio",
+                  "fontFamily": "$font",
+                  "fontSize": 12,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "lF2iw",
+                  "name": "Perfil",
+                  "fill": "$card-lila",
+                  "content": "Ver perfil",
+                  "fontFamily": "$font",
+                  "fontSize": 12,
+                  "fontWeight": "600"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "n4q0R",
+      "x": 470,
+      "y": 964,
+      "name": "05 · Tarjeta · invitado",
+      "clip": true,
+      "width": 390,
+      "height": 844,
+      "fill": "$bg",
+      "layout": "none",
+      "children": [
+        {
+          "type": "rectangle",
+          "id": "y4zJR",
+          "x": 0,
+          "y": 0,
+          "name": "Fotograma",
+          "fill": {
+            "type": "image",
+            "enabled": true,
+            "url": "../public/episodio-13-cap.jpg",
+            "mode": "fill"
+          },
+          "width": 390,
+          "height": 594
+        },
+        {
+          "type": "rectangle",
+          "id": "mmnSv",
+          "x": 0,
+          "y": 350,
+          "name": "Piso oscuro",
+          "fill": {
+            "type": "gradient",
+            "gradientType": "linear",
+            "enabled": true,
+            "rotation": 180,
+            "size": {
+              "height": 1
+            },
+            "colors": [
+              {
+                "color": "#00000000",
+                "position": 0
+              },
+              {
+                "color": "#000000E6",
+                "position": 1
+              }
+            ]
+          },
+          "width": 390,
+          "height": 244
+        },
+        {
+          "type": "frame",
+          "id": "b9YJU2",
+          "x": 16,
+          "y": 470,
+          "name": "Contexto",
+          "layout": "vertical",
+          "gap": 4,
+          "children": [
+            {
+              "type": "text",
+              "id": "K6FCA",
+              "name": "Capítulo",
+              "fill": "$text",
+              "content": "Capítulo 13",
+              "fontFamily": "$font",
+              "fontSize": 14,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "text",
+              "id": "OQdYr",
+              "name": "Serie",
+              "fill": "$text",
+              "content": "Mi Mejor Pasajera",
+              "fontFamily": "$font",
+              "fontSize": 18,
+              "fontWeight": "700"
+            }
+          ]
+        },
+        {
+          "type": "rectangle",
+          "id": "s7SgD",
+          "x": 0,
+          "y": 588,
+          "name": "Scrubber",
+          "fill": "#FFFFFF33",
+          "width": 390,
+          "height": 2
+        },
+        {
+          "type": "rectangle",
+          "id": "wZGF7",
+          "x": 0,
+          "y": 588,
+          "name": "Scrubber lleno",
+          "fill": "$text",
+          "width": 130,
+          "height": 2
+        },
+        {
+          "type": "frame",
+          "id": "j9tGFd",
+          "x": 12,
+          "y": 592,
+          "name": "Tarjeta",
+          "width": 366,
+          "height": 240,
+          "fill": {
+            "type": "gradient",
+            "gradientType": "linear",
+            "enabled": true,
+            "rotation": 180,
+            "size": {
+              "height": 1
+            },
+            "colors": [
+              {
+                "color": "$card-top",
+                "position": 0
+              },
+              {
+                "color": "$card-bottom",
+                "position": 1
+              }
+            ]
+          },
+          "cornerRadius": 22,
+          "stroke": "#A855F757",
+          "strokeWidth": 1,
+          "layout": "vertical",
+          "gap": 14,
+          "padding": [
+            16,
+            16,
+            14,
+            16
+          ],
+          "children": [
+            {
+              "type": "frame",
+              "id": "AqZpi",
+              "name": "Identidad",
+              "width": "fill_container",
+              "gap": 14,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "Hca4Y",
+                  "name": "Avatar",
+                  "width": 76,
+                  "height": 76,
+                  "fill": {
+                    "type": "gradient",
+                    "gradientType": "linear",
+                    "enabled": true,
+                    "rotation": 315,
+                    "size": {
+                      "height": 1
+                    },
+                    "colors": [
+                      {
+                        "color": "#4b4b55",
+                        "position": 0
+                      },
+                      {
+                        "color": "#2a2a31",
+                        "position": 1
+                      }
+                    ]
+                  },
+                  "cornerRadius": 999,
+                  "padding": 3,
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "mC3vk",
+                      "name": "Interior",
+                      "width": 70,
+                      "height": 70,
+                      "fill": "$card-avatar-inner",
+                      "cornerRadius": 999,
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "l2Ia4D",
+                          "name": "Inicial",
+                          "fill": "$card-ink-4",
+                          "content": "?",
+                          "fontFamily": "$font",
+                          "fontSize": 28,
+                          "fontWeight": "700"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "v8lrzb",
+                  "name": "Datos",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 6,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "SW4Xk",
+                      "name": "Nombre",
+                      "fill": "$text",
+                      "content": "Invitado",
+                      "fontFamily": "$font",
+                      "fontSize": 19,
+                      "fontWeight": "700"
+                    },
+                    {
+                      "type": "text",
+                      "id": "hx0pF",
+                      "name": "Sub",
+                      "fill": "$card-ink-3",
+                      "content": "Tu racha vive en este teléfono",
+                      "fontFamily": "$font",
+                      "fontSize": 13,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "rectangle",
+              "id": "PSAWH",
+              "name": "Divisor",
+              "fill": "#FFFFFF17",
+              "width": "fill_container",
+              "height": 1
+            },
+            {
+              "type": "frame",
+              "id": "BGOMH",
+              "name": "Stats",
+              "width": "fill_container",
+              "gap": 12,
+              "justifyContent": "space_between",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "MEbP2",
+                  "name": "Monedas",
+                  "layout": "vertical",
+                  "gap": 4,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "vFjnY",
+                      "name": "Valor",
+                      "gap": 6,
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "ellipse",
+                          "id": "XXNmP",
+                          "name": "Moneda",
+                          "fill": {
+                            "type": "gradient",
+                            "gradientType": "radial",
+                            "enabled": true,
+                            "rotation": 0,
+                            "size": {
+                              "width": 1,
+                              "height": 1
+                            },
+                            "colors": [
+                              {
+                                "color": "$card-coin-hi",
+                                "position": 0
+                              },
+                              {
+                                "color": "$card-coin",
+                                "position": 0.55
+                              },
+                              {
+                                "color": "$card-coin-lo",
+                                "position": 1
+                              }
+                            ],
+                            "center": {
+                              "x": 0.32,
+                              "y": 0.28
+                            }
+                          },
+                          "width": 20,
+                          "height": 20,
+                          "stroke": "#FFFFFF59",
+                          "strokeWidth": 1.5
+                        },
+                        {
+                          "type": "text",
+                          "id": "Tfljd",
+                          "name": "n",
+                          "fill": "$card-coin",
+                          "content": "115",
+                          "fontFamily": "$font",
+                          "fontSize": 20,
+                          "fontWeight": "800"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "Lj9eS",
+                      "name": "Label",
+                      "fill": "$card-ink-5",
+                      "content": "Monedas",
+                      "fontFamily": "$font",
+                      "fontSize": 11,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "YZ2uR",
+                  "name": "Racha",
+                  "stroke": "#FFFFFF17",
+                  "strokeWidth": {
+                    "left": 1
+                  },
+                  "layout": "vertical",
+                  "gap": 4,
+                  "padding": [
+                    0,
+                    0,
+                    0,
+                    12
+                  ],
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "ksFKF",
+                      "name": "Valor",
+                      "gap": 6,
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "path",
+                          "id": "P6i5B",
+                          "name": "Llama",
+                          "geometry": "M8.5 14.5a2.5 2.5 0 0 0 2.5-2.5c0-1.38-0.5-2-1-3-1.07-2.14-0.22-4.05 2-6 0.5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.15 0.43-2.29 1-3a2.5 2.5 0 0 0 2.5 2.5z",
+                          "viewBox": [
+                            0,
+                            0,
+                            24,
+                            24
+                          ],
+                          "fill": "$card-flame",
+                          "width": 18,
+                          "height": 18
+                        },
+                        {
+                          "type": "text",
+                          "id": "n0Olk",
+                          "name": "n",
+                          "fill": "$card-flame",
+                          "content": "7",
+                          "fontFamily": "$font",
+                          "fontSize": 20,
+                          "fontWeight": "800"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "anfAr",
+                      "name": "Label",
+                      "fill": "$card-ink-5",
+                      "content": "Racha",
+                      "fontFamily": "$font",
+                      "fontSize": 11,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "FO8k1",
+                  "name": "Recompensa",
+                  "stroke": "#FFFFFF17",
+                  "strokeWidth": {
+                    "left": 1
+                  },
+                  "layout": "vertical",
+                  "gap": 6,
+                  "padding": [
+                    0,
+                    0,
+                    0,
+                    12
+                  ],
+                  "alignItems": "end",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "O0F1v",
+                      "name": "Vence",
+                      "fill": "$card-ink-5",
+                      "content": "Vence en 2h 59m",
+                      "fontFamily": "$font",
+                      "fontSize": 11,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "mP7oR",
+                      "name": "CTA",
+                      "fill": "$card-violet",
+                      "cornerRadius": 999,
+                      "gap": 6,
+                      "padding": [
+                        10,
+                        12
+                      ],
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "j8zRE",
+                          "name": "Label",
+                          "fill": "$text",
+                          "content": "Reclamar +75",
+                          "fontFamily": "$font",
+                          "fontSize": 13,
+                          "fontWeight": "700"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "ltgTJ",
+              "name": "Pie",
+              "width": "fill_container",
+              "justifyContent": "space_between",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "FgvO2",
+                  "name": "Marco",
+                  "fill": "$card-ink-4",
+                  "content": "Sin cuenta",
+                  "fontFamily": "$font",
+                  "fontSize": 12,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "q0wSpT",
+                  "name": "Perfil",
+                  "fill": "$card-lila",
+                  "content": "Crear cuenta",
+                  "fontFamily": "$font",
+                  "fontSize": 12,
+                  "fontWeight": "600"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "C79ca",
+      "x": 0,
+      "y": 1928,
+      "name": "07 · Hoja · wallet",
+      "clip": true,
+      "width": 390,
+      "height": 844,
+      "fill": "$bg",
+      "layout": "none",
+      "children": [
+        {
+          "type": "rectangle",
+          "id": "YXxB6",
+          "x": 0,
+          "y": 0,
+          "name": "Fotograma",
+          "fill": {
+            "type": "image",
+            "enabled": true,
+            "url": "../public/episodio-13-cap.jpg",
+            "mode": "fill"
+          },
+          "width": 390,
+          "height": 844
+        },
+        {
+          "type": "rectangle",
+          "id": "LUAKt",
+          "x": 0,
+          "y": 0,
+          "name": "Velo",
+          "fill": "#0403069E",
+          "width": 390,
+          "height": 844
+        },
+        {
+          "type": "frame",
+          "id": "uEfwk",
+          "x": 0,
+          "y": 286,
+          "name": "Hoja",
+          "width": 390,
+          "fill": "$card-sheet",
+          "cornerRadius": [
+            26,
+            26,
+            0,
+            0
+          ],
+          "stroke": "#A855F766",
+          "strokeWidth": {
+            "top": 1
+          },
+          "layout": "vertical",
+          "gap": 16,
+          "padding": [
+            20,
+            20,
+            28,
+            20
+          ],
+          "children": [
+            {
+              "type": "rectangle",
+              "cornerRadius": 3,
+              "id": "tIPOd",
+              "name": "Handle",
+              "fill": "#FFFFFF33",
+              "width": 44,
+              "height": 4
+            },
+            {
+              "type": "frame",
+              "id": "JoQ43",
+              "name": "Encabezado",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 4,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "vnQNr",
+                  "name": "Kicker",
+                  "fill": "$card-violet-2",
+                  "content": "WALLET",
+                  "fontFamily": "$font",
+                  "fontSize": 11,
+                  "fontWeight": "700"
+                },
+                {
+                  "type": "text",
+                  "id": "NpcUd",
+                  "name": "Titulo",
+                  "fill": "$text",
+                  "content": "115 monedas",
+                  "fontFamily": "$font",
+                  "fontSize": 22,
+                  "fontWeight": "700"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "uNXFM",
+              "name": "Paquetes",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 8,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "PXJs6",
+                  "name": "Paquete 180",
+                  "width": "fill_container",
+                  "fill": "#A855F71A",
+                  "cornerRadius": 14,
+                  "stroke": "#A855F757",
+                  "strokeWidth": 1,
+                  "padding": [
+                    13,
+                    14
+                  ],
+                  "justifyContent": "space_between",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "zxwjl",
+                      "name": "Izq",
+                      "gap": 8,
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "ellipse",
+                          "id": "f7TfID",
+                          "name": "Moneda",
+                          "fill": {
+                            "type": "gradient",
+                            "gradientType": "radial",
+                            "enabled": true,
+                            "rotation": 0,
+                            "size": {
+                              "width": 1,
+                              "height": 1
+                            },
+                            "colors": [
+                              {
+                                "color": "$card-coin-hi",
+                                "position": 0
+                              },
+                              {
+                                "color": "$card-coin",
+                                "position": 0.55
+                              },
+                              {
+                                "color": "$card-coin-lo",
+                                "position": 1
+                              }
+                            ],
+                            "center": {
+                              "x": 0.32,
+                              "y": 0.28
+                            }
+                          },
+                          "width": 20,
+                          "height": 20,
+                          "stroke": "#FFFFFF59",
+                          "strokeWidth": 1.5
+                        },
+                        {
+                          "type": "text",
+                          "id": "s4nUk",
+                          "name": "n",
+                          "fill": "$card-coin",
+                          "content": "180",
+                          "fontFamily": "$font",
+                          "fontSize": 17,
+                          "fontWeight": "800"
+                        },
+                        {
+                          "type": "frame",
+                          "id": "anyTx",
+                          "name": "Off",
+                          "fill": "$card-violet",
+                          "cornerRadius": 999,
+                          "padding": [
+                            2,
+                            8
+                          ],
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "USWyt",
+                              "name": "pct",
+                              "fill": "$text",
+                              "content": "−69%",
+                              "fontFamily": "$font",
+                              "fontSize": 10,
+                              "fontWeight": "700"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "EaZgf",
+                      "name": "Precio",
+                      "fill": "$text",
+                      "content": "$ 2.500",
+                      "fontFamily": "$font",
+                      "fontSize": 14,
+                      "fontWeight": "700"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "ytYrJ",
+                  "name": "Paquete 375",
+                  "width": "fill_container",
+                  "fill": "#A855F71A",
+                  "cornerRadius": 14,
+                  "stroke": "#A855F757",
+                  "strokeWidth": 1,
+                  "padding": [
+                    13,
+                    14
+                  ],
+                  "justifyContent": "space_between",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "K856c",
+                      "name": "Izq",
+                      "gap": 8,
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "ellipse",
+                          "id": "lk6jo",
+                          "name": "Moneda",
+                          "fill": {
+                            "type": "gradient",
+                            "gradientType": "radial",
+                            "enabled": true,
+                            "rotation": 0,
+                            "size": {
+                              "width": 1,
+                              "height": 1
+                            },
+                            "colors": [
+                              {
+                                "color": "$card-coin-hi",
+                                "position": 0
+                              },
+                              {
+                                "color": "$card-coin",
+                                "position": 0.55
+                              },
+                              {
+                                "color": "$card-coin-lo",
+                                "position": 1
+                              }
+                            ],
+                            "center": {
+                              "x": 0.32,
+                              "y": 0.28
+                            }
+                          },
+                          "width": 20,
+                          "height": 20,
+                          "stroke": "#FFFFFF59",
+                          "strokeWidth": 1.5
+                        },
+                        {
+                          "type": "text",
+                          "id": "bpJrQ",
+                          "name": "n",
+                          "fill": "$card-coin",
+                          "content": "375",
+                          "fontFamily": "$font",
+                          "fontSize": 17,
+                          "fontWeight": "800"
+                        },
+                        {
+                          "type": "frame",
+                          "id": "o2nTB",
+                          "name": "Off",
+                          "fill": "$card-violet",
+                          "cornerRadius": 999,
+                          "padding": [
+                            2,
+                            8
+                          ],
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "xaPpQ",
+                              "name": "pct",
+                              "fill": "$text",
+                              "content": "−20%",
+                              "fontFamily": "$font",
+                              "fontSize": 10,
+                              "fontWeight": "700"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "aN5UN",
+                      "name": "Precio",
+                      "fill": "$text",
+                      "content": "$ 13.500",
+                      "fontFamily": "$font",
+                      "fontSize": 14,
+                      "fontWeight": "700"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "YRM6Y",
+                  "name": "Paquete 725",
+                  "width": "fill_container",
+                  "fill": "#A855F71A",
+                  "cornerRadius": 14,
+                  "stroke": "#A855F757",
+                  "strokeWidth": 1,
+                  "padding": [
+                    13,
+                    14
+                  ],
+                  "justifyContent": "space_between",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "SkigS",
+                      "name": "Izq",
+                      "gap": 8,
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "ellipse",
+                          "id": "oajHj",
+                          "name": "Moneda",
+                          "fill": {
+                            "type": "gradient",
+                            "gradientType": "radial",
+                            "enabled": true,
+                            "rotation": 0,
+                            "size": {
+                              "width": 1,
+                              "height": 1
+                            },
+                            "colors": [
+                              {
+                                "color": "$card-coin-hi",
+                                "position": 0
+                              },
+                              {
+                                "color": "$card-coin",
+                                "position": 0.55
+                              },
+                              {
+                                "color": "$card-coin-lo",
+                                "position": 1
+                              }
+                            ],
+                            "center": {
+                              "x": 0.32,
+                              "y": 0.28
+                            }
+                          },
+                          "width": 20,
+                          "height": 20,
+                          "stroke": "#FFFFFF59",
+                          "strokeWidth": 1.5
+                        },
+                        {
+                          "type": "text",
+                          "id": "vhY4x",
+                          "name": "n",
+                          "fill": "$card-coin",
+                          "content": "725",
+                          "fontFamily": "$font",
+                          "fontSize": 17,
+                          "fontWeight": "800"
+                        },
+                        {
+                          "type": "frame",
+                          "id": "s4CfL",
+                          "name": "Off",
+                          "fill": "$card-violet",
+                          "cornerRadius": 999,
+                          "padding": [
+                            2,
+                            8
+                          ],
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "WucUo",
+                              "name": "pct",
+                              "fill": "$text",
+                              "content": "−24%",
+                              "fontFamily": "$font",
+                              "fontSize": 10,
+                              "fontWeight": "700"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "nvdtj",
+                      "name": "Precio",
+                      "fill": "$text",
+                      "content": "$ 25.500",
+                      "fontFamily": "$font",
+                      "fontSize": 14,
+                      "fontWeight": "700"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "M9qFS",
+              "name": "Gratis",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 8,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "F3GJ5t",
+                  "name": "Kicker2",
+                  "fill": "$card-ink-5",
+                  "content": "O GÁNALAS",
+                  "fontFamily": "$font",
+                  "fontSize": 11,
+                  "fontWeight": "700"
+                },
+                {
+                  "type": "frame",
+                  "id": "sSW71",
+                  "name": "Recompensa diaria",
+                  "width": "fill_container",
+                  "fill": "#FFFFFF0D",
+                  "cornerRadius": 14,
+                  "stroke": "#FFFFFF12",
+                  "strokeWidth": 1,
+                  "padding": [
+                    13,
+                    14
+                  ],
+                  "justifyContent": "space_between",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "su06E",
+                      "name": "Label",
+                      "fill": "$card-ink",
+                      "content": "Recompensa diaria",
+                      "fontFamily": "$font",
+                      "fontSize": 14,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "MD6gA",
+                      "name": "Valor",
+                      "fill": "$card-coin",
+                      "content": "+75",
+                      "fontFamily": "$font",
+                      "fontSize": 14,
+                      "fontWeight": "700"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "qQMzH",
+                  "name": "Por capítulo completado",
+                  "width": "fill_container",
+                  "fill": "#FFFFFF0D",
+                  "cornerRadius": 14,
+                  "stroke": "#FFFFFF12",
+                  "strokeWidth": 1,
+                  "padding": [
+                    13,
+                    14
+                  ],
+                  "justifyContent": "space_between",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "U7EKSE",
+                      "name": "Label",
+                      "fill": "$card-ink",
+                      "content": "Por capítulo completado",
+                      "fontFamily": "$font",
+                      "fontSize": 14,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "wlWGN",
+                      "name": "Valor",
+                      "fill": "$card-coin",
+                      "content": "+10",
+                      "fontFamily": "$font",
+                      "fontSize": 14,
+                      "fontWeight": "700"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "EXI4Q",
+                  "name": "Predicción acertada",
+                  "width": "fill_container",
+                  "fill": "#FFFFFF0D",
+                  "cornerRadius": 14,
+                  "stroke": "#FFFFFF12",
+                  "strokeWidth": 1,
+                  "padding": [
+                    13,
+                    14
+                  ],
+                  "justifyContent": "space_between",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "HlpeQ",
+                      "name": "Label",
+                      "fill": "$card-ink",
+                      "content": "Predicción acertada",
+                      "fontFamily": "$font",
+                      "fontSize": 14,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "C1zmf",
+                      "name": "Valor",
+                      "fill": "$card-coin",
+                      "content": "+20",
+                      "fontFamily": "$font",
+                      "fontSize": 14,
+                      "fontWeight": "700"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "DWGm7",
+                  "name": "Costo de un capítulo",
+                  "width": "fill_container",
+                  "fill": "#FFFFFF0D",
+                  "cornerRadius": 14,
+                  "stroke": "#FFFFFF12",
+                  "strokeWidth": 1,
+                  "padding": [
+                    13,
+                    14
+                  ],
+                  "justifyContent": "space_between",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "s4kk9",
+                      "name": "Label",
+                      "fill": "$card-ink",
+                      "content": "Costo de un capítulo",
+                      "fontFamily": "$font",
+                      "fontSize": 14,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "Plaoy",
+                      "name": "Valor",
+                      "fill": "$text",
+                      "content": "15",
+                      "fontFamily": "$font",
+                      "fontSize": 14,
+                      "fontWeight": "700"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "pObdy",
+      "x": 470,
+      "y": 0,
+      "name": "02 · Barra · reclamada",
+      "clip": true,
+      "width": 390,
+      "height": 844,
+      "fill": "$bg",
+      "layout": "none",
+      "children": [
+        {
+          "type": "rectangle",
+          "id": "b26Qfe",
+          "x": 0,
+          "y": 0,
+          "name": "Fotograma",
+          "fill": {
+            "type": "image",
+            "enabled": true,
+            "url": "../public/episodio-13-cap.jpg",
+            "mode": "fill"
+          },
+          "width": 390,
+          "height": 768
+        },
+        {
+          "type": "rectangle",
+          "id": "BQCef",
+          "x": 0,
+          "y": 468,
+          "name": "Piso oscuro",
+          "fill": {
+            "type": "gradient",
+            "gradientType": "linear",
+            "enabled": true,
+            "rotation": 180,
+            "size": {
+              "height": 1
+            },
+            "colors": [
+              {
+                "color": "#00000000",
+                "position": 0
+              },
+              {
+                "color": "#000000E6",
+                "position": 1
+              }
+            ]
+          },
+          "width": 390,
+          "height": 300
+        },
+        {
+          "type": "frame",
+          "id": "u6t3c",
+          "x": 16,
+          "y": 600,
+          "name": "Contexto",
+          "layout": "vertical",
+          "gap": 4,
+          "children": [
+            {
+              "type": "text",
+              "id": "zok9E",
+              "name": "Capítulo",
+              "fill": "$text",
+              "content": "Capítulo 13",
+              "fontFamily": "$font",
+              "fontSize": 14,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "text",
+              "id": "V4hZJr",
+              "name": "Serie",
+              "fill": "$text",
+              "content": "Mi Mejor Pasajera",
+              "fontFamily": "$font",
+              "fontSize": 18,
+              "fontWeight": "700"
+            },
+            {
+              "type": "text",
+              "id": "U8Ujn",
+              "name": "Progreso",
+              "fill": "$text-2",
+              "content": "Capítulo 13 de 56",
+              "fontFamily": "$font",
+              "fontSize": 12,
+              "fontWeight": "normal"
+            }
+          ]
+        },
+        {
+          "type": "rectangle",
+          "id": "e6BVS",
+          "x": 0,
+          "y": 762,
+          "name": "Scrubber",
+          "fill": "#FFFFFF33",
+          "width": 390,
+          "height": 2
+        },
+        {
+          "type": "rectangle",
+          "id": "EMlAw",
+          "x": 0,
+          "y": 762,
+          "name": "Scrubber lleno",
+          "fill": "$text",
+          "width": 130,
+          "height": 2
+        },
+        {
+          "type": "frame",
+          "id": "P252W",
+          "x": 10,
+          "y": 776,
+          "name": "Barra colapsada",
+          "width": 370,
+          "height": 56,
+          "fill": {
+            "type": "gradient",
+            "gradientType": "linear",
+            "enabled": true,
+            "rotation": 180,
+            "size": {
+              "height": 1
+            },
+            "colors": [
+              {
+                "color": "$card-bar-top",
+                "position": 0
+              },
+              {
+                "color": "$card-bar-bottom",
+                "position": 1
+              }
+            ]
+          },
+          "cornerRadius": 18,
+          "stroke": "#A855F74D",
+          "strokeWidth": 1,
+          "gap": 12,
+          "padding": [
+            0,
+            14
+          ],
+          "justifyContent": "space_between",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "G8kpF",
+              "name": "Avatar",
+              "width": 36,
+              "height": 36,
+              "fill": {
+                "type": "gradient",
+                "gradientType": "linear",
+                "enabled": true,
+                "rotation": 315,
+                "size": {
+                  "height": 1
+                },
+                "colors": [
+                  {
+                    "color": "$card-lila",
+                    "position": 0
+                  },
+                  {
+                    "color": "$card-violet",
+                    "position": 1
+                  }
+                ]
+              },
+              "cornerRadius": 999,
+              "padding": 2,
+              "justifyContent": "center",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "cFWzj",
+                  "name": "Interior",
+                  "width": 32,
+                  "height": 32,
+                  "fill": "$card-avatar-inner",
+                  "cornerRadius": 999,
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "UNZy9",
+                      "name": "Inicial",
+                      "fill": "$card-lila",
+                      "content": "J",
+                      "fontFamily": "$font",
+                      "fontSize": 13,
+                      "fontWeight": "700"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "wSSlk",
+              "name": "Identidad",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 4,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "f5T4GV",
+                  "name": "Nombre",
+                  "gap": 8,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "c8ZNsk",
+                      "name": "Usuario",
+                      "fill": "$text",
+                      "content": "@juanesp",
+                      "fontFamily": "$font",
+                      "fontSize": 13,
+                      "fontWeight": "700"
+                    },
+                    {
+                      "type": "text",
+                      "id": "ReLcK",
+                      "name": "Nivel",
+                      "fill": "$card-lila",
+                      "content": "Nv 5",
+                      "fontFamily": "$font",
+                      "fontSize": 11,
+                      "fontWeight": "700"
+                    }
+                  ]
+                },
+                {
+                  "type": "rectangle",
+                  "cornerRadius": 999,
+                  "id": "bF15U",
+                  "name": "XP track",
+                  "fill": "#FFFFFF24",
+                  "width": 190,
+                  "height": 3
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "RYotq",
+              "name": "Stats",
+              "gap": 10,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "BAnoP",
+                  "name": "Monedas",
+                  "gap": 4,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "ellipse",
+                      "id": "BBo7d",
+                      "name": "Moneda",
+                      "fill": {
+                        "type": "gradient",
+                        "gradientType": "radial",
+                        "enabled": true,
+                        "rotation": 0,
+                        "size": {
+                          "width": 1,
+                          "height": 1
+                        },
+                        "colors": [
+                          {
+                            "color": "$card-coin-hi",
+                            "position": 0
+                          },
+                          {
+                            "color": "$card-coin",
+                            "position": 0.55
+                          },
+                          {
+                            "color": "$card-coin-lo",
+                            "position": 1
+                          }
+                        ],
+                        "center": {
+                          "x": 0.32,
+                          "y": 0.28
+                        }
+                      },
+                      "width": 16,
+                      "height": 16,
+                      "stroke": "#FFFFFF59",
+                      "strokeWidth": 1.5
+                    },
+                    {
+                      "type": "text",
+                      "id": "l1nwz",
+                      "name": "Saldo",
+                      "fill": "$card-coin",
+                      "content": "115",
+                      "fontFamily": "$font",
+                      "fontSize": 13,
+                      "fontWeight": "700"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "dluM8",
+                  "name": "Racha",
+                  "gap": 4,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "path",
+                      "id": "VE8rh",
+                      "name": "Llama",
+                      "geometry": "M8.5 14.5a2.5 2.5 0 0 0 2.5-2.5c0-1.38-0.5-2-1-3-1.07-2.14-0.22-4.05 2-6 0.5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.15 0.43-2.29 1-3a2.5 2.5 0 0 0 2.5 2.5z",
+                      "viewBox": [
+                        0,
+                        0,
+                        24,
+                        24
+                      ],
+                      "fill": "$card-flame",
+                      "width": 14,
+                      "height": 14
+                    },
+                    {
+                      "type": "text",
+                      "id": "A2uNk",
+                      "name": "Días",
+                      "fill": "$card-flame",
+                      "content": "7",
+                      "fontFamily": "$font",
+                      "fontSize": 13,
+                      "fontWeight": "700"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "ttLuj",
+      "x": 940,
+      "y": 0,
+      "name": "03 · Barra · invitado",
+      "clip": true,
+      "width": 390,
+      "height": 844,
+      "fill": "$bg",
+      "layout": "none",
+      "children": [
+        {
+          "type": "rectangle",
+          "id": "KwDBI",
+          "x": 0,
+          "y": 0,
+          "name": "Fotograma",
+          "fill": {
+            "type": "image",
+            "enabled": true,
+            "url": "../public/episodio-13-cap.jpg",
+            "mode": "fill"
+          },
+          "width": 390,
+          "height": 768
+        },
+        {
+          "type": "rectangle",
+          "id": "G3qls",
+          "x": 0,
+          "y": 468,
+          "name": "Piso oscuro",
+          "fill": {
+            "type": "gradient",
+            "gradientType": "linear",
+            "enabled": true,
+            "rotation": 180,
+            "size": {
+              "height": 1
+            },
+            "colors": [
+              {
+                "color": "#00000000",
+                "position": 0
+              },
+              {
+                "color": "#000000E6",
+                "position": 1
+              }
+            ]
+          },
+          "width": 390,
+          "height": 300
+        },
+        {
+          "type": "frame",
+          "id": "VuKCI",
+          "x": 16,
+          "y": 600,
+          "name": "Contexto",
+          "layout": "vertical",
+          "gap": 4,
+          "children": [
+            {
+              "type": "text",
+              "id": "x5a39",
+              "name": "Capítulo",
+              "fill": "$text",
+              "content": "Capítulo 13",
+              "fontFamily": "$font",
+              "fontSize": 14,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "text",
+              "id": "ON821",
+              "name": "Serie",
+              "fill": "$text",
+              "content": "Mi Mejor Pasajera",
+              "fontFamily": "$font",
+              "fontSize": 18,
+              "fontWeight": "700"
+            },
+            {
+              "type": "text",
+              "id": "s4VLWI",
+              "name": "Progreso",
+              "fill": "$text-2",
+              "content": "Capítulo 13 de 56",
+              "fontFamily": "$font",
+              "fontSize": 12,
+              "fontWeight": "normal"
+            }
+          ]
+        },
+        {
+          "type": "rectangle",
+          "id": "IczeA",
+          "x": 0,
+          "y": 762,
+          "name": "Scrubber",
+          "fill": "#FFFFFF33",
+          "width": 390,
+          "height": 2
+        },
+        {
+          "type": "rectangle",
+          "id": "UcXyv",
+          "x": 0,
+          "y": 762,
+          "name": "Scrubber lleno",
+          "fill": "$text",
+          "width": 130,
+          "height": 2
+        },
+        {
+          "type": "frame",
+          "id": "Z6fHC6",
+          "x": 10,
+          "y": 776,
+          "name": "Barra colapsada",
+          "width": 370,
+          "height": 56,
+          "fill": {
+            "type": "gradient",
+            "gradientType": "linear",
+            "enabled": true,
+            "rotation": 180,
+            "size": {
+              "height": 1
+            },
+            "colors": [
+              {
+                "color": "$card-bar-top",
+                "position": 0
+              },
+              {
+                "color": "$card-bar-bottom",
+                "position": 1
+              }
+            ]
+          },
+          "cornerRadius": 18,
+          "stroke": "#A855F74D",
+          "strokeWidth": 1,
+          "gap": 12,
+          "padding": [
+            0,
+            14
+          ],
+          "justifyContent": "space_between",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "S8NtHL",
+              "name": "Avatar",
+              "width": 36,
+              "height": 36,
+              "fill": {
+                "type": "gradient",
+                "gradientType": "linear",
+                "enabled": true,
+                "rotation": 315,
+                "size": {
+                  "height": 1
+                },
+                "colors": [
+                  {
+                    "color": "#4b4b55",
+                    "position": 0
+                  },
+                  {
+                    "color": "#2a2a31",
+                    "position": 1
+                  }
+                ]
+              },
+              "cornerRadius": 999,
+              "padding": 2,
+              "justifyContent": "center",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "JXol9",
+                  "name": "Interior",
+                  "width": 32,
+                  "height": 32,
+                  "fill": "$card-avatar-inner",
+                  "cornerRadius": 999,
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "tsnXQ",
+                      "name": "Inicial",
+                      "fill": "$card-ink-4",
+                      "content": "?",
+                      "fontFamily": "$font",
+                      "fontSize": 13,
+                      "fontWeight": "700"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "O4p99I",
+              "name": "Identidad",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 4,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "T6ziaU",
+                  "name": "Nombre",
+                  "gap": 8,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "ToyKA",
+                      "name": "Usuario",
+                      "fill": "$text",
+                      "content": "Invitado",
+                      "fontFamily": "$font",
+                      "fontSize": 13,
+                      "fontWeight": "700"
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "id": "UiAvI",
+                  "name": "Sub",
+                  "fill": "$card-ink-5",
+                  "content": "Guarda tu racha con una cuenta",
+                  "fontFamily": "$font",
+                  "fontSize": 10,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "i7NI9",
+              "name": "Stats",
+              "gap": 10,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "abPe1",
+                  "name": "Monedas",
+                  "gap": 4,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "ellipse",
+                      "id": "tQOPW",
+                      "name": "Moneda",
+                      "fill": {
+                        "type": "gradient",
+                        "gradientType": "radial",
+                        "enabled": true,
+                        "rotation": 0,
+                        "size": {
+                          "width": 1,
+                          "height": 1
+                        },
+                        "colors": [
+                          {
+                            "color": "$card-coin-hi",
+                            "position": 0
+                          },
+                          {
+                            "color": "$card-coin",
+                            "position": 0.55
+                          },
+                          {
+                            "color": "$card-coin-lo",
+                            "position": 1
+                          }
+                        ],
+                        "center": {
+                          "x": 0.32,
+                          "y": 0.28
+                        }
+                      },
+                      "width": 16,
+                      "height": 16,
+                      "stroke": "#FFFFFF59",
+                      "strokeWidth": 1.5
+                    },
+                    {
+                      "type": "text",
+                      "id": "EqBd7",
+                      "name": "Saldo",
+                      "fill": "$card-coin",
+                      "content": "115",
+                      "fontFamily": "$font",
+                      "fontSize": 13,
+                      "fontWeight": "700"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "etzvR",
+                  "name": "Racha",
+                  "gap": 4,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "path",
+                      "id": "rLy0n",
+                      "name": "Llama",
+                      "geometry": "M8.5 14.5a2.5 2.5 0 0 0 2.5-2.5c0-1.38-0.5-2-1-3-1.07-2.14-0.22-4.05 2-6 0.5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.15 0.43-2.29 1-3a2.5 2.5 0 0 0 2.5 2.5z",
+                      "viewBox": [
+                        0,
+                        0,
+                        24,
+                        24
+                      ],
+                      "fill": "$card-flame",
+                      "width": 14,
+                      "height": 14
+                    },
+                    {
+                      "type": "text",
+                      "id": "nGPKA",
+                      "name": "Días",
+                      "fill": "$card-flame",
+                      "content": "7",
+                      "fontFamily": "$font",
+                      "fontSize": 13,
+                      "fontWeight": "700"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "t8hZ4w",
+                  "name": "Recompensa",
+                  "width": 26,
+                  "height": 26,
+                  "fill": "$card-violet",
+                  "cornerRadius": 9,
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "path",
+                      "id": "vLvKc",
+                      "name": "Regalo",
+                      "geometry": "M3 9h18v3h-18z m9-1v13m7-9v7a2 2 0 0 1-2 2h-10a2 2 0 0 1-2-2v-7m2.5-4a2.5 2.5 0 0 1 0-5c3.5 0 4.5 5 4.5 5s1-5 4.5-5a2.5 2.5 0 0 1 0 5",
+                      "viewBox": [
+                        0,
+                        0,
+                        24,
+                        24
+                      ],
+                      "fill": "#00000000",
+                      "width": 14,
+                      "height": 14,
+                      "stroke": "$text",
+                      "strokeWidth": 2
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "NOb2m",
+      "x": 940,
+      "y": 964,
+      "name": "06 · Tarjeta · reclamada",
+      "clip": true,
+      "width": 390,
+      "height": 844,
+      "fill": "$bg",
+      "layout": "none",
+      "children": [
+        {
+          "type": "rectangle",
+          "id": "ZtuPP",
+          "x": 0,
+          "y": 0,
+          "name": "Fotograma",
+          "fill": {
+            "type": "image",
+            "enabled": true,
+            "url": "../public/episodio-13-cap.jpg",
+            "mode": "fill"
+          },
+          "width": 390,
+          "height": 594
+        },
+        {
+          "type": "rectangle",
+          "id": "exWKF",
+          "x": 0,
+          "y": 350,
+          "name": "Piso oscuro",
+          "fill": {
+            "type": "gradient",
+            "gradientType": "linear",
+            "enabled": true,
+            "rotation": 180,
+            "size": {
+              "height": 1
+            },
+            "colors": [
+              {
+                "color": "#00000000",
+                "position": 0
+              },
+              {
+                "color": "#000000E6",
+                "position": 1
+              }
+            ]
+          },
+          "width": 390,
+          "height": 244
+        },
+        {
+          "type": "frame",
+          "id": "q9j2x",
+          "x": 16,
+          "y": 470,
+          "name": "Contexto",
+          "layout": "vertical",
+          "gap": 4,
+          "children": [
+            {
+              "type": "text",
+              "id": "XYySL",
+              "name": "Capítulo",
+              "fill": "$text",
+              "content": "Capítulo 13",
+              "fontFamily": "$font",
+              "fontSize": 14,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "text",
+              "id": "DlV4m",
+              "name": "Serie",
+              "fill": "$text",
+              "content": "Mi Mejor Pasajera",
+              "fontFamily": "$font",
+              "fontSize": 18,
+              "fontWeight": "700"
+            }
+          ]
+        },
+        {
+          "type": "rectangle",
+          "id": "nZCYN",
+          "x": 0,
+          "y": 588,
+          "name": "Scrubber",
+          "fill": "#FFFFFF33",
+          "width": 390,
+          "height": 2
+        },
+        {
+          "type": "rectangle",
+          "id": "cQMrV",
+          "x": 0,
+          "y": 588,
+          "name": "Scrubber lleno",
+          "fill": "$text",
+          "width": 130,
+          "height": 2
+        },
+        {
+          "type": "frame",
+          "id": "vzK1j",
+          "x": 12,
+          "y": 592,
+          "name": "Tarjeta",
+          "width": 366,
+          "height": 240,
+          "fill": {
+            "type": "gradient",
+            "gradientType": "linear",
+            "enabled": true,
+            "rotation": 180,
+            "size": {
+              "height": 1
+            },
+            "colors": [
+              {
+                "color": "$card-top",
+                "position": 0
+              },
+              {
+                "color": "$card-bottom",
+                "position": 1
+              }
+            ]
+          },
+          "cornerRadius": 22,
+          "stroke": "#A855F757",
+          "strokeWidth": 1,
+          "layout": "vertical",
+          "gap": 14,
+          "padding": [
+            16,
+            16,
+            14,
+            16
+          ],
+          "children": [
+            {
+              "type": "frame",
+              "id": "c2KEc",
+              "name": "Identidad",
+              "width": "fill_container",
+              "gap": 14,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "v0xZju",
+                  "name": "Avatar",
+                  "width": 76,
+                  "height": 76,
+                  "fill": {
+                    "type": "gradient",
+                    "gradientType": "linear",
+                    "enabled": true,
+                    "rotation": 315,
+                    "size": {
+                      "height": 1
+                    },
+                    "colors": [
+                      {
+                        "color": "$card-lila",
+                        "position": 0
+                      },
+                      {
+                        "color": "$card-violet",
+                        "position": 1
+                      }
+                    ]
+                  },
+                  "cornerRadius": 999,
+                  "padding": 3,
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "etulE",
+                      "name": "Interior",
+                      "width": 70,
+                      "height": 70,
+                      "fill": "$card-avatar-inner",
+                      "cornerRadius": 999,
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "a9yyN",
+                          "name": "Inicial",
+                          "fill": "$card-lila",
+                          "content": "J",
+                          "fontFamily": "$font",
+                          "fontSize": 28,
+                          "fontWeight": "700"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "hxwKn",
+                  "name": "Datos",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 6,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "QP2ec",
+                      "name": "Nombre",
+                      "fill": "$text",
+                      "content": "juanesp",
+                      "fontFamily": "$font",
+                      "fontSize": 19,
+                      "fontWeight": "700"
+                    },
+                    {
+                      "type": "text",
+                      "id": "Th7wZ",
+                      "name": "Nivel",
+                      "fill": "$card-ink-3",
+                      "content": "Nivel 5",
+                      "fontFamily": "$font",
+                      "fontSize": 13,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "y7SKY",
+                      "name": "XP",
+                      "width": 190,
+                      "height": 7,
+                      "fill": "#FFFFFF1F",
+                      "cornerRadius": 999,
+                      "layout": "none",
+                      "children": [
+                        {
+                          "type": "rectangle",
+                          "cornerRadius": 999,
+                          "id": "ldgUM",
+                          "x": 0,
+                          "y": 0,
+                          "name": "XP lleno",
+                          "fill": {
+                            "type": "gradient",
+                            "gradientType": "linear",
+                            "enabled": true,
+                            "rotation": 270,
+                            "size": {
+                              "height": 1
+                            },
+                            "colors": [
+                              {
+                                "color": "$card-xp",
+                                "position": 0
+                              },
+                              {
+                                "color": "$card-xp-2",
+                                "position": 1
+                              }
+                            ]
+                          },
+                          "width": 22,
+                          "height": 7
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "cexmi",
+                      "name": "XP texto",
+                      "fill": "$card-ink-5",
+                      "content": "2.230 / 19.450 XP",
+                      "fontFamily": "$font",
+                      "fontSize": 11,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "rectangle",
+              "id": "N5aRG",
+              "name": "Divisor",
+              "fill": "#FFFFFF17",
+              "width": "fill_container",
+              "height": 1
+            },
+            {
+              "type": "frame",
+              "id": "oKJyh",
+              "name": "Stats",
+              "width": "fill_container",
+              "gap": 12,
+              "justifyContent": "space_between",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "wS22k",
+                  "name": "Monedas",
+                  "layout": "vertical",
+                  "gap": 4,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "xje82",
+                      "name": "Valor",
+                      "gap": 6,
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "ellipse",
+                          "id": "uIKpn",
+                          "name": "Moneda",
+                          "fill": {
+                            "type": "gradient",
+                            "gradientType": "radial",
+                            "enabled": true,
+                            "rotation": 0,
+                            "size": {
+                              "width": 1,
+                              "height": 1
+                            },
+                            "colors": [
+                              {
+                                "color": "$card-coin-hi",
+                                "position": 0
+                              },
+                              {
+                                "color": "$card-coin",
+                                "position": 0.55
+                              },
+                              {
+                                "color": "$card-coin-lo",
+                                "position": 1
+                              }
+                            ],
+                            "center": {
+                              "x": 0.32,
+                              "y": 0.28
+                            }
+                          },
+                          "width": 20,
+                          "height": 20,
+                          "stroke": "#FFFFFF59",
+                          "strokeWidth": 1.5
+                        },
+                        {
+                          "type": "text",
+                          "id": "CLBMo",
+                          "name": "n",
+                          "fill": "$card-coin",
+                          "content": "115",
+                          "fontFamily": "$font",
+                          "fontSize": 20,
+                          "fontWeight": "800"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "i3bhm4",
+                      "name": "Label",
+                      "fill": "$card-ink-5",
+                      "content": "Monedas",
+                      "fontFamily": "$font",
+                      "fontSize": 11,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "dJdJj",
+                  "name": "Racha",
+                  "stroke": "#FFFFFF17",
+                  "strokeWidth": {
+                    "left": 1
+                  },
+                  "layout": "vertical",
+                  "gap": 4,
+                  "padding": [
+                    0,
+                    0,
+                    0,
+                    12
+                  ],
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "zdTRO",
+                      "name": "Valor",
+                      "gap": 6,
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "path",
+                          "id": "P7QOn",
+                          "name": "Llama",
+                          "geometry": "M8.5 14.5a2.5 2.5 0 0 0 2.5-2.5c0-1.38-0.5-2-1-3-1.07-2.14-0.22-4.05 2-6 0.5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.15 0.43-2.29 1-3a2.5 2.5 0 0 0 2.5 2.5z",
+                          "viewBox": [
+                            0,
+                            0,
+                            24,
+                            24
+                          ],
+                          "fill": "$card-flame",
+                          "width": 18,
+                          "height": 18
+                        },
+                        {
+                          "type": "text",
+                          "id": "JICxC",
+                          "name": "n",
+                          "fill": "$card-flame",
+                          "content": "7",
+                          "fontFamily": "$font",
+                          "fontSize": 20,
+                          "fontWeight": "800"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "TryIL",
+                      "name": "Label",
+                      "fill": "$card-ink-5",
+                      "content": "Racha",
+                      "fontFamily": "$font",
+                      "fontSize": 11,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "tmhC6",
+                  "name": "Recompensa",
+                  "stroke": "#FFFFFF17",
+                  "strokeWidth": {
+                    "left": 1
+                  },
+                  "layout": "vertical",
+                  "gap": 6,
+                  "padding": [
+                    0,
+                    0,
+                    0,
+                    12
+                  ],
+                  "alignItems": "end",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "Q73dpK",
+                      "name": "Vence",
+                      "fill": "$card-ink-5",
+                      "content": "Próxima: +100",
+                      "fontFamily": "$font",
+                      "fontSize": 11,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "X5lXtK",
+                      "name": "Reclamada",
+                      "fill": "#FFFFFF0F",
+                      "cornerRadius": 999,
+                      "stroke": "#FFFFFF24",
+                      "strokeWidth": 1,
+                      "padding": [
+                        10,
+                        12
+                      ],
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "P2ZkA0",
+                          "name": "Label",
+                          "fill": "$card-ink-5",
+                          "content": "Reclamada",
+                          "fontFamily": "$font",
+                          "fontSize": 13,
+                          "fontWeight": "700"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "S6mTW6",
+              "name": "Pie",
+              "width": "fill_container",
+              "justifyContent": "space_between",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "l33QG",
+                  "name": "Marco",
+                  "fill": "$card-ink-4",
+                  "content": "Marco · Neón Idilio",
+                  "fontFamily": "$font",
+                  "fontSize": 12,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "TZwt9",
+                  "name": "Perfil",
+                  "fill": "$card-lila",
+                  "content": "Ver perfil",
+                  "fontFamily": "$font",
+                  "fontSize": 12,
+                  "fontWeight": "600"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "E1KAEf",
+      "x": 470,
+      "y": 1928,
+      "name": "08 · Hoja · racha",
+      "clip": true,
+      "width": 390,
+      "height": 844,
+      "fill": "$bg",
+      "layout": "none",
+      "children": [
+        {
+          "type": "rectangle",
+          "id": "Ka1z7",
+          "x": 0,
+          "y": 0,
+          "name": "Fotograma",
+          "fill": {
+            "type": "image",
+            "enabled": true,
+            "url": "../public/episodio-13-cap.jpg",
+            "mode": "fill"
+          },
+          "width": 390,
+          "height": 844
+        },
+        {
+          "type": "rectangle",
+          "id": "BOMll",
+          "x": 0,
+          "y": 0,
+          "name": "Velo",
+          "fill": "#0403069E",
+          "width": 390,
+          "height": 844
+        },
+        {
+          "type": "frame",
+          "id": "ko94v",
+          "x": 0,
+          "y": 549,
+          "name": "Hoja",
+          "width": 390,
+          "fill": "$card-sheet",
+          "cornerRadius": [
+            26,
+            26,
+            0,
+            0
+          ],
+          "stroke": "#A855F766",
+          "strokeWidth": {
+            "top": 1
+          },
+          "layout": "vertical",
+          "gap": 16,
+          "padding": [
+            20,
+            20,
+            28,
+            20
+          ],
+          "children": [
+            {
+              "type": "rectangle",
+              "cornerRadius": 3,
+              "id": "b3Un0",
+              "name": "Handle",
+              "fill": "#FFFFFF33",
+              "width": 44,
+              "height": 4
+            },
+            {
+              "type": "frame",
+              "id": "a4jV0D",
+              "name": "Encabezado",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 4,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "zZ2Mm",
+                  "name": "Kicker",
+                  "fill": "$card-violet-2",
+                  "content": "RACHA",
+                  "fontFamily": "$font",
+                  "fontSize": 11,
+                  "fontWeight": "700"
+                },
+                {
+                  "type": "text",
+                  "id": "fNTOV",
+                  "name": "Titulo",
+                  "fill": "$text",
+                  "content": "7 días siguiendo historias",
+                  "fontFamily": "$font",
+                  "fontSize": 22,
+                  "fontWeight": "700"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "mjHab",
+              "name": "Gratis",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 8,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "uUOwz",
+                  "name": "Recompensa diaria",
+                  "width": "fill_container",
+                  "fill": "#FFFFFF0D",
+                  "cornerRadius": 14,
+                  "stroke": "#FFFFFF12",
+                  "strokeWidth": 1,
+                  "padding": [
+                    13,
+                    14
+                  ],
+                  "justifyContent": "space_between",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "Jk95o",
+                      "name": "Label",
+                      "fill": "$card-ink",
+                      "content": "Última actividad",
+                      "fontFamily": "$font",
+                      "fontSize": 14,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "crZfY",
+                      "name": "Valor",
+                      "fill": "$text",
+                      "content": "Capítulo 13",
+                      "fontFamily": "$font",
+                      "fontSize": 14,
+                      "fontWeight": "700"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "X5sHA",
+                  "name": "Por capítulo completado",
+                  "width": "fill_container",
+                  "fill": "#FFFFFF0D",
+                  "cornerRadius": 14,
+                  "stroke": "#FFFFFF12",
+                  "strokeWidth": 1,
+                  "padding": [
+                    13,
+                    14
+                  ],
+                  "justifyContent": "space_between",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "gwDCB",
+                      "name": "Label",
+                      "fill": "$card-ink",
+                      "content": "Cuenta ver un capítulo, no abrir la app",
+                      "fontFamily": "$font",
+                      "fontSize": 14,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "tZNZu",
+                      "name": "Valor",
+                      "fill": "$success",
+                      "content": "Hoy ✓",
+                      "fontFamily": "$font",
+                      "fontSize": 14,
+                      "fontWeight": "700"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "zL6Pf",
+                  "name": "Predicción acertada",
+                  "width": "fill_container",
+                  "fill": "#FFFFFF0D",
+                  "cornerRadius": 14,
+                  "stroke": "#FFFFFF12",
+                  "strokeWidth": 1,
+                  "padding": [
+                    13,
+                    14
+                  ],
+                  "justifyContent": "space_between",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "g544YH",
+                      "name": "Label",
+                      "fill": "$card-ink",
+                      "content": "Día 30 desbloquea",
+                      "fontFamily": "$font",
+                      "fontSize": 14,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "BA2D0",
+                      "name": "Valor",
+                      "fill": "$card-flame",
+                      "content": "Marco Racha 30",
+                      "fontFamily": "$font",
+                      "fontSize": 14,
+                      "fontWeight": "700"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "i6Lkmi",
+      "x": 940,
+      "y": 1928,
+      "name": "09 · Hoja · progreso",
+      "clip": true,
+      "width": 390,
+      "height": 844,
+      "fill": "$bg",
+      "layout": "none",
+      "children": [
+        {
+          "type": "rectangle",
+          "id": "cGMbh",
+          "x": 0,
+          "y": 0,
+          "name": "Fotograma",
+          "fill": {
+            "type": "image",
+            "enabled": true,
+            "url": "../public/episodio-13-cap.jpg",
+            "mode": "fill"
+          },
+          "width": 390,
+          "height": 844
+        },
+        {
+          "type": "rectangle",
+          "id": "ROCQj",
+          "x": 0,
+          "y": 0,
+          "name": "Velo",
+          "fill": "#0403069E",
+          "width": 390,
+          "height": 844
+        },
+        {
+          "type": "frame",
+          "id": "RdyKQ",
+          "x": 0,
+          "y": 495,
+          "name": "Hoja",
+          "width": 390,
+          "fill": "$card-sheet",
+          "cornerRadius": [
+            26,
+            26,
+            0,
+            0
+          ],
+          "stroke": "#A855F766",
+          "strokeWidth": {
+            "top": 1
+          },
+          "layout": "vertical",
+          "gap": 16,
+          "padding": [
+            20,
+            20,
+            28,
+            20
+          ],
+          "children": [
+            {
+              "type": "rectangle",
+              "cornerRadius": 3,
+              "id": "gAEZv",
+              "name": "Handle",
+              "fill": "#FFFFFF33",
+              "width": 44,
+              "height": 4
+            },
+            {
+              "type": "frame",
+              "id": "jaJjq",
+              "name": "Encabezado",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 4,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "x6GXQ2",
+                  "name": "Kicker",
+                  "fill": "$card-violet-2",
+                  "content": "PROGRESO",
+                  "fontFamily": "$font",
+                  "fontSize": 11,
+                  "fontWeight": "700"
+                },
+                {
+                  "type": "text",
+                  "id": "YTygH",
+                  "name": "Titulo",
+                  "fill": "$text",
+                  "content": "Nivel 5",
+                  "fontFamily": "$font",
+                  "fontSize": 22,
+                  "fontWeight": "700"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "T2z6s",
+              "name": "Gratis",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 8,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "qovyh",
+                  "name": "XP actual",
+                  "width": "fill_container",
+                  "fill": "#FFFFFF0D",
+                  "cornerRadius": 14,
+                  "stroke": "#FFFFFF12",
+                  "strokeWidth": 1,
+                  "padding": [
+                    13,
+                    14
+                  ],
+                  "justifyContent": "space_between",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "jD7eM",
+                      "name": "Label",
+                      "fill": "$card-ink",
+                      "content": "XP actual",
+                      "fontFamily": "$font",
+                      "fontSize": 14,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "WiB4D",
+                      "name": "Valor",
+                      "fill": "$card-xp",
+                      "content": "2.230 / 19.450",
+                      "fontFamily": "$font",
+                      "fontSize": 14,
+                      "fontWeight": "700"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "f678EP",
+                  "name": "Valentina",
+                  "width": "fill_container",
+                  "fill": "#FFFFFF0D",
+                  "cornerRadius": 14,
+                  "stroke": "#FFFFFF12",
+                  "strokeWidth": 1,
+                  "padding": [
+                    13,
+                    14
+                  ],
+                  "justifyContent": "space_between",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "zRFXc",
+                      "name": "Label",
+                      "fill": "$card-ink",
+                      "content": "Valentina",
+                      "fontFamily": "$font",
+                      "fontSize": 14,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "K5HDDo",
+                      "name": "Valor",
+                      "fill": "$text",
+                      "content": "82%",
+                      "fontFamily": "$font",
+                      "fontSize": 14,
+                      "fontWeight": "700"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "p06Ay",
+                  "name": "La Herencia",
+                  "width": "fill_container",
+                  "fill": "#FFFFFF0D",
+                  "cornerRadius": 14,
+                  "stroke": "#FFFFFF12",
+                  "strokeWidth": 1,
+                  "padding": [
+                    13,
+                    14
+                  ],
+                  "justifyContent": "space_between",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "wDAcI",
+                      "name": "Label",
+                      "fill": "$card-ink",
+                      "content": "La Herencia",
+                      "fontFamily": "$font",
+                      "fontSize": 14,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "f7vs0",
+                      "name": "Valor",
+                      "fill": "$text",
+                      "content": "44%",
+                      "fontFamily": "$font",
+                      "fontSize": 14,
+                      "fontWeight": "700"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "lXbxq",
+                  "name": "El Último",
+                  "width": "fill_container",
+                  "fill": "#FFFFFF0D",
+                  "cornerRadius": 14,
+                  "stroke": "#FFFFFF12",
+                  "strokeWidth": 1,
+                  "padding": [
+                    13,
+                    14
+                  ],
+                  "justifyContent": "space_between",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "MunYg",
+                      "name": "Label",
+                      "fill": "$card-ink",
+                      "content": "El Último",
+                      "fontFamily": "$font",
+                      "fontSize": 14,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "a85hlZ",
+                      "name": "Valor",
+                      "fill": "$text",
+                      "content": "18%",
+                      "fontFamily": "$font",
+                      "fontSize": 14,
+                      "fontWeight": "700"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "NFruf",
+      "x": 1410,
+      "y": 1928,
+      "name": "10 · Hoja · marcos",
+      "clip": true,
+      "width": 390,
+      "height": 844,
+      "fill": "$bg",
+      "layout": "none",
+      "children": [
+        {
+          "type": "rectangle",
+          "id": "wuFI7",
+          "x": 0,
+          "y": 0,
+          "name": "Fotograma",
+          "fill": {
+            "type": "image",
+            "enabled": true,
+            "url": "../public/episodio-13-cap.jpg",
+            "mode": "fill"
+          },
+          "width": 390,
+          "height": 844
+        },
+        {
+          "type": "rectangle",
+          "id": "ak4my",
+          "x": 0,
+          "y": 0,
+          "name": "Velo",
+          "fill": "#0403069E",
+          "width": 390,
+          "height": 844
+        },
+        {
+          "type": "frame",
+          "id": "Z3IWC",
+          "x": 0,
+          "y": 642,
+          "name": "Hoja",
+          "width": 390,
+          "fill": "$card-sheet",
+          "cornerRadius": [
+            26,
+            26,
+            0,
+            0
+          ],
+          "stroke": "#A855F766",
+          "strokeWidth": {
+            "top": 1
+          },
+          "layout": "vertical",
+          "gap": 16,
+          "padding": [
+            20,
+            20,
+            28,
+            20
+          ],
+          "children": [
+            {
+              "type": "rectangle",
+              "cornerRadius": 3,
+              "id": "mYeXx",
+              "name": "Handle",
+              "fill": "#FFFFFF33",
+              "width": 44,
+              "height": 4
+            },
+            {
+              "type": "frame",
+              "id": "q6Sfh8",
+              "name": "Encabezado",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 4,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "Nt8NH",
+                  "name": "Kicker",
+                  "fill": "$card-violet-2",
+                  "content": "MARCO ACTUAL · NEÓN IDILIO",
+                  "fontFamily": "$font",
+                  "fontSize": 11,
+                  "fontWeight": "700"
+                },
+                {
+                  "type": "text",
+                  "id": "nyNXj",
+                  "name": "Titulo",
+                  "fill": "$text",
+                  "content": "Cambiar marco",
+                  "fontFamily": "$font",
+                  "fontSize": 22,
+                  "fontWeight": "700"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "fKtcm",
+              "name": "Gratis",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 8,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "B7Z6Yv",
+                  "name": "Marcos",
+                  "width": "fill_container",
+                  "gap": 12,
+                  "justifyContent": "space_between",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "TVHUv",
+                      "name": "Básico",
+                      "layout": "vertical",
+                      "gap": 6,
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "QnrZE",
+                          "name": "Swatch",
+                          "width": 46,
+                          "height": 46,
+                          "fill": {
+                            "type": "gradient",
+                            "gradientType": "linear",
+                            "enabled": true,
+                            "rotation": 315,
+                            "size": {
+                              "height": 1
+                            },
+                            "colors": [
+                              {
+                                "color": "#4b4b55",
+                                "position": 0
+                              },
+                              {
+                                "color": "#2a2a31",
+                                "position": 1
+                              }
+                            ]
+                          },
+                          "cornerRadius": 999,
+                          "padding": 3,
+                          "justifyContent": "center",
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "ellipse",
+                              "id": "g5vVL",
+                              "name": "Interior",
+                              "fill": "$card-avatar-inner",
+                              "width": 40,
+                              "height": 40
+                            }
+                          ]
+                        },
+                        {
+                          "type": "text",
+                          "id": "KJ34Z",
+                          "name": "Nombre",
+                          "fill": "$card-ink-5",
+                          "content": "Básico",
+                          "fontFamily": "$font",
+                          "fontSize": 9,
+                          "fontWeight": "600"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "rPr1o",
+                      "name": "Neón Idilio",
+                      "layout": "vertical",
+                      "gap": 6,
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "sUG40",
+                          "name": "Swatch",
+                          "width": 46,
+                          "height": 46,
+                          "fill": {
+                            "type": "gradient",
+                            "gradientType": "linear",
+                            "enabled": true,
+                            "rotation": 315,
+                            "size": {
+                              "height": 1
+                            },
+                            "colors": [
+                              {
+                                "color": "#c084fc",
+                                "position": 0
+                              },
+                              {
+                                "color": "#7c2bff",
+                                "position": 1
+                              }
+                            ]
+                          },
+                          "cornerRadius": 999,
+                          "padding": 3,
+                          "justifyContent": "center",
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "ellipse",
+                              "id": "HLSq3",
+                              "name": "Interior",
+                              "fill": "$card-avatar-inner",
+                              "width": 40,
+                              "height": 40
+                            }
+                          ]
+                        },
+                        {
+                          "type": "text",
+                          "id": "dDO79",
+                          "name": "Nombre",
+                          "fill": "$card-lila",
+                          "content": "Neón Idilio",
+                          "fontFamily": "$font",
+                          "fontSize": 9,
+                          "fontWeight": "600"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "IdCnF",
+                      "name": "Racha 30",
+                      "layout": "vertical",
+                      "gap": 6,
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "G0zmbT",
+                          "name": "Swatch",
+                          "width": 46,
+                          "height": 46,
+                          "fill": {
+                            "type": "gradient",
+                            "gradientType": "linear",
+                            "enabled": true,
+                            "rotation": 315,
+                            "size": {
+                              "height": 1
+                            },
+                            "colors": [
+                              {
+                                "color": "#ffb347",
+                                "position": 0
+                              },
+                              {
+                                "color": "#ff5f29",
+                                "position": 1
+                              }
+                            ]
+                          },
+                          "cornerRadius": 999,
+                          "padding": 3,
+                          "justifyContent": "center",
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "ellipse",
+                              "id": "cSblv",
+                              "name": "Interior",
+                              "fill": "$card-avatar-inner",
+                              "width": 40,
+                              "height": 40
+                            }
+                          ]
+                        },
+                        {
+                          "type": "text",
+                          "id": "oXpjE",
+                          "name": "Nombre",
+                          "fill": "$card-ink-5",
+                          "content": "Racha 30",
+                          "fontFamily": "$font",
+                          "fontSize": 9,
+                          "fontWeight": "600"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "q1w9GO",
+                      "name": "Estreno",
+                      "layout": "vertical",
+                      "gap": 6,
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "j4uRX",
+                          "name": "Swatch",
+                          "width": 46,
+                          "height": 46,
+                          "fill": {
+                            "type": "gradient",
+                            "gradientType": "linear",
+                            "enabled": true,
+                            "rotation": 315,
+                            "size": {
+                              "height": 1
+                            },
+                            "colors": [
+                              {
+                                "color": "#f5c518",
+                                "position": 0
+                              },
+                              {
+                                "color": "#c99406",
+                                "position": 1
+                              }
+                            ]
+                          },
+                          "cornerRadius": 999,
+                          "padding": 3,
+                          "justifyContent": "center",
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "ellipse",
+                              "id": "qUiYQ",
+                              "name": "Interior",
+                              "fill": "$card-avatar-inner",
+                              "width": 40,
+                              "height": 40
+                            }
+                          ]
+                        },
+                        {
+                          "type": "text",
+                          "id": "jo19B",
+                          "name": "Nombre",
+                          "fill": "$card-ink-5",
+                          "content": "Estreno",
+                          "fontFamily": "$font",
+                          "fontSize": 9,
+                          "fontWeight": "600"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "vkkEd",
+                      "name": "Valentina",
+                      "layout": "vertical",
+                      "gap": 6,
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "o06Y6",
+                          "name": "Swatch",
+                          "width": 46,
+                          "height": 46,
+                          "fill": {
+                            "type": "gradient",
+                            "gradientType": "linear",
+                            "enabled": true,
+                            "rotation": 315,
+                            "size": {
+                              "height": 1
+                            },
+                            "colors": [
+                              {
+                                "color": "#ff6f91",
+                                "position": 0
+                              },
+                              {
+                                "color": "#a1207d",
+                                "position": 1
+                              }
+                            ]
+                          },
+                          "cornerRadius": 999,
+                          "padding": 3,
+                          "justifyContent": "center",
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "ellipse",
+                              "id": "Gn8N1",
+                              "name": "Interior",
+                              "fill": "$card-avatar-inner",
+                              "width": 40,
+                              "height": 40
+                            }
+                          ]
+                        },
+                        {
+                          "type": "text",
+                          "id": "BUBtb",
+                          "name": "Nombre",
+                          "fill": "$card-ink-5",
+                          "content": "Valentina",
+                          "fontFamily": "$font",
+                          "fontSize": 9,
+                          "fontWeight": "600"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "oAmAZ",
+                      "name": "Detective",
+                      "layout": "vertical",
+                      "gap": 6,
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "reMS2",
+                          "name": "Swatch",
+                          "width": 46,
+                          "height": 46,
+                          "fill": {
+                            "type": "gradient",
+                            "gradientType": "linear",
+                            "enabled": true,
+                            "rotation": 315,
+                            "size": {
+                              "height": 1
+                            },
+                            "colors": [
+                              {
+                                "color": "#7dd3fc",
+                                "position": 0
+                              },
+                              {
+                                "color": "#1e40af",
+                                "position": 1
+                              }
+                            ]
+                          },
+                          "cornerRadius": 999,
+                          "padding": 3,
+                          "justifyContent": "center",
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "ellipse",
+                              "id": "sZZba",
+                              "name": "Interior",
+                              "fill": "$card-avatar-inner",
+                              "width": 40,
+                              "height": 40
+                            }
+                          ]
+                        },
+                        {
+                          "type": "text",
+                          "id": "p9Xei",
+                          "name": "Nombre",
+                          "fill": "$card-ink-5",
+                          "content": "Detective",
+                          "fontFamily": "$font",
+                          "fontSize": 9,
+                          "fontWeight": "600"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "nr9WC",
+      "x": 0,
+      "y": 2892,
+      "name": "11 · Overlay · fin de capítulo",
+      "clip": true,
+      "width": 390,
+      "height": 844,
+      "fill": "$bg",
+      "layout": "none",
+      "children": [
+        {
+          "type": "rectangle",
+          "id": "t7Z5lN",
+          "x": 0,
+          "y": 0,
+          "name": "Fotograma",
+          "fill": {
+            "type": "image",
+            "enabled": true,
+            "url": "../public/episodio-13-cap.jpg",
+            "mode": "fill"
+          },
+          "width": 390,
+          "height": 768
+        },
+        {
+          "type": "rectangle",
+          "id": "GTofd",
+          "x": 0,
+          "y": 0,
+          "name": "Velo",
+          "fill": {
+            "type": "gradient",
+            "gradientType": "linear",
+            "enabled": true,
+            "rotation": 180,
+            "size": {
+              "height": 1
+            },
+            "colors": [
+              {
+                "color": "#08060C8C",
+                "position": 0
+              },
+              {
+                "color": "#08060CF0",
+                "position": 0.45
+              }
+            ]
+          },
+          "width": 390,
+          "height": 768
+        },
+        {
+          "type": "frame",
+          "id": "De2Bz",
+          "x": 22,
+          "y": 420,
+          "name": "Contenido",
+          "width": 346,
+          "layout": "vertical",
+          "gap": 16,
+          "children": [
+            {
+              "type": "text",
+              "id": "wmo3W",
+              "name": "Kicker",
+              "fill": "$card-violet-2",
+              "content": "EPISODIO COMPLETADO",
+              "fontFamily": "$font",
+              "fontSize": 11,
+              "fontWeight": "700"
+            },
+            {
+              "type": "frame",
+              "id": "GvOoc",
+              "name": "Tiles",
+              "width": "fill_container",
+              "gap": 8,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "o9JSF6",
+                  "name": "XP",
+                  "width": 110,
+                  "fill": "#A855F71C",
+                  "cornerRadius": 14,
+                  "stroke": "#A855F752",
+                  "strokeWidth": 1,
+                  "layout": "vertical",
+                  "gap": 4,
+                  "padding": [
+                    12,
+                    14
+                  ],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "dNJ4A",
+                      "name": "n",
+                      "fill": "$card-xp",
+                      "content": "+25",
+                      "fontFamily": "$font",
+                      "fontSize": 22,
+                      "fontWeight": "800"
+                    },
+                    {
+                      "type": "text",
+                      "id": "mHfR9",
+                      "name": "l",
+                      "fill": "$card-ink-3",
+                      "content": "XP",
+                      "fontFamily": "$font",
+                      "fontSize": 11,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "q29de",
+                  "name": "Monedas",
+                  "width": 110,
+                  "fill": "#F5C5181A",
+                  "cornerRadius": 14,
+                  "stroke": "#F5C5184D",
+                  "strokeWidth": 1,
+                  "layout": "vertical",
+                  "gap": 4,
+                  "padding": [
+                    12,
+                    14
+                  ],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "vdOxG",
+                      "name": "n",
+                      "fill": "$card-coin",
+                      "content": "+10",
+                      "fontFamily": "$font",
+                      "fontSize": 22,
+                      "fontWeight": "800"
+                    },
+                    {
+                      "type": "text",
+                      "id": "pgmTv",
+                      "name": "l",
+                      "fill": "$card-ink-3",
+                      "content": "Monedas",
+                      "fontFamily": "$font",
+                      "fontSize": 11,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "c6MEQ",
+                  "name": "Racha mantenida",
+                  "width": 110,
+                  "fill": "#FF7A291A",
+                  "cornerRadius": 14,
+                  "stroke": "#FF7A294D",
+                  "strokeWidth": 1,
+                  "layout": "vertical",
+                  "gap": 4,
+                  "padding": [
+                    12,
+                    14
+                  ],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "C6o5y",
+                      "name": "n",
+                      "fill": "$card-flame",
+                      "content": "7",
+                      "fontFamily": "$font",
+                      "fontSize": 22,
+                      "fontWeight": "800"
+                    },
+                    {
+                      "type": "text",
+                      "id": "t61j4",
+                      "name": "l",
+                      "fill": "$card-ink-3",
+                      "content": "Racha",
+                      "fontFamily": "$font",
+                      "fontSize": 11,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "sifXH",
+              "name": "Nivel",
+              "width": "fill_container",
+              "justifyContent": "space_between",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "YrSxq",
+                  "name": "Nv",
+                  "fill": "$card-ink-2",
+                  "content": "Nivel 5",
+                  "fontFamily": "$font",
+                  "fontSize": 12,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "X495u",
+                  "name": "XP",
+                  "fill": "$card-ink-2",
+                  "content": "2.255 / 19.450 XP",
+                  "fontFamily": "$font",
+                  "fontSize": 12,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "fo1Bl",
+              "name": "Barra XP",
+              "width": "fill_container",
+              "height": 8,
+              "fill": "#FFFFFF1F",
+              "cornerRadius": 999,
+              "layout": "none",
+              "children": [
+                {
+                  "type": "rectangle",
+                  "cornerRadius": 999,
+                  "id": "S3Pel",
+                  "x": 0,
+                  "y": 0,
+                  "name": "Lleno",
+                  "fill": "$card-xp",
+                  "width": 42,
+                  "height": 8
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "ca76m",
+              "name": "Acciones",
+              "width": "fill_container",
+              "gap": 8,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "XaEhY",
+                  "name": "Siguiente",
+                  "width": 232,
+                  "height": 48,
+                  "fill": "$card-violet",
+                  "cornerRadius": 999,
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "tAZBr",
+                      "name": "l",
+                      "fill": "$text",
+                      "content": "Siguiente capítulo",
+                      "fontFamily": "$font",
+                      "fontSize": 15,
+                      "fontWeight": "700"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "bD0D5",
+                  "name": "Predecir",
+                  "width": 106,
+                  "height": 48,
+                  "cornerRadius": 999,
+                  "stroke": "#FFFFFF3D",
+                  "strokeWidth": 1,
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "Pd9as",
+                      "name": "l",
+                      "fill": "$text",
+                      "content": "Predecir",
+                      "fontFamily": "$font",
+                      "fontSize": 15,
+                      "fontWeight": "700"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "heo6p",
+      "x": 470,
+      "y": 2892,
+      "name": "12 · Overlay · predicción",
+      "clip": true,
+      "width": 390,
+      "height": 844,
+      "fill": "$bg",
+      "layout": "none",
+      "children": [
+        {
+          "type": "rectangle",
+          "id": "HcAyr",
+          "x": 0,
+          "y": 0,
+          "name": "Fotograma",
+          "fill": {
+            "type": "image",
+            "enabled": true,
+            "url": "../public/episodio-13-cap.jpg",
+            "mode": "fill"
+          },
+          "width": 390,
+          "height": 768
+        },
+        {
+          "type": "rectangle",
+          "id": "I6edra",
+          "x": 0,
+          "y": 0,
+          "name": "Velo",
+          "fill": {
+            "type": "gradient",
+            "gradientType": "linear",
+            "enabled": true,
+            "rotation": 180,
+            "size": {
+              "height": 1
+            },
+            "colors": [
+              {
+                "color": "#08060C8C",
+                "position": 0
+              },
+              {
+                "color": "#08060CF0",
+                "position": 0.45
+              }
+            ]
+          },
+          "width": 390,
+          "height": 768
+        },
+        {
+          "type": "frame",
+          "id": "QCkcv",
+          "x": 22,
+          "y": 400,
+          "name": "Contenido",
+          "width": 346,
+          "layout": "vertical",
+          "gap": 16,
+          "children": [
+            {
+              "type": "text",
+              "id": "B0cZm",
+              "name": "Kicker",
+              "fill": "$card-violet-2",
+              "content": "PREDICE LO QUE PASARÁ",
+              "fontFamily": "$font",
+              "fontSize": 11,
+              "fontWeight": "700"
+            },
+            {
+              "type": "text",
+              "id": "jYOlr",
+              "name": "Pregunta",
+              "fill": "$text",
+              "content": "¿Qué hará Valentina?",
+              "fontFamily": "$font",
+              "fontSize": 20,
+              "fontWeight": "700"
+            },
+            {
+              "type": "frame",
+              "id": "rRj7L",
+              "name": "Opciones",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 8,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "IApNQ",
+                  "name": "Opción A",
+                  "width": "fill_container",
+                  "fill": "#FFFFFF0D",
+                  "cornerRadius": 14,
+                  "stroke": "#FFFFFF24",
+                  "strokeWidth": 1,
+                  "gap": 12,
+                  "padding": [
+                    14,
+                    16
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "RQbW9",
+                      "name": "Letra",
+                      "width": 24,
+                      "height": 24,
+                      "fill": "#FFFFFF1A",
+                      "cornerRadius": 7,
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "qoRSE",
+                          "name": "k",
+                          "fill": "$text",
+                          "content": "A",
+                          "fontFamily": "$font",
+                          "fontSize": 11,
+                          "fontWeight": "700"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "B6HfH",
+                      "name": "Texto",
+                      "fill": "$card-ink",
+                      "content": "Le dice la verdad al capitán",
+                      "fontFamily": "$font",
+                      "fontSize": 14,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "QFhrm",
+                  "name": "Opción B",
+                  "width": "fill_container",
+                  "fill": "#A855F729",
+                  "cornerRadius": 14,
+                  "stroke": "$card-violet-2",
+                  "strokeWidth": 1,
+                  "gap": 12,
+                  "padding": [
+                    14,
+                    16
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "naHn9",
+                      "name": "Letra",
+                      "width": 24,
+                      "height": 24,
+                      "fill": "#FFFFFF1A",
+                      "cornerRadius": 7,
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "jqr7x",
+                          "name": "k",
+                          "fill": "$text",
+                          "content": "B",
+                          "fontFamily": "$font",
+                          "fontSize": 11,
+                          "fontWeight": "700"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "PYdgv",
+                      "name": "Texto",
+                      "fill": "$card-ink",
+                      "content": "Se baja del avión sin explicar nada",
+                      "fontFamily": "$font",
+                      "fontSize": 14,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "h6xX0",
+                  "name": "Opción C",
+                  "width": "fill_container",
+                  "fill": "#FFFFFF0D",
+                  "cornerRadius": 14,
+                  "stroke": "#FFFFFF24",
+                  "strokeWidth": 1,
+                  "gap": 12,
+                  "padding": [
+                    14,
+                    16
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "Xlz9p",
+                      "name": "Letra",
+                      "width": 24,
+                      "height": 24,
+                      "fill": "#FFFFFF1A",
+                      "cornerRadius": 7,
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "gphPW",
+                          "name": "k",
+                          "fill": "$text",
+                          "content": "C",
+                          "fontFamily": "$font",
+                          "fontSize": 11,
+                          "fontWeight": "700"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "BtqMB",
+                      "name": "Texto",
+                      "fill": "$card-ink",
+                      "content": "Finge que no lo conoce",
+                      "fontFamily": "$font",
+                      "fontSize": 14,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "id": "ZzTsc",
+              "name": "Nota",
+              "fill": "$card-ink-5",
+              "content": "Acertar da +20 XP y +10 monedas.",
+              "fontFamily": "$font",
+              "fontSize": 12,
+              "fontWeight": "normal"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "a03X5v",
+      "x": 940,
+      "y": 2892,
+      "name": "13 · Muro · saldo insuficiente",
+      "clip": true,
+      "width": 390,
+      "height": 844,
+      "fill": "$bg",
+      "layout": "none",
+      "children": [
+        {
+          "type": "rectangle",
+          "id": "j9U5cp",
+          "x": 0,
+          "y": 0,
+          "name": "Fotograma",
+          "fill": {
+            "type": "image",
+            "enabled": true,
+            "url": "../public/episodio-13-cap.jpg",
+            "mode": "fill"
+          },
+          "width": 390,
+          "height": 768
+        },
+        {
+          "type": "rectangle",
+          "id": "PRBGo",
+          "x": 0,
+          "y": 0,
+          "name": "Velo",
+          "fill": "#000000B3",
+          "width": 390,
+          "height": 768
+        },
+        {
+          "type": "frame",
+          "id": "oh8oE",
+          "x": 16,
+          "y": 269,
+          "name": "Muro",
+          "width": 358,
+          "fill": "$surface",
+          "cornerRadius": 20,
+          "layout": "vertical",
+          "gap": 20,
+          "padding": 24,
+          "children": [
+            {
+              "type": "frame",
+              "id": "GVxhj",
+              "name": "Icono",
+              "width": 48,
+              "height": 48,
+              "fill": "$surface-2",
+              "cornerRadius": 12,
+              "justifyContent": "center",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "nTYXy",
+                  "name": "l",
+                  "fill": "$card-violet",
+                  "content": "🔒",
+                  "fontFamily": "$font",
+                  "fontSize": 20,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "id": "WTEdI",
+              "name": "Titulo",
+              "fill": "$text",
+              "content": "Desbloquea este episodio",
+              "fontFamily": "$font",
+              "fontSize": 19,
+              "fontWeight": "700"
+            },
+            {
+              "type": "frame",
+              "id": "RlVNq",
+              "name": "Cifras",
+              "gap": 12,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "kbQZ6",
+                  "name": "Costo",
+                  "fill": "$surface-2",
+                  "cornerRadius": 999,
+                  "gap": 8,
+                  "padding": [
+                    8,
+                    14
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "O7mnI3",
+                      "name": "l",
+                      "fill": "$text-2",
+                      "content": "Costo",
+                      "fontFamily": "$font",
+                      "fontSize": 13,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "cdiYb",
+                      "name": "v",
+                      "fill": "$card-coin",
+                      "content": "15",
+                      "fontFamily": "$font",
+                      "fontSize": 13,
+                      "fontWeight": "700"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "NfRVb",
+                  "name": "Saldo",
+                  "fill": "$surface-2",
+                  "cornerRadius": 999,
+                  "gap": 8,
+                  "padding": [
+                    8,
+                    14
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "H1QMb",
+                      "name": "l",
+                      "fill": "$text-2",
+                      "content": "Tu saldo",
+                      "fontFamily": "$font",
+                      "fontSize": 13,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "JA0aF",
+                      "name": "v",
+                      "fill": "$danger",
+                      "content": "0",
+                      "fontFamily": "$font",
+                      "fontSize": 13,
+                      "fontWeight": "700"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "hgQGg",
+              "name": "CTA",
+              "width": "fill_container",
+              "height": 48,
+              "fill": "$card-violet",
+              "cornerRadius": 999,
+              "justifyContent": "center",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "JpdI7",
+                  "name": "l",
+                  "fill": "$text",
+                  "content": "Desbloquear",
+                  "fontFamily": "$font",
+                  "fontSize": 15,
+                  "fontWeight": "700"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "id": "RNIl3",
+              "name": "Sec",
+              "fill": "$text-2",
+              "content": "Ver paquetes",
+              "fontFamily": "$font",
+              "fontSize": 13,
+              "fontWeight": "700"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "TSdit",
+      "x": 0,
+      "y": 3856,
+      "name": "14 · Flujo de la tarjeta",
+      "clip": true,
+      "width": 1180,
+      "height": 720,
+      "fill": "$bg",
+      "layout": "none",
+      "children": [
+        {
+          "type": "frame",
+          "id": "Wd39f",
+          "x": 48,
+          "y": 44,
+          "name": "Cabecera",
+          "layout": "vertical",
+          "gap": 6,
+          "children": [
+            {
+              "type": "text",
+              "id": "OkP9U",
+              "name": "Kicker",
+              "fill": "$card-violet-2",
+              "content": "ENTREGABLE 5.3",
+              "fontFamily": "$font",
+              "fontSize": 11,
+              "fontWeight": "700"
+            },
+            {
+              "type": "text",
+              "id": "VafrD",
+              "name": "Titulo",
+              "fill": "$text",
+              "content": "Flujo de la tarjeta",
+              "fontFamily": "$font",
+              "fontSize": 26,
+              "fontWeight": "700"
+            },
+            {
+              "type": "text",
+              "id": "knw6D",
+              "name": "Sub",
+              "fill": "$text-2",
+              "content": "Una capa que se abre, no una pantalla a la que se navega. El usuario nunca sale del episodio.",
+              "fontFamily": "$font",
+              "fontSize": 13
+            }
+          ]
+        },
+        {
+          "type": "path",
+          "id": "bLRtA",
+          "x": 198,
+          "y": 250,
+          "name": "Conector",
+          "geometry": "M0 0l48 0",
+          "viewBox": [
+            0,
+            0,
+            48,
+            1
+          ],
+          "fill": "#00000000",
+          "width": 48,
+          "height": 1,
+          "stroke": "$text-3",
+          "strokeWidth": 1.6
+        },
+        {
+          "type": "path",
+          "id": "T8iIY",
+          "x": 239,
+          "y": 245,
+          "name": "Punta",
+          "geometry": "M7 5l-7-5 0 10z",
+          "viewBox": [
+            0,
+            0,
+            7,
+            10
+          ],
+          "fill": "$text-3",
+          "width": 7,
+          "height": 10
+        },
+        {
+          "type": "path",
+          "id": "QWGAK",
+          "x": 426,
+          "y": 250,
+          "name": "Conector",
+          "geometry": "M0 0l48 0",
+          "viewBox": [
+            0,
+            0,
+            48,
+            1
+          ],
+          "fill": "#00000000",
+          "width": 48,
+          "height": 1,
+          "stroke": "$text-3",
+          "strokeWidth": 1.6
+        },
+        {
+          "type": "path",
+          "id": "sqV2p",
+          "x": 467,
+          "y": 245,
+          "name": "Punta",
+          "geometry": "M7 5l-7-5 0 10z",
+          "viewBox": [
+            0,
+            0,
+            7,
+            10
+          ],
+          "fill": "$text-3",
+          "width": 7,
+          "height": 10
+        },
+        {
+          "type": "path",
+          "id": "AXzcP",
+          "x": 624,
+          "y": 250,
+          "name": "Conector",
+          "geometry": "M0 0l48 0",
+          "viewBox": [
+            0,
+            0,
+            48,
+            1
+          ],
+          "fill": "#00000000",
+          "width": 48,
+          "height": 1,
+          "stroke": "$text-3",
+          "strokeWidth": 1.6
+        },
+        {
+          "type": "path",
+          "id": "tlhgy",
+          "x": 665,
+          "y": 245,
+          "name": "Punta",
+          "geometry": "M7 5l-7-5 0 10z",
+          "viewBox": [
+            0,
+            0,
+            7,
+            10
+          ],
+          "fill": "$text-3",
+          "width": 7,
+          "height": 10
+        },
+        {
+          "type": "path",
+          "id": "e5F1In",
+          "x": 336,
+          "y": 272,
+          "name": "Conector",
+          "geometry": "M213 0l0 58-213 0 0 228",
+          "viewBox": [
+            0,
+            0,
+            213,
+            286
+          ],
+          "fill": "#00000000",
+          "width": 213,
+          "height": 286,
+          "stroke": "$text-3",
+          "strokeWidth": 1.6
+        },
+        {
+          "type": "path",
+          "id": "lq2bs",
+          "x": 331,
+          "y": 551,
+          "name": "Punta",
+          "geometry": "M5 7l-5-7 10 0z",
+          "viewBox": [
+            0,
+            0,
+            10,
+            7
+          ],
+          "fill": "$text-3",
+          "width": 10,
+          "height": 7
+        },
+        {
+          "type": "path",
+          "id": "KCjum",
+          "x": 660,
+          "y": 272,
+          "name": "Conector",
+          "geometry": "M112 0l0 88-112 0 0 48",
+          "viewBox": [
+            0,
+            0,
+            112,
+            136
+          ],
+          "fill": "#00000000",
+          "width": 112,
+          "height": 136,
+          "stroke": "$text-3",
+          "strokeWidth": 1.6
+        },
+        {
+          "type": "path",
+          "id": "j1QlR",
+          "x": 655,
+          "y": 401,
+          "name": "Punta",
+          "geometry": "M5 7l-5-7 10 0z",
+          "viewBox": [
+            0,
+            0,
+            10,
+            7
+          ],
+          "fill": "$text-3",
+          "width": 10,
+          "height": 7
+        },
+        {
+          "type": "path",
+          "id": "ObElh",
+          "x": 772,
+          "y": 272,
+          "name": "Conector",
+          "geometry": "M0 0l0 88 161 0 0 48",
+          "viewBox": [
+            0,
+            0,
+            161,
+            136
+          ],
+          "fill": "#00000000",
+          "width": 161,
+          "height": 136,
+          "stroke": "$text-3",
+          "strokeWidth": 1.6
+        },
+        {
+          "type": "path",
+          "id": "jMsOo",
+          "x": 928,
+          "y": 401,
+          "name": "Punta",
+          "geometry": "M5 7l-5-7 10 0z",
+          "viewBox": [
+            0,
+            0,
+            10,
+            7
+          ],
+          "fill": "$text-3",
+          "width": 10,
+          "height": 7
+        },
+        {
+          "type": "path",
+          "id": "S46lC",
+          "x": 660,
+          "y": 452,
+          "name": "Conector",
+          "geometry": "M0 0l0 106",
+          "viewBox": [
+            0,
+            0,
+            1,
+            106
+          ],
+          "fill": "#00000000",
+          "width": 1,
+          "height": 106,
+          "stroke": "$text-3",
+          "strokeWidth": 1.6
+        },
+        {
+          "type": "path",
+          "id": "oJ5IG",
+          "x": 655,
+          "y": 551,
+          "name": "Punta",
+          "geometry": "M5 7l-5-7 10 0z",
+          "viewBox": [
+            0,
+            0,
+            10,
+            7
+          ],
+          "fill": "$text-3",
+          "width": 10,
+          "height": 7
+        },
+        {
+          "type": "path",
+          "id": "GqjDK",
+          "x": 426,
+          "y": 580,
+          "name": "Conector",
+          "geometry": "M159 0l-159 0",
+          "viewBox": [
+            0,
+            0,
+            159,
+            1
+          ],
+          "fill": "#00000000",
+          "width": 159,
+          "height": 1,
+          "stroke": "$text-3",
+          "strokeWidth": 1.6
+        },
+        {
+          "type": "path",
+          "id": "fmxJj",
+          "x": 426,
+          "y": 575,
+          "name": "Punta",
+          "geometry": "M0 5l7-5 0 10z",
+          "viewBox": [
+            0,
+            0,
+            7,
+            10
+          ],
+          "fill": "$text-3",
+          "width": 7,
+          "height": 10
+        },
+        {
+          "type": "frame",
+          "id": "z7f7a",
+          "x": 48,
+          "y": 228,
+          "name": "Ve un capítulo",
+          "width": 150,
+          "height": 44,
+          "fill": "$surface",
+          "cornerRadius": 12,
+          "stroke": "$track",
+          "strokeWidth": 1,
+          "padding": [
+            0,
+            12
+          ],
+          "justifyContent": "center",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "PFM9M",
+              "name": "l",
+              "fill": "$text",
+              "content": "Ve un capítulo",
+              "fontFamily": "$font",
+              "fontSize": 13,
+              "fontWeight": "500"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "bJbeE",
+          "x": 246,
+          "y": 228,
+          "name": "Barra colapsada",
+          "width": 180,
+          "height": 44,
+          "fill": "$card-top",
+          "cornerRadius": 12,
+          "stroke": "$card-violet-2",
+          "strokeWidth": 1,
+          "padding": [
+            0,
+            12
+          ],
+          "justifyContent": "center",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "Q2c24",
+              "name": "l",
+              "fill": "$text",
+              "content": "Barra colapsada",
+              "fontFamily": "$font",
+              "fontSize": 13,
+              "fontWeight": "600"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "UFSsk",
+          "x": 474,
+          "y": 228,
+          "name": "¿La toca?",
+          "width": 150,
+          "height": 44,
+          "fill": "#00000000",
+          "cornerRadius": 22,
+          "stroke": "$card-violet",
+          "strokeWidth": 1,
+          "padding": [
+            0,
+            12
+          ],
+          "justifyContent": "center",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "JF5vF",
+              "name": "l",
+              "fill": "$text",
+              "content": "¿La toca?",
+              "fontFamily": "$font",
+              "fontSize": 13,
+              "fontWeight": "500"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "Xx8lW",
+          "x": 672,
+          "y": 228,
+          "name": "Tarjeta expandida",
+          "width": 200,
+          "height": 44,
+          "fill": "$card-top",
+          "cornerRadius": 12,
+          "stroke": "$card-violet-2",
+          "strokeWidth": 1,
+          "padding": [
+            0,
+            12
+          ],
+          "justifyContent": "center",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "wlAsH",
+              "name": "l",
+              "fill": "$text",
+              "content": "Tarjeta expandida",
+              "fontFamily": "$font",
+              "fontSize": 13,
+              "fontWeight": "600"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "j0VarZ",
+          "x": 560,
+          "y": 408,
+          "name": "Wallet · el saldo",
+          "width": 200,
+          "height": 44,
+          "fill": "$card-top",
+          "cornerRadius": 12,
+          "stroke": "$card-violet-2",
+          "strokeWidth": 1,
+          "padding": [
+            0,
+            12
+          ],
+          "justifyContent": "center",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "SSgoh",
+              "name": "l",
+              "fill": "$text",
+              "content": "Wallet · el saldo",
+              "fontFamily": "$font",
+              "fontSize": 13,
+              "fontWeight": "600"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "sQ7pc",
+          "x": 808,
+          "y": 408,
+          "name": "Racha · Progreso · Marcos",
+          "width": 250,
+          "height": 44,
+          "fill": "$card-top",
+          "cornerRadius": 12,
+          "stroke": "$card-violet-2",
+          "strokeWidth": 1,
+          "padding": [
+            0,
+            12
+          ],
+          "justifyContent": "center",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "daLUn",
+              "name": "l",
+              "fill": "$text",
+              "content": "Racha · Progreso · Marcos",
+              "fontFamily": "$font",
+              "fontSize": 13,
+              "fontWeight": "600"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "bo4Zd",
+          "x": 585,
+          "y": 558,
+          "name": "Reclamar",
+          "width": 150,
+          "height": 44,
+          "fill": "$surface",
+          "cornerRadius": 12,
+          "stroke": "$track",
+          "strokeWidth": 1,
+          "padding": [
+            0,
+            12
+          ],
+          "justifyContent": "center",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "somTE",
+              "name": "l",
+              "fill": "$text",
+              "content": "Reclamar",
+              "fontFamily": "$font",
+              "fontSize": 13,
+              "fontWeight": "500"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "D6hlB",
+          "x": 246,
+          "y": 558,
+          "name": "Vuelve al video",
+          "width": 180,
+          "height": 44,
+          "fill": "$surface",
+          "cornerRadius": 12,
+          "stroke": "$track",
+          "strokeWidth": 1,
+          "padding": [
+            0,
+            12
+          ],
+          "justifyContent": "center",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "eP9Aj",
+              "name": "l",
+              "fill": "$text",
+              "content": "Vuelve al video",
+              "fontFamily": "$font",
+              "fontSize": 13,
+              "fontWeight": "500"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "id": "sdPjC",
+          "x": 634,
+          "y": 226,
+          "name": "Etiqueta",
+          "fill": "$text-2",
+          "content": "Sí",
+          "fontFamily": "$font",
+          "fontSize": 10,
+          "fontWeight": "500"
+        },
+        {
+          "type": "text",
+          "id": "sbGJc",
+          "x": 360,
+          "y": 306,
+          "name": "Etiqueta",
+          "fill": "$text-2",
+          "content": "No · sigue viendo",
+          "fontFamily": "$font",
+          "fontSize": 10,
+          "fontWeight": "500"
+        },
+        {
+          "type": "frame",
+          "id": "kCf64",
+          "x": 48,
+          "y": 646,
+          "name": "Leyenda",
+          "gap": 24,
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "QchbR",
+              "name": "Acción",
+              "gap": 8,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "ofYoD",
+                  "name": "c",
+                  "width": 26,
+                  "height": 16,
+                  "fill": "$surface",
+                  "cornerRadius": 6,
+                  "stroke": "$track",
+                  "strokeWidth": 1
+                },
+                {
+                  "type": "text",
+                  "id": "b88sqo",
+                  "name": "l",
+                  "fill": "$text-2",
+                  "content": "Acción",
+                  "fontFamily": "$font",
+                  "fontSize": 11,
+                  "fontWeight": "500"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "PXUuE",
+              "name": "Decisión",
+              "gap": 8,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "VkJGf",
+                  "name": "c",
+                  "width": 26,
+                  "height": 16,
+                  "fill": "#00000000",
+                  "cornerRadius": 8,
+                  "stroke": "$card-violet",
+                  "strokeWidth": 1
+                },
+                {
+                  "type": "text",
+                  "id": "dcZsp",
+                  "name": "l",
+                  "fill": "$text-2",
+                  "content": "Decisión",
+                  "fontFamily": "$font",
+                  "fontSize": 11,
+                  "fontWeight": "500"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "W2H9kT",
+              "name": "Superficie de la tarjeta",
+              "gap": 8,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "WpLfB",
+                  "name": "c",
+                  "width": 26,
+                  "height": 16,
+                  "fill": "$card-top",
+                  "cornerRadius": 6,
+                  "stroke": "$card-violet-2",
+                  "strokeWidth": 1
+                },
+                {
+                  "type": "text",
+                  "id": "roZ0P",
+                  "name": "l",
+                  "fill": "$text-2",
+                  "content": "Superficie de la tarjeta",
+                  "fontFamily": "$font",
+                  "fontSize": 11,
+                  "fontWeight": "500"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "variables": {
+    "bg": {
+      "type": "color",
+      "value": "#000000"
+    },
+    "surface": {
+      "type": "color",
+      "value": "#141414"
+    },
+    "surface-2": {
+      "type": "color",
+      "value": "#1E1E1E"
+    },
+    "surface-violet": {
+      "type": "color",
+      "value": "#2A0E4A"
+    },
+    "violet": {
+      "type": "color",
+      "value": "#7B2FF7"
+    },
+    "violet-bright": {
+      "type": "color",
+      "value": "#9B4DFF"
+    },
+    "violet-logo": {
+      "type": "color",
+      "value": "#C44BF0"
+    },
+    "coin": {
+      "type": "color",
+      "value": "#FFD84D"
+    },
+    "coin-deep": {
+      "type": "color",
+      "value": "#E8A317"
+    },
+    "coin-locked": {
+      "type": "color",
+      "value": "#B9A8CC"
+    },
+    "success": {
+      "type": "color",
+      "value": "#3ED07A"
+    },
+    "danger": {
+      "type": "color",
+      "value": "#FF453A"
+    },
+    "text": {
+      "type": "color",
+      "value": "#FFFFFF"
+    },
+    "text-2": {
+      "type": "color",
+      "value": "#9A9A9A"
+    },
+    "text-3": {
+      "type": "color",
+      "value": "#6B6B6B"
+    },
+    "track": {
+      "type": "color",
+      "value": "#2E2E2E"
+    },
+    "cta-gradient-end": {
+      "type": "color",
+      "value": "#9446FD"
+    },
+    "r-pill": {
+      "type": "number",
+      "value": 999
+    },
+    "r-card": {
+      "type": "number",
+      "value": 16
+    },
+    "bar-height": {
+      "type": "number",
+      "value": 56
+    },
+    "safe-area": {
+      "type": "number",
+      "value": 34
+    },
+    "gutter": {
+      "type": "number",
+      "value": 16
+    },
+    "font": {
+      "type": "string",
+      "value": "Poppins"
+    },
+    "card-violet": {
+      "type": "color",
+      "value": "#7c2bff"
+    },
+    "card-violet-2": {
+      "type": "color",
+      "value": "#a855f7"
+    },
+    "card-lila": {
+      "type": "color",
+      "value": "#c084fc"
+    },
+    "card-xp": {
+      "type": "color",
+      "value": "#d8f24a"
+    },
+    "card-xp-2": {
+      "type": "color",
+      "value": "#a3e635"
+    },
+    "card-coin": {
+      "type": "color",
+      "value": "#f5c518"
+    },
+    "card-coin-hi": {
+      "type": "color",
+      "value": "#ffe89a"
+    },
+    "card-coin-lo": {
+      "type": "color",
+      "value": "#c99406"
+    },
+    "card-flame": {
+      "type": "color",
+      "value": "#ff7a29"
+    },
+    "card-top": {
+      "type": "color",
+      "value": "#1a1024"
+    },
+    "card-bottom": {
+      "type": "color",
+      "value": "#0c0910"
+    },
+    "card-bar-top": {
+      "type": "color",
+      "value": "#171020"
+    },
+    "card-bar-bottom": {
+      "type": "color",
+      "value": "#0d0a12"
+    },
+    "card-sheet": {
+      "type": "color",
+      "value": "#120d19"
+    },
+    "card-avatar-inner": {
+      "type": "color",
+      "value": "#1b1424"
+    },
+    "card-ink": {
+      "type": "color",
+      "value": "#e5e5ea"
+    },
+    "card-ink-2": {
+      "type": "color",
+      "value": "#c9c9d1"
+    },
+    "card-ink-3": {
+      "type": "color",
+      "value": "#b9b9c3"
+    },
+    "card-ink-4": {
+      "type": "color",
+      "value": "#9a9aa4"
+    },
+    "card-ink-5": {
+      "type": "color",
+      "value": "#8e8e98"
+    }
+  },
+  "fileToken": "427646ac-5c54-4b57-8ba3-3f239cf1b613"
+}

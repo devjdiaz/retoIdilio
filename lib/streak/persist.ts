@@ -3,9 +3,9 @@ import type { StreakState } from "./types";
 const STORAGE_KEY = "idilio-poc-streak";
 
 // Solo lo que define la racha en sí. Lo transitorio (celebración, intento de
-// desbloqueo, advertencia de tiempo, visibilidad) es de la sesión actual y
-// no debe sobrevivir un refresh — CLAUDE.md: "localStorage opcional para
-// sobrevivir un refresh. Nada más."
+// desbloqueo, advertencia de tiempo) es de la sesión actual y no debe
+// sobrevivir un refresh — CLAUDE.md: "localStorage opcional para sobrevivir
+// un refresh. Nada más."
 // El progreso de episodios entra también: sin él, un refresh devolvería el
 // saldo ya gastado en un desbloqueo pero volvería a bloquear el episodio.
 export type PersistedStreak = Pick<

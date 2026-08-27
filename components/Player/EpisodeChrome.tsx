@@ -10,8 +10,8 @@ import { CommentsSheet, MoreSheet } from "./PlayerSheets";
  * y scrubber.
  *
  * NO es el reproductor real (fuera de alcance por CLAUDE.md). Es el marco que
- * hace legible la intervención: la barra de racha se defiende como una capa
- * sobre el core loop, y sin nada de ese loop en pantalla la barra se lee como
+ * hace legible la intervención: la tarjeta se defiende como una capa
+ * sobre el core loop, y sin nada de ese loop en pantalla la tarjeta se lee como
  * un componente suelto — o peor, como una app más pobre que la real.
  *
  * Replica lo que la app ya muestra en esa zona (`referencias/IMG_9295`):
@@ -20,7 +20,7 @@ import { CommentsSheet, MoreSheet } from "./PlayerSheets";
  *
  * El botón de pausa de la captura no se replica: ahí aparece porque el video
  * estaba pausado. Acá el video corre, y además el toque sobre el video ya
- * tiene dueño — oculta y muestra la barra, estados 8 y 9 de estados.md.
+ * tiene dueño — expande y colapsa la tarjeta.
  */
 export function EpisodeChrome({ episode }: { episode: number }) {
   const [sheet, setSheet] = useState<"comments" | "more" | null>(null);

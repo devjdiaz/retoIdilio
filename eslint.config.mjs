@@ -12,6 +12,9 @@ const eslintConfig = defineConfig([
     "out/**",
     "build/**",
     "next-env.d.ts",
+    // El handoff es material de diseño, no código del POC: el prototipo y su
+    // runtime vienen tal cual de la herramienta y no se editan acá.
+    "design_handoff_player_identity_card/**",
   ]),
 ]);
 

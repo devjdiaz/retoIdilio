@@ -942,16 +942,6 @@ footer{border-top:1px solid var(--line);padding-block:clamp(48px,7vw,80px)}
     sin salir del episodio, sin perder el lugar.
   </p>
 
-  <p style="margin-bottom:24px">
-    <a class="bigcta" style="height:48px;padding:0 22px;font-size:15px;box-shadow:none;border:1px solid rgba(155,77,255,.5);background:linear-gradient(155deg,rgba(42,14,74,.7),var(--surface));color:var(--ink)"
-       href="https://claude.ai/code/artifact/894e64be-8c13-4a61-9b65-ed7a28ef9808" target="_blank" rel="noopener">
-      Ver el canvas de diseño <span>16 artboards · estados, anatomía, flujo</span>
-    </a>
-    <a class="bigcta" style="height:48px;padding:0 22px;font-size:15px;box-shadow:none;border:1px solid rgba(155,77,255,.5);background:linear-gradient(155deg,rgba(42,14,74,.7),var(--surface));color:var(--ink);margin-left:12px"
-       href="https://claude.ai/code/artifact/85eae30d-c579-4604-81b8-edf21f409900" target="_blank" rel="noopener">
-      Ver los diez estados en pen.dev <span>1 componente · 10 instancias</span>
-    </a>
-  </p>
 
   <div class="card card-tight" style="max-width:var(--measure);margin-bottom:40px">
     <h4 style="margin-bottom:10px">Sobre la herramienta</h4>
@@ -962,18 +952,21 @@ footer{border-top:1px solid var(--line);padding-block:clamp(48px,7vw,80px)}
       entregable: lo que se evalúa sigue estando y sigue siendo inspeccionable.
     </p>
     <p style="font-size:14px;color:var(--ink-2);margin-top:12px">
-      La barra existe <b style="color:var(--ink)">una sola vez</b>, como componente
-      reutilizable. Los diez estados son instancias con overrides de texto y de visibilidad, y
-      los tokens de <code>design-tokens.md</code> están cargados como
-      <b style="color:var(--ink)">23 variables del documento</b>. Editar el componente cambia
-      los diez estados a la vez — que es lo que alguien abre a comprobar cuando revisa
+      Son <b style="color:var(--ink)">14 artboards</b> del modelo actual: la barra colapsada y
+      la tarjeta expandida en sus variantes de cuenta, las cuatro hojas, los dos overlays, el
+      muro y el flujo. Los tokens de <code>design-tokens.md</code> y la paleta
+      <code>card-</code> del handoff están cargados como
+      <b style="color:var(--ink)">variables del documento</b>, así que el color y la forma
+      salen de un solo lugar — que es lo que alguien abre a comprobar cuando revisa
       consistencia.
     </p>
     <p style="font-size:13.5px;color:var(--ink-3);margin-top:12px">
       Las imágenes de esta página y del enlace salen exportadas del archivo, no son capturas.
-      Una decisión que vale contar: el indicador viene apagado en el componente porque con
-      mensaje, indicador y CTA encendidos a la vez el grupo mide 353px y en la barra hay 358
-      útiles menos los 52 del saldo. Ningún estado real lleva los tres.
+      Un par de cosas que vale contar: dos defectos salieron de <b style="color:var(--ink)">medir
+      cajas</b>, sin necesitar el render — el subtítulo de la barra de invitado medía 185px en
+      un contenedor de 172 y «Racha mantenida» medía 100px en un tile con 82 útiles, los dos se
+      recortaban. Y la primera versión del flujo tenía un conector que terminaba en el nodo
+      equivocado. Corregidos en el archivo.
     </p>
   </div>
 
@@ -1046,6 +1039,18 @@ footer{border-top:1px solid var(--line);padding-block:clamp(48px,7vw,80px)}
     van. La tarjeta es esa misma barra, abierta.
     <b style="color:var(--ink)">Esos diez estados no se tiraron: siguen corriendo por debajo</b>
     — son los que deciden si hay recompensa, qué día de racha es y cuánto paga mañana.
+  </p>
+
+  <p style="margin-bottom:8px;font-family:var(--mono);font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-3)">El archivo de diseño</p>
+  <p style="margin-bottom:32px">
+    <a class="bigcta" style="height:48px;padding:0 22px;font-size:15px;box-shadow:none;border:1px solid rgba(155,77,255,.5);background:linear-gradient(155deg,rgba(42,14,74,.7),var(--surface));color:var(--ink)"
+       href="https://claude.ai/code/artifact/85eae30d-c579-4604-81b8-edf21f409900" target="_blank" rel="noopener">
+      Abrir pen.dev <span>14 artboards · el modelo actual y su flujo</span>
+    </a>
+    <a class="bigcta" style="height:48px;padding:0 22px;font-size:15px;box-shadow:none;border:1px solid rgba(155,77,255,.5);background:linear-gradient(155deg,rgba(42,14,74,.7),var(--surface));color:var(--ink);margin-left:12px"
+       href="https://claude.ai/code/artifact/894e64be-8c13-4a61-9b65-ed7a28ef9808" target="_blank" rel="noopener">
+      Ver el canvas <span>16 artboards de la primera versión</span>
+    </a>
   </p>
   <div class="states">
 

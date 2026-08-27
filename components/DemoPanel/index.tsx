@@ -21,7 +21,6 @@ const RESET_FIELDS: Partial<StreakState> = {
   celebrating: false,
   insufficientAttempt: null,
   riskWarningHoursLeft: null,
-  visibility: "visible",
   episode: START_EPISODE,
   unlockedThrough: FREE_THROUGH,
 };
@@ -104,8 +103,7 @@ export function DemoPanel({
       balance: 5,
       unlockedThrough: state.episode - 1,
       insufficientAttempt: EPISODE_COST - 5,
-      visibility: "visible",
-    });
+        });
 
   return (
     <div className="w-full max-w-sm shrink-0 rounded-card-lg bg-surface p-5 text-text">
@@ -113,7 +111,7 @@ export function DemoPanel({
         Panel de demo — herramienta de evaluación
       </p>
       <p className="mt-1 text-xs text-text-2">
-        No es parte de la barra. Sirve para recorrer el flujo y saltar entre estados
+        No es parte de la tarjeta. Sirve para recorrer el flujo y saltar entre estados
         durante la revisión.
       </p>
 

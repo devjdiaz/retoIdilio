@@ -58,7 +58,7 @@ function CurveRow({
 }
 
 /**
- * No es funcionalidad de la barra: es material para la sesión con Idilio.
+ * No es funcionalidad de la tarjeta: es material para la sesión con Idilio.
  * estados.md → "Corrección de la curva de racha".
  */
 export function CurveComparison() {
@@ -70,7 +70,7 @@ export function CurveComparison() {
         Comparación — para la sesión
       </p>
       <p className="mt-1 text-xs text-text-2">
-        No es parte de la barra: material para mostrar el hallazgo en la reunión.
+        No es parte de la tarjeta: material para mostrar el hallazgo en la reunión.
       </p>
 
       <div className="mt-3 flex gap-2">

@@ -9,7 +9,7 @@ import { useState } from "react";
  * no hacer nada. El rail de la app real abre estas dos superficies, así que
  * acá también.
  *
- * Deliberadamente chicas. No son el entregable —la barra lo es— y crecerlas
+ * Deliberadamente chicas. No son el entregable —la tarjeta lo es— y crecerlas
  * competiría con lo que hay que mirar. Comentarios arranca vacío porque el
  * contador de la captura de producción dice 0: inventar comentarios sería
  * poner contenido falso en un prototipo que en todo lo demás usa datos reales.
@@ -25,8 +25,8 @@ function Sheet({
   children: React.ReactNode;
 }) {
   return (
-    // z-40: por encima de la barra (z-30). Una hoja que se abre y queda tapada
-    // por la barra no es una hoja. Además es lo que hace la app real: los
+    // z-40: por encima de la tarjeta (z-30). Una hoja que se abre y queda
+    // tapada por la tarjeta no es una hoja. Es lo que hace la app real: los
     // comentarios cubren la franja inferior mientras están abiertos.
     <div className="absolute inset-0 z-40 flex flex-col justify-end">
       <button

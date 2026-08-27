@@ -2,15 +2,14 @@ import { FREE_THROUGH, START_EPISODE } from "./economy";
 
 /**
  * Estado del contenido de la barra (qué mensaje gana). 8 y 9 (ocultamiento y
- * reaparición) NO están acá: son una transición de visibilidad ortogonal al
- * contenido, controlada por `StreakState.visibility` — así lo modela
- * estados.md, cuya tabla de prioridad tampoco los incluye.
+ * reaparición) NO están acá: eran una transición de visibilidad ortogonal al
+ * contenido, y dejaron de existir cuando la tarjeta reemplazó a la barra —
+ * ahora tocar el video expande y colapsa, no oculta. La tabla de prioridad de
+ * estados.md tampoco los incluía.
  * 'loading' antecede a toda prioridad: es el estado antes de resolver
  * localStorage, para no parpadear el estado equivocado.
  */
 export type BarState = "loading" | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 10;
-
-export type Visibility = "visible" | "hidden";
 
 export type StreakState = {
   hydrated: boolean;
@@ -25,7 +24,6 @@ export type StreakState = {
   insufficientAttempt: number | null;
   /** Horas restantes para el estado 6; null si no hay advertencia activa. */
   riskWarningHoursLeft: number | null;
-  visibility: Visibility;
   /** Episodio que el usuario está viendo o intentando ver. */
   episode: number;
   /** Último episodio desbloqueado. Arranca en los 12 gratis de la app real. */
@@ -41,7 +39,6 @@ export const initialStreakState: StreakState = {
   celebrating: false,
   insufficientAttempt: null,
   riskWarningHoursLeft: null,
-  visibility: "visible",
   episode: START_EPISODE,
   unlockedThrough: FREE_THROUGH,
 };
@@ -51,9 +48,6 @@ export type StreakAction =
   | { type: "CLAIM" }
   | { type: "GRANT_COINS"; amount: number }
   | { type: "ADVANCE_DAY"; broke: boolean }
-  | { type: "ENTER_PLAYER" }
-  | { type: "HIDE_BAR" }
-  | { type: "SHOW_BAR" }
   | { type: "ATTEMPT_UNLOCK"; cost: number }
   | { type: "NEXT_EPISODE" }
   | { type: "DISMISS_UNLOCK" }

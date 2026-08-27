@@ -126,16 +126,17 @@ generar urgencia sobre algo que no tiene.
 racha ya se castigó solo; recordárselo produce abandono.
 **Copy prohibido:** "Perdiste", "Se acabó", cualquier cifra de lo perdido.
 
-### 8 · Oculta
-**Cuándo:** reproductor con video corriendo y controles ocultos.
-**Transición:** fade + translate Y, 200ms, `ease-out`.
-**Por qué:** el video vertical a pantalla completa es el producto. Ningún píxel permanente.
+### 8 · Oculta · 9 · Reaparición — reemplazados por la tarjeta
+En la barra, tocar el video la ocultaba (fade + translate Y, 200ms) y reaparecía en la
+transición entre episodios. **La tarjeta no los hereda:** tocar el video ahora expande y
+colapsa, y la barra de 56px se queda siempre. La razón por la que existían —«el video
+vertical a pantalla completa es el producto, ningún píxel permanente»— la resuelve mejor la
+tarjeta en flujo: no flota sobre el video, así que no le roba píxeles a la escena; el video
+cede la altura y nada queda tapado.
 
-### 9 · Reaparición
-**Cuándo:** transición entre episodios, pausa, o salida del reproductor.
-**Transición:** entrada 250ms, `ease-out`.
-**Por qué:** es el momento de decisión — seguir, salir, desbloquear. La barra llega justo
-cuando la información sirve.
+Nunca fueron estados de contenido —eran visibilidad, ortogonal a qué mensaje se muestra— y
+por eso tampoco aparecían en la tabla de prioridad. Al desaparecer la superficie que los
+usaba, salieron también de `lib/streak/`.
 
 ### 10 · Saldo insuficiente
 **Cuándo:** toca desbloquear y no le alcanza.
@@ -231,13 +232,14 @@ de los estados con CTA se escribieron contra esa medida, no contra una estimaci�
 Efectos: el estado 2 se queda sin mensaje (`🪙 45` … `[Reclamar +35]`) porque el botón ya lo
 dice todo; ningún estado trunca; y "el número siempre visible" se cumple mejor que antes,
 con el saldo a la izquierda y el monto en el CTA. El nombre de la acción se mantiene:
-botón `Reclamar +35` → resultado `Reclamado`.
+botón `Reclamar +35` → resultado `Reclamada` (la recompensa), que es como se
+nombran los estados 3 y 4 en esta misma tabla.
 
 El indicador es un **elemento visual**, no caracteres de bloque: los `▓░░` de la tabla solo
 notan cuántos segmentos van llenos.
 
 Reglas: verbo primero, número siempre visible, sin signos de admiración salvo en el hito,
-tú informal. El botón dice "Reclamar" y el resultado dice "Reclamado".
+tú informal. El botón dice "Reclamar" y el resultado dice "Reclamada".
 
 ---
 
@@ -270,13 +272,14 @@ flowchart TD
   G --> L[Entra al reproductor]
   U --> L
   K --> L
-  L --> M[8 · Oculta]
+  L --> M[Barra colapsada · 56px]
+  M -.->|Toca la barra o el video| V[Tarjeta expandida]
+  V -.->|Colapsa| M
   M --> N{¿Fin de episodio?}
-  N -->|Sale| S[9 · Reaparición]
-  S -->|Sigue viendo| M
+  N -->|Sigue viendo| M
   N -->|Bloqueado| O{¿Saldo suficiente?}
   O -->|Sí| P[Desbloquea]
-  P -->|Vuelve a ocultarse| M
+  P --> M
   O -->|No| Q[10 · Saldo insuficiente]
   Q --> R[Reclamar o pagar]
 ```
@@ -285,12 +288,14 @@ flowchart TD
 
 ## Alcance del POC
 
-**Se construye:** estados 1–5, 8, 9, 10 + panel de control de demo para saltar entre días
-y estados.
-
-**Si sobra tiempo:** 6 y 7.
+**Se construye:** la tarjeta en sus dos alturas, sus dos variantes de cuenta, las cuatro
+hojas, los dos overlays y el muro de desbloqueo — con la máquina de racha completa por
+debajo (estados 1–7 y 10, todos alcanzables desde el panel) + panel de control de demo para
+saltar entre días y estados.
 
 **No se construye:** login, home, catálogo, reproductor real, pagos, backend.
+
+Los estados 8 y 9 no se construyen: dejaron de existir con la tarjeta (ver arriba).
 
 El panel de demo se etiqueta como herramienta de evaluación. Sin él una racha de 7 días es
 imposible de evaluar en una sesión de revisión.

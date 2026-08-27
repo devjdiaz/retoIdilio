@@ -1,17 +1,20 @@
-# CLAUDE.md — POC Idilio TV · Barra de racha
+# CLAUDE.md — POC Idilio TV · Player Identity Card
 
 ## Qué es esto
 
-Prototipo interactivo de **una sola funcionalidad**: una barra de estado persistente,
-anclada al borde inferior, que muestra saldo de monedas y estado de racha diaria, para una
-app de microdramas verticales en español.
+Prototipo interactivo de **una sola funcionalidad**: una capa de identidad y progreso en el
+reproductor de una app de microdramas verticales en español. Colapsada es una barra de 56px
+con saldo, racha y recompensa; al tocarla se abre en tarjeta con nivel, XP, marco y cuatro
+hojas de detalle.
 
 Es un ejercicio de evaluación. No se conecta a nada real.
 
 ## Archivos que hay que leer antes de escribir UI
 
 1. `design-tokens.md` — todo color, tipografía, radio y espaciado sale de ahí
-2. `estados.md` — los 10 estados, su copy y su lógica de prioridad
+2. `design_handoff_player_identity_card/README.md` — el handoff de la tarjeta: pantallas,
+   comportamiento, contrato de datos y la paleta `card-`
+3. `estados.md` — la máquina de racha que corre debajo: su copy y su lógica de prioridad
 
 **Si un valor no está en `design-tokens.md`, preguntar. No inventar tokens.**
 
@@ -22,8 +25,10 @@ Es un ejercicio de evaluación. No se conecta a nada real.
 ### Se construye
 - Contenedor mobile 390×844 centrado, con marco de teléfono
 - Video simulado (loop corto o gradiente animado en canvas)
-- La barra persistente con estados 1–5, 8, 9, 10
-- La transición de ocultamiento y reaparición
+- La tarjeta en sus dos alturas: barra colapsada y tarjeta expandida
+- Las dos variantes de cuenta: con cuenta e invitado
+- Las cuatro hojas (wallet, racha, progreso, marcos) y los dos overlays
+- El muro de desbloqueo, donde el sumidero se encuentra con el grifo
 - La interacción de reclamo con su animación
 - Panel de control de demo para saltar entre días y estados
 
@@ -47,15 +52,14 @@ Sin base de datos. Sin librería de estado. Sin librería de UI.
 - **Tokens como CSS variables en `globals.css`** y mapeados en `tailwind.config`.
   Cero hex sueltos en componentes. Cero valores arbitrarios de Tailwind para color.
 - **Estado con `useReducer`**, no con varios `useState`. La racha es una máquina de estados
-  y se modela como tal: la pila de prioridad vive en una sola función y se lee de un vistazo,
-  en vez de repartida en banderas que hay que cruzar mentalmente.
+  y se modela como tal. Esto se defiende en entrevista.
 - **Persistencia:** `localStorage` opcional para sobrevivir un refresh. Nada más.
 - **Componentes chicos**, un archivo por responsabilidad.
 - **Sin dependencias nuevas** sin preguntar.
 
 ---
 
-## Reglas de craft
+## Reglas de craft (esto es el 20% de la nota)
 
 - Escala de espaciado: **4 / 8 / 12 / 16 / 20 / 24 / 32**. Ningún valor fuera de esa lista.
 - Margen lateral de pantalla: **16px**.
@@ -77,7 +81,7 @@ Sin base de datos. Sin librería de estado. Sin librería de UI.
 - Español neutro LATAM, tú informal, verbo primero.
 - El número siempre visible. El usuario nunca pregunta cuánto tiene ni cuánto le falta.
 - El nombre de la acción se mantiene en todo el flujo: botón "Reclamar" → resultado
-  "Reclamado".
+  "Reclamada".
 - La racha rota **no regaña** y no muestra lo perdido.
 - Los textos exactos están en `estados.md`. No reescribirlos sin avisar.
 - Cero lorem ipsum, cero placeholder, cero TODO en lo que se entrega.

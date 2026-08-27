@@ -5,7 +5,7 @@ archivo propio, componentes, variables y exportación.
 
 | Archivo | Qué es |
 |---|---|
-| `idilio-barra-de-racha.pen` | El archivo de diseño. Se abre con Pencil |
+| `idilio-player-identity-card.pen` | El archivo de diseño. Se abre con Pencil |
 | `export/` | PNG exportados del archivo, a 1× |
 
 El `.pen` está encriptado y sólo lo abre Pencil, así que los PNG se versionan a propósito:
@@ -13,32 +13,49 @@ son lo que hace el diseño inspeccionable sin instalar nada.
 
 ---
 
+## Los catorce artboards
+
+```
+01–03  Barra colapsada      con recompensa · reclamada · invitado
+04–06  Tarjeta expandida    con cuenta · invitado · reclamada
+07–10  Hojas                wallet · racha · progreso · marcos
+11–12  Overlays             fin de capítulo · predicción
+13     Muro                 saldo insuficiente
+14     Flujo de la tarjeta
+```
+
+Los tres primeros y los tres siguientes son el mismo objeto en sus dos alturas: la barra de
+56px que se ve por defecto, y la tarjeta que se abre al tocarla. Las dos variantes de cuenta
+—con cuenta e invitado— están en ambas, porque el 88% de Idilio consume como invitado y esa
+es la variante que más gente vería.
+
+El artboard 14 es el flujo: las dos ramas de la decisión, las cuatro superficies y el
+retorno al video.
+
+---
+
 ## Cómo está construido
 
-La barra existe **una sola vez**, como componente reutilizable en el origen del canvas. Las
-pantallas empiezan en `y = 200`. Los diez estados son instancias con overrides de texto y de
-visibilidad — editar el componente cambia los diez a la vez.
+Los tokens de [`../design-tokens.md`](../design-tokens.md) están cargados como **variables
+del documento**, más la paleta `card-` del handoff. Editar una variable cambia los catorce
+artboards a la vez.
 
-```
-Barra de racha · componente     390×90   vertical
-├─ Contenido                    390×56   horizontal · space_between
-│  ├─ Saldo                     moneda + cantidad
-│  └─ Estado activo             mensaje · indicador · CTA
-└─ Safe area                    390×34
-```
+**Dos defectos salieron de medir cajas, sin necesitar el render:** el subtítulo de la barra
+de invitado medía 185px en un contenedor de 172, y «Racha mantenida» medía 100px en un tile
+con 82 útiles. Los dos se recortaban. Corregidos en el archivo.
 
-Los tokens de [`../design-tokens.md`](../design-tokens.md) están cargados como **23
-variables del documento**: colores, radios, medidas y la fuente.
+### La versión anterior
 
-**El indicador viene apagado en el componente.** Con mensaje, indicador y CTA encendidos a la
-vez el grupo mide 353px, y en la barra hay 358 útiles menos los 52 del saldo. Ningún estado
-real lleva los tres: el máximo son dos de tres. La base es mensaje + CTA —la forma de los
-estados 6, 7 y 10— y cada instancia enciende o apaga desde ahí.
+El archivo tuvo once pantallas de una **barra de racha de diez estados**, la primera
+intervención. Se borraron de pen.dev cuando la tarjeta pasó a ser el modelo: pen.dev es el
+modelo actual, y el registro de esa primera versión vive en el canvas de 16 artboards
+([`../entrega/canvas/`](../entrega/canvas/)) y en el historial de git.
 
-**El glow no está en el componente.** Va como override sólo en el estado 2. Si aparece en
-tres estados deja de significar urgencia.
-
-**El safe area es un frame de 34px, no padding.** Así la anatomía se mide en el canvas.
+Aquella barra existía una sola vez como componente reutilizable y los diez estados eran
+instancias con overrides. Dos decisiones de ese armado siguen valiendo en la tarjeta: el
+**glow va sólo donde hay recompensa disponible** —si aparece en tres lugares deja de
+significar urgencia— y el **safe area es un frame de 34px, no padding**, para que la
+anatomía se mida en el canvas.
 
 ---
 

@@ -4,7 +4,8 @@ import type { BarState, StreakState } from "./types";
  * Un estado a la vez, el más urgente (estados.md → "Estados y prioridad"):
  * loading › 10 · 6 · 2 · 7 · 5 · 3/4 · 1
  *
- * 8 y 9 no aparecen: son visibilidad, no contenido (ver types.ts).
+ * 8 y 9 no aparecen: eran visibilidad, no contenido, y ya no existen
+ * (ver types.ts).
  * En el flujo normal las condiciones no se solapan (streak viva vs. rota son
  * ramas alternas del flowchart de estados.md), pero 6 y 10 son disparadores
  * transitorios (tiempo, intento de desbloqueo) que sí pueden coincidir con

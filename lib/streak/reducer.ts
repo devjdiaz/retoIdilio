@@ -58,26 +58,15 @@ export function streakReducer(
           }
         : { ...state, insufficientAttempt: action.cost - state.balance };
 
-    // Estado 9 de estados.md: la transición entre episodios es el momento de
-    // decisión (seguir, salir, desbloquear), así que la barra reaparece —
-    // aunque el usuario la hubiera ocultado durante el episodio anterior.
     case "NEXT_EPISODE":
       return {
         ...state,
         episode: state.episode + 1,
         insufficientAttempt: null,
-        visibility: "visible",
       };
 
     case "DISMISS_UNLOCK":
       return { ...state, insufficientAttempt: null };
-
-    case "HIDE_BAR":
-      return { ...state, visibility: "hidden" };
-
-    case "SHOW_BAR":
-    case "ENTER_PLAYER":
-      return { ...state, visibility: "visible" };
 
     case "DEMO_SET":
       return { ...state, ...action.patch };
