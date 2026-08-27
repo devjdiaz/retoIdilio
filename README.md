@@ -39,7 +39,8 @@ La primera intervención fue una **barra de racha de diez estados**. La tarjeta 
 la barra colapsada es ese mismo objeto, y la máquina de racha que decide si hay algo que
 reclamar sigue corriendo debajo. Por eso [`estados.md`](./estados.md) sigue en el
 repositorio —la lógica de prioridad y la corrección de la curva vienen de ahí— y el
-[canvas de 16 artboards](./entrega/canvas/) queda como registro de esa primera versión.
+[canvas de 16 artboards](./entrega/canvas/) queda como registro de esa primera versión. No
+es un entregable: la página de entrega no lo enlaza.
 
 ---
 
